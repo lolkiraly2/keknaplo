@@ -30,4 +30,12 @@ Route::get('home', function () {
  
  });
 
+ Route::get('/map', function () {
+    return Inertia::render('map');
+})->middleware(['auth', 'verified'])->name('map');
+
+Route::get('/mapteszt', function () {
+    return view('maps');
+})->middleware(['auth', 'verified'])->name('probaterkep');
+
 require __DIR__.'/auth.php';
