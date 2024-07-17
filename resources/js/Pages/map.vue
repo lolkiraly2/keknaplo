@@ -16,7 +16,7 @@ export default {
     };
   },
   mounted() {
-    this.map = L.map("map").setView([46.927,17.704], 8);
+    this.map = L.map("map").setView([46.927, 17.704], 8);
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -24,7 +24,11 @@ export default {
 
     const url = 'gpx/rpddk_teljes.gpx'; // URL to your GPX file or the GPX itself
     new L.GPX(url, {
-      async: true
+      async: true,
+      markers: {
+        startIcon: '',
+        endIcon: '',
+      }
     }).on('loaded', function (e) {
       map.fitBounds(e.target.getBounds());
     }).addTo(this.map);
