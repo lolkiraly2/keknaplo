@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\CpointController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use PhpParser\Node\Stmt\Return_;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -33,6 +36,8 @@ Route::get('home', function () {
  Route::get('/map', function () {
     return Inertia::render('map');
 })->middleware(['auth', 'verified'])->name('map');
+
+Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
 
 Route::get('/mapteszt', function () {
     return view('maps');

@@ -6,7 +6,9 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import { useFavicon} from '@vueuse/core'
 
+useFavicon('sav-kek.ico')
 const showingNavigationDropdown = ref(false);
 </script>
 
@@ -34,8 +36,15 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('map')" :active="route().current('map')">
                                     Térkép
                                 </NavLink>
+
+                                <NavLink :href="route('custompoints.index')" :active="route().current('custompoints.index')">
+                                    Saját pont
+                                </NavLink> 
                             </div>
+
                         </div>
+
+                            
 
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
                             <!-- Settings Dropdown -->
@@ -118,7 +127,7 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Heading -->
             <header class="bg-white shadow" v-if="$slots.header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     <slot name="header" />
                 </div>
             </header>

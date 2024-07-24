@@ -1,42 +1,36 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-</script>
-
-<script>
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
+</script>
 
+<script>
 export default {
   name: "LeafletMap",
   data() {
     return {
+      gpx: null,
       map: null
     };
   },
   mounted() {
-    this.map = L.map("map").setView([46.927, 17.704], 8);
+    map.value = L.map("map").setView([46.927, 17.704], 8);
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(this.map);
+    }).addTo(map.value);
 
     const url = 'gpx/rpddk_teljes.gpx'; // URL to your GPX file or the GPX itself
-    new L.GPX(url, {
+    this.gpx = new L.GPX(url, {
       async: true,
       markers: {
-        startIcon: '',
-        endIcon: '',
+        startIcon: 'gpx/empty.png',
+        endIcon: 'gpx/empty.png',
       }
-    }).on('loaded', function (e) {
-      map.fitBounds(e.target.getBounds());
-    }).addTo(this.map);
-
-
-
+    }).addTo(map.value);
   },
-
 };
 </script>
 

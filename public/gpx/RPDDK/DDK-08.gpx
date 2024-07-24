@@ -4,46 +4,6 @@
 		<time>2023-04-04T13:56:37+02:00</time>
 		<bounds minlat="46.152808899" minlon="17.692608748" maxlat="46.354726789" maxlon="18.075572952"/>
 	</metadata>
-	<wpt lat="46.35471532" lon="17.692680073">
-		<ele>148.9464</ele>
-		<name>Kaposmérő</name>
-		<desc>OKK információs tábla - Az információs táblán a Rákóczi és a Dadai út sarkán. (DDKPH_31)</desc>
-	</wpt>
-	<wpt lat="46.152826455" lon="18.075256844">
-		<ele>175.7357</ele>
-		<name>Abaliget vá.</name>
-		<desc>Abaliget vasútállomás - Az állomásépület tornácán, a váróterem bejárata mellett. (DDKPH_37)</desc>
-	</wpt>
-	<wpt lat="46.284746761" lon="17.829743649">
-		<ele>196.1874</ele>
-		<name>Simonfa</name>
-		<desc>Meteor kulcsosház - A kulcsosház utca felőli oldalán, a villanyóraszekrényben. (DDKPH_34)</desc>
-	</wpt>
-	<wpt lat="46.273241123" lon="17.734074401">
-		<ele>168.7064</ele>
-		<name>Zselickisfalud</name>
-		<desc>Vegyesbolt - A kirakat ablakkeretén. (DDKPH_33_2)</desc>
-	</wpt>
-	<wpt lat="46.304775377" lon="17.72617197">
-		<ele>162.6346</ele>
-		<name>Szenna</name>
-		<desc>Vadász presszó - A presszó melletti dohánybolt előtt, a fedett pihenő oszlopán. (DDKPH_32)</desc>
-	</wpt>
-	<wpt lat="46.269214436" lon="17.730797146">
-		<ele>169.7183</ele>
-		<name>Zselickisfalud</name>
-		<desc>Vándor turistaház - A turistaház melletti „Régi kincsek, új utak” információs tábla oszlopán. (DDKPH_33_1)</desc>
-	</wpt>
-	<wpt lat="46.192146123" lon="17.958822555">
-		<ele>264.0023</ele>
-		<name>Felsőkövesd</name>
-		<desc>Hirdetőtábla - A harangláb melletti hirdetőtáblán. (DDKPH_36)</desc>
-	</wpt>
-	<wpt lat="46.255456837" lon="17.885234823">
-		<ele>163.345</ele>
-		<name>Gálosfa</name>
-		<desc>OKK információs tábla - Az információs táblán a vegyesbolttal szemben. (DD075INF) (DDKPH_35)</desc>
-	</wpt>
 	<trk>
 		<name>RPDDK-08</name>
 		<desc>Kaposmérő - Abaliget vá.</desc>
