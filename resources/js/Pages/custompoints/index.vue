@@ -1,36 +1,31 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { ref } from 'vue';
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import 'leaflet-gpx/gpx.js';
 
 </script>
 
 <script>
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import 'leaflet-gpx/gpx.js';
+
 export default {
     name: "LeafletMap",
     setup() {
-        
+
     },
     data() {
         return {
             kekturak: '0',
             szakasz: 0,
             szakaszok: [],
-            terkep: 0,
             gpx: null,
-            // map:null
+            marker: null,
+            map: null
         };
     },
     mounted() {
-        map.value = L.map('map').setView([47.234, 18.600], 7);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map.value);
-
+        this.InitMap();
     },
 
     props: {
@@ -40,6 +35,31 @@ export default {
     },
 
     methods: {
+        InitMap() {
+            this.map = L.map('map').setView([47.234, 18.600], 7);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(this.map);
+            this.map.on('click', this.NewMarker);
+        },
+
+        NewMarker(e) {
+            if (this.marker) this.map.removeLayer(this.marker);
+            var myIcon = L.icon({
+                iconUrl: 'https://raw.githubusercontent.com/iconic/open-iconic/master/png/map-marker-8x.png',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+            });
+            this.marker = new L.marker([e.latlng.lat, e.latlng.lng]).addTo(this.map);
+            console.log("new marker")
+
+            //console.log(this.marker)
+            document.querySelector("#szel").value = this.marker._latlng.lat
+            document.querySelector("#hossz").value = this.marker._latlng.lng
+
+        },
+
         turavaltozas() {
             if (this.kekturak == "OKT")
                 this.szakaszok = this.oktstages
@@ -53,8 +73,9 @@ export default {
         },
 
         szakaszvaltozas() {
-            //console.log("szakasz változás " + this.szakasz);
-
+            if (this.marker) this.map.removeLayer(this.marker);
+            document.querySelector("#szel").value = ''
+            document.querySelector("#hossz").value = ''
             let url = "gpx/";
             let sznev = "";
 
@@ -75,25 +96,23 @@ export default {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
 
                 else {
-                    map.value.removeLayer(this.gpx);
+                    this.map.removeLayer(this.gpx);
                     this.gpx = new L.GPX(url, {
                         async: true,
                         markers: {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
                 }
             }
 
@@ -114,25 +133,23 @@ export default {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
 
                 else {
-                    map.value.removeLayer(this.gpx);
+                    this.map.removeLayer(this.gpx);
                     this.gpx = new L.GPX(url, {
                         async: true,
                         markers: {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
                 }
             }
 
@@ -153,36 +170,38 @@ export default {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
-
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
                 else {
-                    map.value.removeLayer(this.gpx);
+                    this.map.removeLayer(this.gpx);
                     this.gpx = new L.GPX(url, {
                         async: true,
                         markers: {
                             startIcon: 'gpx/empty.png',
                             endIcon: 'gpx/empty.png',
                         }
-                    }).on('loaded', function (e) {
-                        let detail = e.target;
-                        map.value.flyToBounds(detail.getBounds());
-                        document.querySelector("#stagename").innerHTML = detail.get_desc();
-                    }).addTo(map.value);
+                    }).on('loaded', (e) => {
+                        this.map.flyToBounds(e.target.getBounds());
+                        document.querySelector("#stagename").innerHTML = e.target.get_desc();
+                    }).addTo(this.map);
                 }
             }
-        },
-    }
+        }
+    },
 
-};
+}
+
 </script>
 
 <style>
 #map {
     height: 500px;
+}
+
+#save {
+    border: 1px solid #787E8B;
 }
 </style>
 
@@ -223,8 +242,21 @@ export default {
                                         </option>
                                     </select>
                                 </div>
-                                
-                                <div><p id="stagename"></p></div>
+
+                                <div>
+                                    <p id="stagename"></p>
+                                </div>
+
+                                <div class="w-min mt-8">
+                                    <form action="">
+                                        <input type="text" placeholder="Saját pont neve" id="nev" name="nev"
+                                            class="mb-5" required>
+                                        <input type="text" placeholder="szélesség" id="szel" name="szel" class="mb-5" disabled required>
+                                        <input type="text" placeholder="hosszúság" id="hossz" name="hossz" class="mb-5" disabled required>
+                                        <textarea name="leiras" id="leiras" placeholder="Rövid leírás"></textarea>
+                                        <input type="submit" value="Rögzítés" id="save">
+                                    </form>
+                                </div>
 
                             </div>
 
