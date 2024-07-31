@@ -37,7 +37,7 @@ const showingNavigationDropdown = ref(false);
                                     Térkép
                                 </NavLink>
 
-                                <NavLink :href="route('custompoints.index')" :active="route().current('custompoints.index')">
+                                <NavLink :href="route('custompoints.index')">
                                     Saját pont
                                 </NavLink> 
                             </div>
