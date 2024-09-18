@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, useForm } from '@inertiajs/vue3';
+import { Head, useForm, usePage } from '@inertiajs/vue3';
 import Pointnav from '@/Components/pointnav.vue';
 import { router } from '@inertiajs/vue3';
 import { ref, onMounted } from 'vue'
@@ -8,11 +8,13 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx/gpx.js';
 
+const page = usePage();
+const user =  page.props.auth.user
+console.log(user.name)
 const props = defineProps({
     oktstages: Array,
     ddkstages: Array,
     akstages: Array,
-    uid: Number
 })
 
 const kekturak = ref('Országos');
@@ -32,11 +34,11 @@ const form = useForm({
     user_id: null
    
 })
-form.user_id = props.uid
+form.user_id = user.id
 
 onMounted(() => {
     InitMap();
-    console.log(props.uid)
+    console.log(user.id)
 })
 
 function InitMap() {

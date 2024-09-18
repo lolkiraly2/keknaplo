@@ -6,9 +6,6 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
-import { useFavicon} from '@vueuse/core'
-
-useFavicon('sav-kek.ico')
 const showingNavigationDropdown = ref(false);
 </script>
 
@@ -40,6 +37,10 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('custompoints.index')">
                                     Saját pont
                                 </NavLink> 
+
+                                <NavLink :href="route('korlatozasok')">
+                                    Korlátozások
+                                </NavLink>
                             </div>
 
                         </div>

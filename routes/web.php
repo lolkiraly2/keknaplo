@@ -37,6 +37,10 @@ Route::get('home', function () {
     return Inertia::render('map');
 })->middleware(['auth', 'verified'])->name('map');
 
+Route::get('/korlatozasok', function () {
+    return Inertia::render('korlatozasok');
+})->middleware(['auth', 'verified'])->name('korlatozasok');
+
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
 
 Route::get('/mapteszt', function () {

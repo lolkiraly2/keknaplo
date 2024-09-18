@@ -1,37 +1,28 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+import { onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
-</script>
 
-<script>
-export default {
-  name: "LeafletMap",
-  data() {
-    return {
-      gpx: null,
-      map: null
-    };
-  },
-  mounted() {
-    map.value = L.map("map").setView([46.927, 17.704], 8);
-    L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map.value);
+onMounted(() => {
+  InitMap();
+})
 
-    const url = 'gpx/rpddk_teljes.gpx'; // URL to your GPX file or the GPX itself
-    this.gpx = new L.GPX(url, {
-      async: true,
-      markers: {
-        startIcon: 'gpx/empty.png',
-        endIcon: 'gpx/empty.png',
-      }
-    }).addTo(map.value);
-  },
-};
+function InitMap() {
+  map.value = L.map('map').setView([47.234, 18.600], 7);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map.value);
+
+  L.tileLayer.wms('https://turistaterkepek.hu/server/services/Turistaut_nyilvantartas/nyilvantartaswms/MapServer/WMSServer', {
+    layers: '00',
+    format: 'image/png',
+    transparent: true
+  }).addTo(map.value);
+}
 </script>
 
 <style>

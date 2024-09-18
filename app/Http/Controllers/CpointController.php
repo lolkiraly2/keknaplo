@@ -17,8 +17,8 @@ class CpointController extends Controller
     public function index()
     {
         $uid = Auth::user()->id;
-        return Inertia::render('custompoints/index',[
-            'points' => Cpoint::where('user_id',$uid)->get()
+        return Inertia::render('custompoints/index', [
+            'points' => Cpoint::where('user_id', $uid)->get()
         ]);
     }
 
@@ -27,11 +27,10 @@ class CpointController extends Controller
      */
     public function create()
     {
-        return Inertia::render('custompoints/create',[
-            'oktstages' => Stage::select('id','nev')->where('nev', 'like', "OKT%")->get(),
-            'ddkstages' => Stage::select('id','nev')->where('nev', 'like', "DDK%")->get(),
-            'akstages' => Stage::select('id','nev')->where('nev', 'like', "AK%")->get(),
-            'uid' => Auth::user()->id
+        return Inertia::render('custompoints/create', [
+            'oktstages' => Stage::select('id', 'nev')->where('nev', 'like', "OKT%")->get(),
+            'ddkstages' => Stage::select('id', 'nev')->where('nev', 'like', "DDK%")->get(),
+            'akstages' => Stage::select('id', 'nev')->where('nev', 'like', "AK%")->get(),
         ]);
     }
 
@@ -47,9 +46,9 @@ class CpointController extends Controller
             'leiras' => ['required', 'max:50'],
             'stage_id' => ['required'],
             'user_id' => ['required']
-          ]));
-  
-          return to_route('custompoints.index');
+        ]));
+
+        return to_route('custompoints.index');
     }
 
     /**
@@ -58,7 +57,7 @@ class CpointController extends Controller
     public function show(Request $request)
     {
         //dd($selected);
-        return Inertia::render('custompoints/show',[
+        return Inertia::render('custompoints/show', [
             'se' => $request->query('selected')
         ]);
     }
@@ -66,9 +65,14 @@ class CpointController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Cpoint $cpoint)
     {
-        //
+        return Inertia::render('custompoints/edit', [
+            'oktstages' => Stage::select('id', 'nev')->where('nev', 'like', "OKT%")->get(),
+            'ddkstages' => Stage::select('id', 'nev')->where('nev', 'like', "DDK%")->get(),
+            'akstages' => Stage::select('id', 'nev')->where('nev', 'like', "AK%")->get(),
+            'cpoint' => $cpoint
+        ]);
     }
 
     /**
