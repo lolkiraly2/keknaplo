@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a{
+    color: blue;
+    text-decoration: solid;
+}
+
+h3{
+    font-weight: bold;
+}
+
+#delete{
+    background-color: red;
+}

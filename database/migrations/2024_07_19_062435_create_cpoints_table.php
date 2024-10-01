@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('stage_id')->constrained();
             $table->double('szelesseg');
             $table->double('hosszusag');
-            $table->string('leiras');
+            $table->string('leiras')->nullable();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });

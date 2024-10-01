@@ -3,36 +3,38 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm, usePage } from '@inertiajs/vue3';
 import Pointnav from '@/Components/pointnav.vue';
 import { router } from '@inertiajs/vue3';
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, defineProps } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
-const user =  page.props.auth.user
+const user = page.props.auth.user
 console.log(user.name)
 const props = defineProps({
     oktstages: Array,
     ddkstages: Array,
     akstages: Array,
+    cpoint: Object,
+    stage: String
 })
 
-const kekturak = ref(null);
-const szakasz =  ref(null);
+const kekturak = ref('OKT');
+const szakasz = ref(null);
 const szakaszok = ref(null);
-const gpx =  ref(null);
+const gpx = ref(null);
 const marker = ref(null);
 const map = ref(null);
 const stagename = ref('');
 
 const form = useForm({
-    nev: null,
-    stage_id: null,
-    szelesseg: null,
-    hosszusag: null,
-    leiras: null,
-    user_id: null
-   
+    nev: props.cpoint.nev,
+    stage_id: props.cpoint.stage_id,
+    szelesseg: props.cpoint.szelesseg,
+    hosszusag: props.cpoint.hosszusag,
+    leiras: props.cpoint.leiras,
+    user_id: props.cpoint.user_id
+
 })
 form.user_id = user.id
 
@@ -47,6 +49,19 @@ function InitMap() {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map.value);
+
+    if (props.stage[0] == 'D')
+        kekturak.value = "DDK";
+    if (props.stage[0] == 'A')
+        kekturak.value = "AK";
+    if (props.stage[0] == 'B')
+        kekturak.value = "BFK";
+    let url = "../../gpx/" + kekturak.value + "/" + props.stage + ".gpx";
+    szakasz.value = props.cpoint.stage_id
+    turavaltozas();
+    addGPXtoMap(url)
+    marker.value = new L.marker([props.cpoint.szelesseg, props.cpoint.hosszusag]).addTo(map.value);
+
     map.value.on('click', NewMarker);
 }
 
@@ -65,7 +80,7 @@ function NewMarker(e) {
     form.hosszusag = marker.value._latlng.lng
 }
 
-function turavaltozas() {    
+function turavaltozas() {
     if (kekturak.value == "OKT")
         szakaszok.value = props.oktstages
     if (kekturak.value == "AK")
@@ -83,8 +98,8 @@ function addGPXtoMap(u) {
     gpx.value = new L.GPX(u, {
         async: true,
         markers: {
-            startIcon: '../gpx/empty.png',
-            endIcon: '../gpx/empty.png',
+            startIcon: '../../gpx/empty.png',
+            endIcon: '../../gpx/empty.png',
         }
     }).on('loaded', (e) => {
         map.value.flyToBounds(e.target.getBounds());
@@ -99,7 +114,7 @@ function szakaszvaltozas() {
     form.stage_id = szakasz.value;
     // form.stage_id = this.szakasz;
     if (marker.value) map.value.removeLayer(marker.value);
-    let url = "../gpx/";
+    let url = "../../gpx/";
     let sznev = "";
 
     //DDK szakasz lett választva
@@ -110,7 +125,6 @@ function szakaszvaltozas() {
                 sznev = props.ddkstages[i].nev;
                 break;
             }
-
         url += "DDK/" + sznev + ".gpx";
         addGPXtoMap(url);
     }
@@ -196,7 +210,7 @@ function szakaszvaltozas() {
                                 </div>
 
                                 <div class="w-min mt-8">
-                                    <form @submit.prevent="form.post(route('custompoints.store'))">
+                                    <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))">
 
                                         <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.nev"
                                             class="mb-5" required>
@@ -206,10 +220,13 @@ function szakaszvaltozas() {
                                             class="mb-5" disabled required>
                                         <textarea id="leiras" placeholder="Rövid leírás"
                                             v-model="form.leiras"></textarea>
-                                        <input type="submit" value="Rögzítés" id="save">
+                                        <input type="submit" value="Mentés" id="save">
                                     </form>
                                 </div>
 
+                                <form @submit.prevent="form.delete(route('custompoints.destroy', props.cpoint.id))">
+                                    <input type="submit" value="Törlés" id="delete">
+                                </form>
                             </div>
 
                         </div>

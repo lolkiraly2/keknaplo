@@ -5,46 +5,47 @@ import { ref, onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
-import '../../css/style.css'
+import { FeatureLayer } from "esri-leaflet";
 
 onMounted(() => {
   InitMap();
 })
 
-function onEachFeature(feature, layer) {
-  // does this feature have a property named popupContent?
-  if (feature.properties && feature.properties.description) {
-    let desc = "<strong>" + feature.properties.ceg + "</strong><br>" + feature.properties.description + '<br><a href =" ' + feature.properties.url + '" target="blank">link</a>';
-    layer.bindPopup(desc);
-  }
-}
-
 function InitMap() {
   map.value = L.map('map').setView([47.234, 18.600], 7);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői, Térképadatok: <a href="https://turistaterkepek.hu/">MTSZ térképportál</a>'
   }).addTo(map.value);
 
   L.tileLayer.wms('https://turistaterkepek.hu/server/services/Turistaut_nyilvantartas/nyilvantartaswms/MapServer/WMSServer', {
-    layers: '00',
+    layers: '0',
     format: 'image/png',
     transparent: true
   }).addTo(map.value);
 
-  var style = {
-    "color": "#ff7800",
-    "weight": 5,
-    "opacity": 0.65
-  };
+ const fr = new FeatureLayer({
+  url: 'https://turistaterkepek.hu/server/rest/services/alapadatok/korlatozasok/MapServer/0',
+  style: (feature) => {
+    return {
+      color: 'orange',
+      weight: 2,
+      fillColor: 'orange',
+      fillOpacity: 0.4
+    };
+  }
+}).addTo(map.value);
 
-  let url = 'https://heyjoe.hu/erdolatogatasi_korlatozas_geojson.php';
-  const response = fetch(url).then(response => response.json()).then(response => {
-    L.geoJson(response, {
-      style: style,
-      onEachFeature: onEachFeature
-    }).addTo(map.value);
-  })
+fr.bindPopup(function (layer) {
+  var kezdet = new Date(layer.feature.properties.ervenyesseg_kezdete).toISOString().split('T')[0];
+  var vege = new Date(layer.feature.properties.ervenyesseg_vege).toISOString().split('T')[0];
+  return L.Util.template(
+    "<h3>{name}.</h3> <p>Erdészet: {erdeszet}.</p> <p>{description}.</p><p>Érvenyesség kezdete:" + kezdet + "<br>Érvenyesség vége: " + vege + "</p> <p><a target='blank' href={hir_url}>link</a></p>",
+    layer.feature.properties
+  );
+});
+
+  
 }
 </script>
 
@@ -56,14 +57,11 @@ function InitMap() {
 
 <template>
 
-  <Head title="Térkép" />
+  <Head title="Korlátozások" />
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">A korlátozás réteg a <a href="https://heyjoe.hu/"
-          target="_blank" rel="noopener noreferrer">heyjoe.hu</a>-ról származik. További részletekről érdeklődjön az <a
-          href="https://www.mtsz.org/turistautak-figyelmeztetesek" target="_blank">MTSZ</a> oldalán vagy a
-        vadásztársaságok oldalán.</h2>
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">Erdőlátogatási korlátozások</h2>
     </template>
 
     <div class="py-12">

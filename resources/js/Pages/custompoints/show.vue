@@ -3,7 +3,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm, usePage } from '@inertiajs/vue3';
 import Pointnav from '@/Components/pointnav.vue';
 import { router } from '@inertiajs/vue3';
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, defineProps } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx/gpx.js';
@@ -12,12 +12,10 @@ const page = usePage();
 const user =  page.props.auth.user
 console.log(user.name)
 const props = defineProps({
-    oktstages: Array,
-    ddkstages: Array,
-    akstages: Array,
+   cpoint:Object
 })
 
-const kekturak = ref(null);
+const kekturak = ref('Országos');
 const szakasz =  ref(null);
 const szakaszok = ref(null);
 const gpx =  ref(null);
@@ -111,7 +109,7 @@ function szakaszvaltozas() {
                 break;
             }
 
-        url += "DDK/" + sznev + ".gpx";
+        url += "RPDDK/" + sznev + ".gpx";
         addGPXtoMap(url);
     }
 
