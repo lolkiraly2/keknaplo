@@ -2,8 +2,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm, usePage } from '@inertiajs/vue3';
 import Pointnav from '@/Components/pointnav.vue';
-import { router } from '@inertiajs/vue3';
-import { ref, onMounted, defineProps } from 'vue'
+import { ref, onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx/gpx.js';
@@ -189,7 +188,6 @@ function szakaszvaltozas() {
                             <div class="flex flex-col items-center">
                                 <div>
                                     <select v-model="kekturak" @change="turavaltozas" class="mt-10">
-                                        <option value="0" disabled :selected="true">Válassz egy kéktúrát!</option>
                                         <option value="AK">Alföldi Kéktúra</option>
                                         <option value="DDK">Dél-Dunántúli Kéktúra</option>
                                         <option value="OKT">Országos Kéktúra</option>
@@ -198,7 +196,6 @@ function szakaszvaltozas() {
 
                                 <div>
                                     <select class="mt-2" v-model="szakasz" @change="szakaszvaltozas">
-                                        <option value="0" disabled selected>Válassz szakaszt!</option>
                                         <option v-for="sz in szakaszok" v-bind:value="sz.id">
                                             {{ sz.nev }}
                                         </option>
@@ -218,7 +215,7 @@ function szakaszvaltozas() {
                                             class="mb-5" disabled required>
                                         <input type="text" placeholder="hosszúság" id="hossz" v-model="form.hosszusag"
                                             class="mb-5" disabled required>
-                                        <textarea id="leiras" placeholder="Rövid leírás"
+                                        <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
                                             v-model="form.leiras"></textarea>
                                         <input type="submit" value="Mentés" id="save">
                                     </form>

@@ -31,7 +31,7 @@ const props = defineProps({
 
                         <tr v-for="point in points">
                             <td class="px-6"><Link :href="route('custompoints.show',point.id)">{{ point.nev }}</Link></td>
-                            <td class="text-right px-6"><Link :href="route('custompoints.edit',point.id)">szerkesztés</Link></td>
+                            <td class="text-right px-6"><button class="editbutton"><Link :href="route('custompoints.edit',point.id)">szerkesztés</Link></button></td>
                         </tr>
                     </table>
                 </div>

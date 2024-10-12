@@ -2,7 +2,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm, usePage } from '@inertiajs/vue3';
 import Pointnav from '@/Components/pointnav.vue';
-import { router } from '@inertiajs/vue3';
 import { ref, onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -17,8 +16,8 @@ const props = defineProps({
     akstages: Array,
 })
 
-const kekturak = ref(null);
-const szakasz =  ref(null);
+const kekturak = ref('0');
+const szakasz =  ref('0');
 const szakaszok = ref(null);
 const gpx =  ref(null);
 const marker = ref(null);
@@ -204,7 +203,7 @@ function szakaszvaltozas() {
                                             class="mb-5" disabled required>
                                         <input type="text" placeholder="hosszúság" id="hossz" v-model="form.hosszusag"
                                             class="mb-5" disabled required>
-                                        <textarea id="leiras" placeholder="Rövid leírás"
+                                        <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
                                             v-model="form.leiras"></textarea>
                                         <input type="submit" value="Rögzítés" id="save">
                                     </form>

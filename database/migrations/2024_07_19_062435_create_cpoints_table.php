@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cpoints', function (Blueprint $table) {
             $table->id();
             $table->string('nev', 50);
-            $table->foreignId('stage_id')->constrained();
+            $table->foreignId('stage_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->double('szelesseg');
             $table->double('hosszusag');
             $table->string('leiras')->nullable();

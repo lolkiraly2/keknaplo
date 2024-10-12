@@ -9,12 +9,7 @@ use Inertia\Inertia;
 use PhpParser\Node\Stmt\Return_;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('Welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -41,7 +36,7 @@ Route::get('/korlatozasok', function () {
     return Inertia::render('korlatozasok');
 })->middleware(['auth', 'verified'])->name('korlatozasok');
 
-Route::resource('custompoints', CpointController::class);
+Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
 
 Route::get('/mapteszt', function () {
     return view('maps');
