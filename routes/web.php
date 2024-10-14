@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\CpointController;
-use App\Http\Controllers\ProfileController;
-use Illuminate\Contracts\View\View;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use PhpParser\Node\Stmt\Return_;
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\CpointController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');

@@ -42,6 +42,10 @@ icon.value = "ico/sav-kek.ico";
                             <div class="ms-3 relative">
                                 <NavLink :href="route('login')">
                                     Bejelentkezés
+                                </NavLink>
+
+                                <NavLink :href="route('register')">
+                                    Regisztráció
                                 </NavLink> 
                             </div>
                         </div>
