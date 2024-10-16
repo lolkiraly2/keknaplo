@@ -6,6 +6,7 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
+import pecsetek from '@/Components/pecsetek.vue';
 import { Link } from '@inertiajs/vue3';
 const showingNavigationDropdown = ref(false);
 const icon = useFavicon();
@@ -19,7 +20,7 @@ icon.value = "ico/sav-kek.ico";
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
-                        <div class="flex">
+                        <div class="flex items-center">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
@@ -44,6 +45,8 @@ icon.value = "ico/sav-kek.ico";
                                 <NavLink :href="route('korlatozasok')">
                                     Korlátozások
                                 </NavLink>
+
+                                <pecsetek></pecsetek>
                             </div>
 
                         </div>

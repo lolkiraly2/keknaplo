@@ -5,6 +5,7 @@ use PhpParser\Node\Stmt\Return_;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
 use App\Http\Controllers\ProfileController;
 
@@ -37,6 +38,8 @@ Route::get('/korlatozasok', function () {
 })->middleware(['auth', 'verified'])->name('korlatozasok');
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
+
+Route::get('/stamps/{hike}', [StampController::class, 'index'])->name('stamps.index');
 
 Route::get('/mapteszt', function () {
     return view('maps');

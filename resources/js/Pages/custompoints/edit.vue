@@ -46,7 +46,7 @@ function InitMap() {
     map.value = L.map('map').setView([47.234, 18.600], 7);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői'
     }).addTo(map.value);
 
     if (props.stage[0] == 'D')
@@ -180,7 +180,7 @@ function szakaszvaltozas() {
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
                     <div class="grid grid-cols-4">
-                        <div class="col-span-3">
+                        <div class="col-span-3 z-0">
                             <div id="map"></div>
                         </div>
 
