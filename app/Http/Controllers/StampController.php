@@ -31,8 +31,11 @@ class StampController extends Controller
         $number = $this->GetHikeId($hike);
 
         return Inertia::render('stamps/index', [
-            'stamps' => Hike::find($number)->stamps->select('nev','hosszusag','szelesseg','helyszin')->unique('nev'),
-            'hike' => $hike
+            // 'stamps' => Hike::find($number)->stamps->select('nev','hosszusag','szelesseg','helyszin')->unique('nev'),
+            'stamps' => Hike::find($number)->stamps->select('mtsz_id','nev','hosszusag','szelesseg','helyszin','stage_id'),
+            'hike' => $hike,
+            'stages' => Hike::find($number)->stages->select('id','nev')
+
         ]);
     }
 

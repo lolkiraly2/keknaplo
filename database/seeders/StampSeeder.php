@@ -105,7 +105,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_05_2",
+            'mtsz_id' => "AKPH_05_1",
             'pecset_id' => "AKPH_05",
             'stage_id' => 39,
             'nev' => "Bajai átkelés",
@@ -123,7 +123,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_05_1",
+            'mtsz_id' => "AKPH_05_2",
             'pecset_id' => "AKPH_05",
             'stage_id' => 39,
             'nev' => "Bajai átkelés",
@@ -702,7 +702,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_24_2",
+            'mtsz_id' => "AKPH_24_1",
             'pecset_id' => "AKPH_24",
             'stage_id' => 43,
             'nev' => "Szarvas",
@@ -720,7 +720,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_24_1",
+            'mtsz_id' => "AKPH_24_2",
             'pecset_id' => "AKPH_24",
             'stage_id' => 43,
             'nev' => "Szarvas",
@@ -739,7 +739,7 @@ class StampSeeder extends Seeder
 
         //AK 6. szakasz
         Stamp::create([
-            'mtsz_id' => "AKPH_24_2",
+            'mtsz_id' => "AKPH_24_1",
             'pecset_id' => "AKPH_24",
             'stage_id' => 44,
             'nev' => "Szarvas",
@@ -757,7 +757,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_24_1",
+            'mtsz_id' => "AKPH_24_2",
             'pecset_id' => "AKPH_24",
             'stage_id' => 44,
             'nev' => "Szarvas",
@@ -1334,7 +1334,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_44_2",
+            'mtsz_id' => "AKPH_44_1",
             'pecset_id' => "AKPH_44",
             'stage_id' => 47,
             'nev' => "Nagykereki",
@@ -1352,7 +1352,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_44_1",
+            'mtsz_id' => "AKPH_44_2",
             'pecset_id' => "AKPH_44",
             'stage_id' => 47,
             'nev' => "Nagykereki",
@@ -1370,7 +1370,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_45_2",
+            'mtsz_id' => "AKPH_45_1",
             'pecset_id' => "AKPH_45",
             'stage_id' => 47,
             'nev' => "Kismarja",
@@ -1388,7 +1388,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_45_1",
+            'mtsz_id' => "AKPH_45_2",
             'pecset_id' => "AKPH_45",
             'stage_id' => 47,
             'nev' => "Kismarja",
@@ -1569,7 +1569,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_51_2",
+            'mtsz_id' => "AKPH_51_1",
             'pecset_id' => "AKPH_51",
             'stage_id' => 48,
             'nev' => "Vekeri-tó",
@@ -1587,7 +1587,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_51_1",
+            'mtsz_id' => "AKPH_51_2",
             'pecset_id' => "AKPH_51",
             'stage_id' => 48,
             'nev' => "Vekeri-tó",
@@ -2167,7 +2167,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "DDKPH_01_1",
+            'mtsz_id' => "DDKPH_01_2",
             'pecset_id' => "DDKPH_01",
             'stage_id' => 1,
             'nev' => "Írott-kő",
@@ -2999,7 +2999,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "DDKPH_29_2",
+            'mtsz_id' => "DDKPH_29_1",
             'pecset_id' => "DDKPH_29",
             'stage_id' => 7,
             'nev' => "Mesztegnyő",
@@ -3017,7 +3017,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "DDKPH_29_1",
+            'mtsz_id' => "DDKPH_29_2",
             'pecset_id' => "DDKPH_29",
             'stage_id' => 7,
             'nev' => "Mesztegnyő",
@@ -3560,7 +3560,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_01_1",
+            'mtsz_id' => "OKTPH_01_2",
             'pecset_id' => "OKTPH_01",
             'stage_id' => 12,
             'nev' => "Írott-kő",
@@ -4048,7 +4048,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_21_2",
+            'mtsz_id' => "OKTPH_21_1",
             'pecset_id' => "OKTPH_21",
             'stage_id' => 14,
             'nev' => "Rezi",
@@ -4066,7 +4066,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_21_1",
+            'mtsz_id' => "OKTPH_21_2",
             'pecset_id' => "OKTPH_21",
             'stage_id' => 14,
             'nev' => "Rezi",
@@ -4266,7 +4266,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_29_3",
+            'mtsz_id' => "OKTPH_29_1",
             'pecset_id' => "OKTPH_29",
             'stage_id' => 16,
             'nev' => "Szigliget",
@@ -4284,7 +4284,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_29_1",
+            'mtsz_id' => "OKTPH_29_2",
             'pecset_id' => "OKTPH_29",
             'stage_id' => 16,
             'nev' => "Szigliget",
@@ -4302,7 +4302,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_29_2",
+            'mtsz_id' => "OKTPH_29_3",
             'pecset_id' => "OKTPH_29",
             'stage_id' => 16,
             'nev' => "Szigliget",
@@ -4447,7 +4447,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_35_2",
+            'mtsz_id' => "OKTPH_35_1",
             'pecset_id' => "OKTPH_35",
             'stage_id' => 17,
             'nev' => "Nagyvázsony",
@@ -4465,7 +4465,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_35_1",
+            'mtsz_id' => "OKTPH_35_2",
             'pecset_id' => "OKTPH_35",
             'stage_id' => 17,
             'nev' => "Nagyvázsony",
@@ -4484,7 +4484,7 @@ class StampSeeder extends Seeder
 
         //OKT 7. szakasz
         Stamp::create([
-            'mtsz_id' => "OKTPH_35_2",
+            'mtsz_id' => "OKTPH_35_1",
             'pecset_id' => "OKTPH_35",
             'stage_id' => 18,
             'nev' => "Nagyvázsony",
@@ -4502,7 +4502,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_35_1",
+            'mtsz_id' => "OKTPH_35_2",
             'pecset_id' => "OKTPH_35",
             'stage_id' => 18,
             'nev' => "Nagyvázsony",
@@ -4701,7 +4701,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_42_2",
+            'mtsz_id' => "OKTPH_42_1",
             'pecset_id' => "OKTPH_42",
             'stage_id' => 19,
             'nev' => "Borzavár",
@@ -4719,7 +4719,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_42_1",
+            'mtsz_id' => "OKTPH_42_2",
             'pecset_id' => "OKTPH_42",
             'stage_id' => 19,
             'nev' => "Borzavár",
@@ -4737,7 +4737,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_43_2",
+            'mtsz_id' => "OKTPH_43_1",
             'pecset_id' => "OKTPH_43",
             'stage_id' => 19,
             'nev' => "Zirc",
@@ -4755,7 +4755,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_43_1",
+            'mtsz_id' => "OKTPH_43_2",
             'pecset_id' => "OKTPH_43",
             'stage_id' => 19,
             'nev' => "Zirc",
@@ -4774,7 +4774,7 @@ class StampSeeder extends Seeder
 
         //OKT 9. szakasz
         Stamp::create([
-            'mtsz_id' => "OKTPH_43_2",
+            'mtsz_id' => "OKTPH_43_1",
             'pecset_id' => "OKTPH_43",
             'stage_id' => 20,
             'nev' => "Zirc",
@@ -4792,7 +4792,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_43_1",
+            'mtsz_id' => "OKTPH_43_2",
             'pecset_id' => "OKTPH_43",
             'stage_id' => 20,
             'nev' => "Zirc",
@@ -4954,7 +4954,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_50_3",
+            'mtsz_id' => "OKTPH_50_1",
             'pecset_id' => "OKTPH_50",
             'stage_id' => 20,
             'nev' => "Bodajk",
@@ -4990,7 +4990,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_50_1",
+            'mtsz_id' => "OKTPH_50_3",
             'pecset_id' => "OKTPH_50",
             'stage_id' => 20,
             'nev' => "Bodajk",
@@ -5009,7 +5009,7 @@ class StampSeeder extends Seeder
 
         //OKT 10. szakasz
         Stamp::create([
-            'mtsz_id' => "OKTPH_50_3",
+            'mtsz_id' => "OKTPH_50_1",
             'pecset_id' => "OKTPH_50",
             'stage_id' => 21,
             'nev' => "Bodajk",
@@ -5045,7 +5045,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_50_1",
+            'mtsz_id' => "OKTPH_50_3",
             'pecset_id' => "OKTPH_50",
             'stage_id' => 21,
             'nev' => "Bodajk",
@@ -5243,7 +5243,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_57_2",
+            'mtsz_id' => "OKTPH_57_1",
             'pecset_id' => "OKTPH_57",
             'stage_id' => 22,
             'nev' => "Koldusszállás",
@@ -5261,7 +5261,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_57_1",
+            'mtsz_id' => "OKTPH_57_2",
             'pecset_id' => "OKTPH_57",
             'stage_id' => 22,
             'nev' => "Koldusszállás",
@@ -5896,7 +5896,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_78_2",
+            'mtsz_id' => "OKTPH_78_1",
             'pecset_id' => "OKTPH_78",
             'stage_id' => 27,
             'nev' => "Nagy-Villám",
@@ -5914,7 +5914,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_78_1",
+            'mtsz_id' => "OKTPH_78_2",
             'pecset_id' => "OKTPH_78",
             'stage_id' => 27,
             'nev' => "Nagy-Villám",
@@ -5930,6 +5930,26 @@ class StampSeeder extends Seeder
             'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_2.jpg",
             'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_3.jpg",
         ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_79",
+            'pecset_id' => "OKTPH_79",
+            'stage_id' => 27,
+            'nev' => "Visegrád",
+            'helyszin' => "Visegrád-Nagymarosi rév",
+            'helyszin_leiras' => "A komp pénztár teraszán a korlátnál.",
+            'cim' => "2025 Visegrád, Rév utca, révállomás felhajtója",
+            'elerhetoseg' => "Folyamatos",
+            'nyitvatartas' => "nincs",
+            'szelesseg' => 47.78598335,
+            'hosszusag' => 18.96695816,
+            'lenyomat_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_79.svg",
+            'kep1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_1.jpg",
+            'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_2.jpg",
+            'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
+        ]);
+
+        //OKT 17. szakasz
         Stamp::create([
             'mtsz_id' => "OKTPH_79",
             'pecset_id' => "OKTPH_79",
@@ -5948,7 +5968,6 @@ class StampSeeder extends Seeder
             'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
         ]);
 
-        //OKT 17. szakasz
         Stamp::create([
             'mtsz_id' => "OKTPH_80",
             'pecset_id' => "OKTPH_80",
@@ -6221,7 +6240,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_90_2",
+            'mtsz_id' => "OKTPH_90_1",
             'pecset_id' => "OKTPH_90",
             'stage_id' => 29,
             'nev' => "Romhány",
@@ -6239,7 +6258,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_90_1",
+            'mtsz_id' => "OKTPH_90_2",
             'pecset_id' => "OKTPH_90",
             'stage_id' => 29,
             'nev' => "Romhány",
@@ -6384,7 +6403,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_95_2",
+            'mtsz_id' => "OKTPH_95_1",
             'pecset_id' => "OKTPH_95",
             'stage_id' => 30,
             'nev' => "Nógrádsipek",
@@ -6402,7 +6421,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_95_1",
+            'mtsz_id' => "OKTPH_95_2",
             'pecset_id' => "OKTPH_95",
             'stage_id' => 30,
             'nev' => "Nógrádsipek",
@@ -6582,7 +6601,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_102_2",
+            'mtsz_id' => "OKTPH_102_1",
             'pecset_id' => "OKTPH_102",
             'stage_id' => 31,
             'nev' => "Galyatető",
@@ -6600,7 +6619,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_102_1",
+            'mtsz_id' => "OKTPH_102_2",
             'pecset_id' => "OKTPH_102",
             'stage_id' => 31,
             'nev' => "Galyatető",
@@ -6654,7 +6673,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_105_2",
+            'mtsz_id' => "OKTPH_105_1",
             'pecset_id' => "OKTPH_105",
             'stage_id' => 31,
             'nev' => "Mátraháza",
@@ -6672,7 +6691,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_105_1",
+            'mtsz_id' => "OKTPH_105_2",
             'pecset_id' => "OKTPH_105",
             'stage_id' => 31,
             'nev' => "Mátraháza",
@@ -6691,7 +6710,7 @@ class StampSeeder extends Seeder
 
         //OKT 21. szakasz
         Stamp::create([
-            'mtsz_id' => "OKTPH_105_2",
+            'mtsz_id' => "OKTPH_105_1",
             'pecset_id' => "OKTPH_105",
             'stage_id' => 32,
             'nev' => "Mátraháza",
@@ -6709,7 +6728,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_105_1",
+            'mtsz_id' => "OKTPH_105_2",
             'pecset_id' => "OKTPH_105",
             'stage_id' => 32,
             'nev' => "Mátraháza",
@@ -6727,7 +6746,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_106_2",
+            'mtsz_id' => "OKTPH_106_1",
             'pecset_id' => "OKTPH_106",
             'stage_id' => 32,
             'nev' => "Kékestető",
@@ -6745,7 +6764,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_106_1",
+            'mtsz_id' => "OKTPH_106_2",
             'pecset_id' => "OKTPH_106",
             'stage_id' => 32,
             'nev' => "Kékestető",
@@ -7451,7 +7470,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_129_2",
+            'mtsz_id' => "OKTPH_129_1",
             'pecset_id' => "OKTPH_129",
             'stage_id' => 36,
             'nev' => "Felsővadász",
@@ -7469,7 +7488,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_129_1",
+            'mtsz_id' => "OKTPH_129_2",
             'pecset_id' => "OKTPH_129",
             'stage_id' => 36,
             'nev' => "Felsővadász",
@@ -7613,7 +7632,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_135_2",
+            'mtsz_id' => "OKTPH_135_1",
             'pecset_id' => "OKTPH_135",
             'stage_id' => 36,
             'nev' => "Boldogkőváralja",
@@ -7631,7 +7650,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_135_1",
+            'mtsz_id' => "OKTPH_135_2",
             'pecset_id' => "OKTPH_135",
             'stage_id' => 36,
             'nev' => "Boldogkőváralja",
@@ -7650,7 +7669,7 @@ class StampSeeder extends Seeder
 
         //OKT 26. szakasz
         Stamp::create([
-            'mtsz_id' => "OKTPH_135_2",
+            'mtsz_id' => "OKTPH_135_1",
             'pecset_id' => "OKTPH_135",
             'stage_id' => 37,
             'nev' => "Boldogkőváralja",
@@ -7668,7 +7687,7 @@ class StampSeeder extends Seeder
         ]);
         
         Stamp::create([
-            'mtsz_id' => "OKTPH_135_1",
+            'mtsz_id' => "OKTPH_135_2",
             'pecset_id' => "OKTPH_135",
             'stage_id' => 37,
             'nev' => "Boldogkőváralja",
@@ -7921,7 +7940,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_147_2",
+            'mtsz_id' => "OKTPH_147_1",
             'pecset_id' => "OKTPH_147",
             'stage_id' => 38,
             'nev' => "Füzér",
@@ -7939,7 +7958,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_147_1",
+            'mtsz_id' => "OKTPH_147_2",
             'pecset_id' => "OKTPH_147",
             'stage_id' => 38,
             'nev' => "Füzér",
@@ -7975,7 +7994,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_149_3",
+            'mtsz_id' => "OKTPH_149_1",
             'pecset_id' => "OKTPH_149",
             'stage_id' => 38,
             'nev' => "Hollóháza",
@@ -7993,7 +8012,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_149_1",
+            'mtsz_id' => "OKTPH_149_2",
             'pecset_id' => "OKTPH_149",
             'stage_id' => 38,
             'nev' => "Hollóháza",
@@ -8011,7 +8030,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_149_2",
+            'mtsz_id' => "OKTPH_149_3",
             'pecset_id' => "OKTPH_149",
             'stage_id' => 38,
             'nev' => "Hollóháza",

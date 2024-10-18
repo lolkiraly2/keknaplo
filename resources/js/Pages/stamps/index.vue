@@ -1,30 +1,35 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, nextTick } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
+import 'leaflet.markercluster';
 
 const props = defineProps({
   stamps: Object,
-  hike: String
+  hike: String,
+  stages: Object
 })
 
-const map = ref(null);
+let map;
 
 onMounted(() => {
   InitMap();
   addGPXtoMap(props.hike);
-  AddStampsToMap();
+
+  nextTick(() => {
+    AddStampsToMap();
+  });
 })
 
 function InitMap() {
-  map.value = L.map('map').setView([47.234, 18.600], 7);
+  map = L.map('map').setView([47.234, 18.600], 7);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői, Térképadatok: <a href="https://turistaterkepek.hu/">MTSZ térképportál</a>'
-  }).addTo(map.value);
+  }).addTo(map);
 }
 
 function addGPXtoMap(u) {
@@ -36,27 +41,54 @@ function addGPXtoMap(u) {
       startIcon: '../gpx/empty.png',
       endIcon: '../gpx/empty.png',
     }
-  }).on('loaded', (e) => {
-    map.value.flyToBounds(e.target.getBounds());
-  }).addTo(map.value);
+  }).on('loaded', function (e) {
+    map.fitBounds(e.target.getBounds());
+  }).addTo(map);
 }
 
 function AddStampsToMap() {
   // let length = Object.keys(props.stamps).length;
   var icon = L.icon({
     iconUrl: '../ico/stamp.png',
-    iconSize: [32, 32],
+    iconSize: [20, 20],
     iconAnchor: [16, 32],
   });
 
+  var markers = L.markerClusterGroup();
+  let usedstamp = [];
+
   Object.entries(props.stamps).forEach(([key, value]) => {
-    new L.marker([value.szelesseg, value.hosszusag]).addTo(map.value).bindPopup("Pecsét helye:" + value.helyszin);
+    if (!usedstamp.includes(value.mtsz_id)) {
+      let marker = L.marker([value.szelesseg, value.hosszusag], { icon: icon }).bindPopup("Pecsét helye:" + value.helyszin);
+      markers.addLayer(marker);
+      usedstamp.push(value.mtsz_id);
+    }
+
   });
   // console.log("szél " + props.stamps[0].szelesseg + " hossz " + props.stamps[0].hosszusag + "hossz " + length)
+  map.addLayer(markers);
 }
+
+function name($h) {
+  switch ($h) {
+    case 'OKT':
+      return "Országos Kéktúra";
+
+    case 'DDK':
+      return 'Rockenbauer Pál Dél-dunántúli Kéktúra';
+
+    case 'AK':
+      return 'Alföldi Kéktúra';
+  }
+}
+
+const hikename = name(props.hike);
 </script>
 
 <style>
+@import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css';
+@import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css';
+
 #map {
   height: 500px;
 }
@@ -68,7 +100,7 @@ function AddStampsToMap() {
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">Térkép</h2>
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ hikename }} pecstétei szakaszonként</h2>
     </template>
 
     <div class="py-12">
@@ -76,8 +108,15 @@ function AddStampsToMap() {
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex">
-            <div class="basis-1/4">
-              <p v-for="stamp in stamps">{{ stamp.nev }}</p>
+            <div class="basis-1/4" id="szakaszok">
+              <details v-for="stage in stages">
+
+                <summary>{{ stage.nev }}. szakasz</summary>
+                <p v-for=" stamp in stamps"><span v-if="stamp.stage_id === stage.id">{{ stamp.mtsz_id }} - {{ stamp.nev
+                    }}</span></p>
+
+              </details>
+
             </div>
 
             <div class="basis-3/4">
