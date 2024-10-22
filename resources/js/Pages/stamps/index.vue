@@ -1,7 +1,8 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { onMounted, ref, nextTick } from 'vue'
+import { onMounted, nextTick } from 'vue';
+import { Link } from '@inertiajs/vue3';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
@@ -100,7 +101,7 @@ const hikename = name(props.hike);
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ hikename }} pecstétei szakaszonként</h2>
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ hikename }} pecsétei szakaszonként</h2>
     </template>
 
     <div class="py-12">
@@ -111,9 +112,12 @@ const hikename = name(props.hike);
             <div class="basis-1/4" id="szakaszok">
               <details v-for="stage in stages">
 
-                <summary>{{ stage.nev }}. szakasz</summary>
-                <p v-for=" stamp in stamps"><span v-if="stamp.stage_id === stage.id">{{ stamp.mtsz_id }} - {{ stamp.nev
-                    }}</span></p>
+                <summary class="hover:text-sky-600">{{ stage.nev }}. szakasz</summary>
+                <p v-for=" stamp in stamps">
+                  <Link :href="route('stamps.show', stamp.mtsz_id)" class="hover:text-sky-600">
+                  <span v-if="stamp.stage_id === stage.id">{{ stamp.mtsz_id }} - {{ stamp.nev }}</span>
+                  </Link>
+                </p>
 
               </details>
 

@@ -42,7 +42,7 @@ icon.value = "ico/sav-kek.ico";
                                     Saját pont
                                 </NavLink> 
 
-                                <NavLink :href="route('korlatozasok')">
+                                <NavLink :href="route('restrictions')">
                                     Korlátozások
                                 </NavLink>
 

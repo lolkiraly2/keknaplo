@@ -3,87 +3,48 @@
 namespace App\Http\Controllers;
 
 use App\Models\Hike;
+use App\Models\Stamp;
 use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Http\Request;
 
 class StampController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function GetHikeId($h)
     {
         switch ($h) {
             case 'OKT':
                 return 1;
-                
+
             case 'DDK':
                 return 2;
-                
+
             case 'AK':
-                return 3;      
+                return 3;
         }
     }
 
+    /**
+     * Display a listing of the resource.
+     */
     public function index($hike): Response
     {
         $number = $this->GetHikeId($hike);
 
         return Inertia::render('stamps/index', [
-            // 'stamps' => Hike::find($number)->stamps->select('nev','hosszusag','szelesseg','helyszin')->unique('nev'),
-            'stamps' => Hike::find($number)->stamps->select('mtsz_id','nev','hosszusag','szelesseg','helyszin','stage_id'),
+            'stamps' => Hike::find($number)->stamps->select('mtsz_id', 'nev', 'hosszusag', 'szelesseg', 'helyszin', 'stage_id'),
             'hike' => $hike,
-            'stages' => Hike::find($number)->stages->select('id','nev')
-
+            'stages' => Hike::find($number)->stages->select('id', 'nev')
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($stamp): Response
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return Inertia::render('stamps/show', [
+            'stamp' => Stamp::where('mtsz_id', $stamp)->get()->first()
+        ]);
     }
 }

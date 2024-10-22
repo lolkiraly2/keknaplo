@@ -33,13 +33,14 @@ Route::get('home', function () {
     return Inertia::render('map');
 })->middleware(['auth', 'verified'])->name('map');
 
-Route::get('/korlatozasok', function () {
+Route::get('/restrictions', function () {
     return Inertia::render('korlatozasok');
-})->middleware(['auth', 'verified'])->name('korlatozasok');
+})->middleware(['auth', 'verified'])->name('restrictions');
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
 
 Route::get('/stamps/{hike}', [StampController::class, 'index'])->name('stamps.index');
+Route::get('/stamps/{stamp}/show', [StampController::class, 'show'])->name('stamps.show');
 
 Route::get('/mapteszt', function () {
     return view('maps');
