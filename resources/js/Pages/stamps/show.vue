@@ -1,16 +1,29 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import { Head, useForm, usePage } from '@inertiajs/vue3';
 
 const props = defineProps({
-  stamp: Object
+  stamp: Object,
+  comments: Object
 })
+const page = usePage();
+const user =  page.props.auth.user
+
+const today = new Date().toISOString().split('T')[0];
+
+const form = useForm({
+  eszleles_datum: null,
+  allapot: null,
+  leiras: null,
+  user_id: null,
+  stamp_name: null
+})
+
+form.user_id = user.id
+form.stamp_name =  props.stamp.mtsz_id
 </script>
 
 <style>
-@import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css';
-@import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css';
-
 #map {
   height: 500px;
 }
@@ -33,7 +46,7 @@ h1 {
     <div class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-
+          <h1 class="text-center mt-3">Pecsét adatai</h1>
           <div class="flex">
             <div class="basis-2/5" id="szakaszok">
               <div class="flex flex-col">
@@ -60,8 +73,7 @@ h1 {
             </div>
 
             <div class="basis-3/5 mx-10">
-              <h1 class="text-center">Pecsét adatai</h1>
-              <div class="grid grid-cols-2">
+              <div class="grid grid-cols-2 mb-4">
                 <div class="pl-5 m-1">Pecsét azonosító:</div>
                 <div class="pr-5 m-1">{{ stamp.mtsz_id }}</div>
                 <div class="pl-5 m-1">Név:</div>
@@ -77,6 +89,46 @@ h1 {
                 <div class="pl-5 m-1" v-if="stamp.elerhetoseg != 'Folyamatos'">Nyitvatartás:</div>
                 <div class="pr-5 m-1" v-if="stamp.elerhetoseg != 'Folyamatos'">{{ stamp.nyitvatartas }}</div>
               </div>
+
+
+              <fieldset class="hozzaszolasok h-[30rem] border">
+                <legend class="ml-2">Hozzászólások</legend>
+                <div v-for="comment in comments">
+                  <p>{{ comment.user_id}} {{ comment.eszleles_datum }} {{comment.leiras}}</p>
+                </div>
+              </fieldset>
+
+              <fieldset class="newcomment mt-10 border">
+                <legend class="ml-2">Új hozzászólás</legend>
+                <form @submit.prevent="form.post(route('stampcomments.store'))">
+                  <div class="flex m-3 items-center">
+                    <label for="datum" class="mr-2">Túra napja: </label>
+                    <input type="date" placeholder="Saját pont neve" id="datum" v-model="form.eszleles_datum" class="pl-5 m-1"
+                      required v-bind:max="today">
+                  </div>
+
+                  <div class="flex items-center m-3">
+                    <p class="mr-2">Pecsét állapot: </p>
+                    <input type="radio" id="ok" v-model="form.allapot" class="" name="states" value="Rendben">
+                    <label for="ok" class="mx-2" required>Hibátlan</label>
+
+                    <input type="radio" id="damaged" v-model="form.allapot" class="" name="states" value="Sérült">
+                    <label for="damaged" class="mx-2">Sérült</label>
+
+                    <input type="radio" id="missing" v-model="form.allapot" class="" name="states" value="Hiányzik">
+                    <label for="missing" class="mx-2">Hiányzik</label>
+                  </div>
+
+                  <div class="flex m-3 items-center">
+                    <label for="leiras" class="mr-2">Szöveg:</label>
+                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.leiras"></textarea>
+                  </div>
+                  
+                  <input type="submit" value="Küldés" id="save" class="bg-blue-700 rounded-full hover:bg-blue-800 transition text-white px-5 py-2.5 m-3">
+
+                </form>
+              </fieldset>
+
             </div>
 
           </div>

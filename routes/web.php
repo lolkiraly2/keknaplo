@@ -8,6 +8,7 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StampCommentController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -38,6 +39,7 @@ Route::get('/restrictions', function () {
 })->middleware(['auth', 'verified'])->name('restrictions');
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
+ROute::resource('stampcomments', StampCommentController::class)->middleware(['auth', 'verified']);
 
 Route::get('/stamps/{hike}', [StampController::class, 'index'])->name('stamps.index');
 Route::get('/stamps/{stamp}/show', [StampController::class, 'show'])->name('stamps.show');

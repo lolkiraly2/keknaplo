@@ -142,7 +142,7 @@ class StampSeeder extends Seeder
 
         //AK 2. szakasz
         Stamp::create([
-            'mtsz_id' => "AKPH_05_2",
+            'mtsz_id' => "AKPH_05_1",
             'pecset_id' => "AKPH_05",
             'stage_id' => 40,
             'nev' => "Bajai átkelés",
@@ -160,7 +160,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "AKPH_05_1",
+            'mtsz_id' => "AKPH_05_2",
             'pecset_id' => "AKPH_05",
             'stage_id' => 40,
             'nev' => "Bajai átkelés",
@@ -6605,17 +6605,17 @@ class StampSeeder extends Seeder
             'pecset_id' => "OKTPH_102",
             'stage_id' => 31,
             'nev' => "Galyatető",
-            'helyszin' => "Galya kilátó",
-            'helyszin_leiras' => "A kilátó tetején, a villámhárítón.",
-            'cim' => "3234 Mátraszentimre-Galyatető, Galya-kilátó",
-            'elerhetoseg' => "Nyitvatartás szerint",
-            'nyitvatartas' => "H–V: 7–20",
-            'szelesseg' => 47.91811234,
-            'hosszusag' => 19.92212723,
+            'helyszin' => "OKK információs tábla",
+            'helyszin_leiras' => "Az információs táblán az út mellett.",
+            'cim' => "3234 Mátraszentimre-Galyatető",
+            'elerhetoseg' => "Folyamatos",
+            'nyitvatartas' => "nincs",
+            'szelesseg' => 47.917596,
+            'hosszusag' => 19.924072,
             'lenyomat_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_102.svg",
             'kep1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_1.jpg",
             'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_2.jpg",
-            'kep3_url' => "",
+            'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_102_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6746,7 +6746,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_106_1",
+            'mtsz_id' => "OKTPH_106",
             'pecset_id' => "OKTPH_106",
             'stage_id' => 32,
             'nev' => "Kékestető",
@@ -6758,27 +6758,9 @@ class StampSeeder extends Seeder
             'szelesseg' => 47.873343,
             'hosszusag' => 20.008657,
             'lenyomat_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_106.svg",
-            'kep1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_2_f_1.jpg",
-            'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_2_f_2.jpg",
-            'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_2_f_3.jpg",
-        ]);
-
-        Stamp::create([
-            'mtsz_id' => "OKTPH_106_2",
-            'pecset_id' => "OKTPH_106",
-            'stage_id' => 32,
-            'nev' => "Kékestető",
-            'helyszin' => "Mátrai Gyógyintézet Kékestető",
-            'helyszin_leiras' => "Villanyoszlopon a szanatórium előtt, a buszmegállóval szemben. ",
-            'cim' => "3221 Gyöngyös-Kékestető",
-            'elerhetoseg' => "Folyamatos",
-            'nyitvatartas' => "nincs",
-            'szelesseg' => 47.87088507,
-            'hosszusag' => 20.0099393,
-            'lenyomat_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_106.svg",
-            'kep1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_1_f_1.jpg",
-            'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_1_f_2.jpg",
-            'kep3_url' => "",
+            'kep1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_1.jpg",
+            'kep2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_2.jpg",
+            'kep3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_3.jpg",
         ]);
 
         Stamp::create([

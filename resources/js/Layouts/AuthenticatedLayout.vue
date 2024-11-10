@@ -38,11 +38,11 @@ icon.value = "ico/sav-kek.ico";
                                     Térkép
                                 </NavLink>
 
-                                <NavLink :href="route('custompoints.index')">
+                                <NavLink :href="route('custompoints.index')" :active="route().current('custompoints.index')">
                                     Saját pont
                                 </NavLink> 
 
-                                <NavLink :href="route('restrictions')">
+                                <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
                                     Korlátozások
                                 </NavLink>
 

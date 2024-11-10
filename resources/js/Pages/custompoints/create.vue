@@ -9,7 +9,6 @@ import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
 const user =  page.props.auth.user
-console.log(user.name)
 const props = defineProps({
     oktstages: Array,
     ddkstages: Array,
@@ -37,7 +36,6 @@ form.user_id = user.id
 
 onMounted(() => {
     InitMap();
-    console.log(user.id)
 })
 
 function InitMap() {

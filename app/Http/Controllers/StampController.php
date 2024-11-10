@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Hike;
 use App\Models\Stamp;
+use App\Models\StampComment;
 use Inertia\Inertia;
 use Inertia\Response;
 use Illuminate\Http\Request;
@@ -44,7 +45,8 @@ class StampController extends Controller
     public function show($stamp): Response
     {
         return Inertia::render('stamps/show', [
-            'stamp' => Stamp::where('mtsz_id', $stamp)->get()->first()
+            'stamp' => Stamp::where('mtsz_id', $stamp)->get()->first(),
+            'comments' => StampComment::where('stamp_name', $stamp)->get()
         ]);
     }
 }
