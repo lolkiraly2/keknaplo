@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('stamp_comments', function (Blueprint $table) {
             $table->id();
             $table->enum('allapot', ['Rendben', 'Sérült', 'Hiányzik']);
-            $table->integer('user_id');
+            $table->string('username');
             $table->string('stamp_name');
             $table->string('leiras');
             $table->date('eszleles_datum');

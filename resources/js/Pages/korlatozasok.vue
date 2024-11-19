@@ -15,7 +15,7 @@ function InitMap() {
   map.value = L.map('map').setView([47.234, 18.600], 7);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői, Térképadatok: <a href="https://turistaterkepek.hu/">MTSZ térképportál</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői, Térképadatok: <a href="https://turistaterkepek.hu/">MTSZ Térinformatikai Portál</a>'
   }).addTo(map.value);
 
   L.tileLayer.wms('https://turistaterkepek.hu/server/services/Turistaut_nyilvantartas/nyilvantartaswms/MapServer/WMSServer', {
@@ -24,28 +24,28 @@ function InitMap() {
     transparent: true
   }).addTo(map.value);
 
- const fr = new FeatureLayer({
-  url: 'https://turistaterkepek.hu/server/rest/services/alapadatok/korlatozasok/MapServer/0',
-  style: (feature) => {
-    return {
-      color: 'orange',
-      weight: 2,
-      fillColor: 'orange',
-      fillOpacity: 0.4
-    };
-  }
-}).addTo(map.value);
+  const fr = new FeatureLayer({
+    url: 'https://turistaterkepek.hu/server/rest/services/alapadatok/korlatozasok/MapServer/0',
+    style: (feature) => {
+      return {
+        color: 'orange',
+        weight: 2,
+        fillColor: 'orange',
+        fillOpacity: 0.4
+      };
+    }
+  }).addTo(map.value);
 
-fr.bindPopup(function (layer) {
-  var kezdet = new Date(layer.feature.properties.ervenyesseg_kezdete).toISOString().split('T')[0];
-  var vege = new Date(layer.feature.properties.ervenyesseg_vege).toISOString().split('T')[0];
-  return L.Util.template(
-    "<h3>{name}.</h3> <p>Erdészet: {erdeszet}.</p> <p>{description}.</p><p>Érvenyesség kezdete:" + kezdet + "<br>Érvenyesség vége: " + vege + "</p> <p><a target='blank' href={hir_url}>link</a></p>",
-    layer.feature.properties
-  );
-});
+  fr.bindPopup(function (layer) {
+    var kezdet = new Date(layer.feature.properties.ervenyesseg_kezdete).toISOString().split('T')[0];
+    var vege = new Date(layer.feature.properties.ervenyesseg_vege).toISOString().split('T')[0];
+    return L.Util.template(
+      "<h3>{name}.</h3> <p>Erdészet: {erdeszet}.</p> <p>{description}.</p><p>Érvenyesség kezdete:" + kezdet + "<br>Érvenyesség vége: " + vege + "</p> <p><a target='blank' href={hir_url}>link</a></p>",
+      layer.feature.properties
+    );
+  });
 
-  
+
 }
 </script>
 

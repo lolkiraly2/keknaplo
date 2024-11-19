@@ -7,7 +7,7 @@ const props = defineProps({
   comments: Object
 })
 const page = usePage();
-const user =  page.props.auth.user
+const user = page.props.auth.user
 
 const today = new Date().toISOString().split('T')[0];
 
@@ -15,12 +15,12 @@ const form = useForm({
   eszleles_datum: null,
   allapot: null,
   leiras: null,
-  user_id: null,
+  username: null,
   stamp_name: null
 })
 
-form.user_id = user.id
-form.stamp_name =  props.stamp.mtsz_id
+form.username = user.name
+form.stamp_name = props.stamp.mtsz_id
 </script>
 
 <style>
@@ -50,7 +50,7 @@ h1 {
           <div class="flex">
             <div class="basis-2/5" id="szakaszok">
               <div class="flex flex-col">
-                <div class="m-3">
+                <div class="mx-3 mb-3">
                   <a v-bind:href="stamp.lenyomat_url" target="_blank"><img v-bind:src="stamp.lenyomat_url"
                       alt="Pecsét lenyomat" class="rounded-lg"></a>
                 </div>
@@ -91,10 +91,16 @@ h1 {
               </div>
 
 
-              <fieldset class="hozzaszolasok h-[30rem] border">
+              <fieldset class="hozzaszolasok h-[30rem] border overflow-scroll overflow-y-visible">
                 <legend class="ml-2">Hozzászólások</legend>
-                <div v-for="comment in comments">
-                  <p>{{ comment.user_id}} {{ comment.eszleles_datum }} {{comment.leiras}}</p>
+                <div v-for="comment in comments" class=" border m-3 p-1">
+                  <div class="flex justify-between px-3 mb-2">
+                    <p>{{ comment.username }} </p>
+                    <p>Érintés napja: {{ comment.eszleles_datum }}</p>
+                    <p>Állapot: {{ comment.allapot }}</p>
+                  </div>
+
+                  <p class="ml-2">{{ comment.leiras }}</p>
                 </div>
               </fieldset>
 
@@ -103,8 +109,8 @@ h1 {
                 <form @submit.prevent="form.post(route('stampcomments.store'))">
                   <div class="flex m-3 items-center">
                     <label for="datum" class="mr-2">Túra napja: </label>
-                    <input type="date" placeholder="Saját pont neve" id="datum" v-model="form.eszleles_datum" class="pl-5 m-1"
-                      required v-bind:max="today">
+                    <input type="date" placeholder="Saját pont neve" id="datum" v-model="form.eszleles_datum"
+                      class="pl-5 m-1 inp" required v-bind:max="today">
                   </div>
 
                   <div class="flex items-center m-3">
@@ -121,10 +127,11 @@ h1 {
 
                   <div class="flex m-3 items-center">
                     <label for="leiras" class="mr-2">Szöveg:</label>
-                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.leiras"></textarea>
+                    <textarea id="leiras" placeholder="Rövid leírás" rows="3" cols="50" v-model="form.leiras" class="inp"></textarea>
                   </div>
-                  
-                  <input type="submit" value="Küldés" id="save" class="bg-blue-700 rounded-full hover:bg-blue-800 transition text-white px-5 py-2.5 m-3">
+
+                  <input type="submit" value="Küldés" id="save"
+                    class="bg-blue-700 rounded-full hover:bg-blue-800 transition text-white px-5 py-2.5 m-3">
 
                 </form>
               </fieldset>

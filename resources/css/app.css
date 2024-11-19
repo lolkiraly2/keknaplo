@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 5px;
+}
+
 a{
     text-decoration: solid;
 }
 
 h3{
     font-weight: bold;
-}
-
-#delete{
-    background-color: red;
 }
 
 .editbutton{
@@ -23,4 +32,16 @@ h3{
 .editbutton:hover{
     background-color: rgb(22, 221, 22);
     transition: 1s;
+}
+
+.inp{
+    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm;
+}
+
+.submit{
+    @apply px-4 py-2 mb-5 w-fit bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.delete{
+    @apply px-4 py-2 mb-5 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-700 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }

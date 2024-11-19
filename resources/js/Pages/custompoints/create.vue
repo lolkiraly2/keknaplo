@@ -8,7 +8,7 @@ import L from "leaflet";
 import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
-const user =  page.props.auth.user
+const user = page.props.auth.user
 const props = defineProps({
     oktstages: Array,
     ddkstages: Array,
@@ -16,9 +16,9 @@ const props = defineProps({
 })
 
 const kekturak = ref('0');
-const szakasz =  ref('0');
+const szakasz = ref('0');
 const szakaszok = ref(null);
-const gpx =  ref(null);
+const gpx = ref(null);
 const marker = ref(null);
 const map = ref(null);
 const stagename = ref('');
@@ -30,7 +30,7 @@ const form = useForm({
     hosszusag: null,
     leiras: null,
     user_id: null
-   
+
 })
 form.user_id = user.id
 
@@ -62,7 +62,7 @@ function NewMarker(e) {
     form.hosszusag = marker.value._latlng.lng
 }
 
-function turavaltozas() {    
+function turavaltozas() {
     if (kekturak.value == "OKT")
         szakaszok.value = props.oktstages
     if (kekturak.value == "AK")
@@ -171,7 +171,7 @@ function szakaszvaltozas() {
                         <div>
                             <div class="flex flex-col items-center">
                                 <div>
-                                    <select v-model="kekturak" @change="turavaltozas" class="mt-10">
+                                    <select v-model="kekturak" @change="turavaltozas" class="mt-8 inp">
                                         <option value="0" disabled :selected="true">Válassz egy kéktúrát!</option>
                                         <option value="AK">Alföldi Kéktúra</option>
                                         <option value="DDK">Dél-Dunántúli Kéktúra</option>
@@ -180,7 +180,7 @@ function szakaszvaltozas() {
                                 </div>
 
                                 <div>
-                                    <select class="mt-2" v-model="szakasz" @change="szakaszvaltozas">
+                                    <select class="mt-2 inp" v-model="szakasz" @change="szakaszvaltozas">
                                         <option value="0" disabled selected>Válassz szakaszt!</option>
                                         <option v-for="sz in szakaszok" v-bind:value="sz.id">
                                             {{ sz.nev }}
@@ -192,18 +192,19 @@ function szakaszvaltozas() {
                                     <p>{{ stagename }}</p>
                                 </div>
 
-                                <div class="w-min mt-8">
-                                    <form @submit.prevent="form.post(route('custompoints.store'))">
+                                <div class="mt-8">
+                                    <form @submit.prevent="form.post(route('custompoints.store'))" class="flex flex-col items-center">
 
                                         <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.nev"
-                                            class="mb-5" required>
+                                            class="mb-5 inp" required>
                                         <input type="text" placeholder="szélesség" id="szel" v-model="form.szelesseg"
-                                            class="mb-5" disabled required>
+                                            class="mb-5 inp" disabled required>
                                         <input type="text" placeholder="hosszúság" id="hossz" v-model="form.hosszusag"
-                                            class="mb-5" disabled required>
+                                            class="mb-5 inp" disabled required>
                                         <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
-                                            v-model="form.leiras"></textarea>
-                                        <input type="submit" value="Rögzítés" id="save">
+                                            v-model="form.leiras" class="mb-5 inp"></textarea>
+                                        <input type="submit" value="Rögzítés" id="save"
+                                            class="submit">
                                     </form>
                                 </div>
 

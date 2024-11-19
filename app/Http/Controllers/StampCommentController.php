@@ -51,7 +51,7 @@ class StampCommentController extends Controller
                 'allapot' => ['required'],
                 'leiras' => ['min:0', 'max:250'],
                 'stamp_name' => ['required'],
-                'user_id' => ['required'],
+                'username' => ['required'],
             ],
             [
                 'datum.required' => "A dátum nem lehet üres!",

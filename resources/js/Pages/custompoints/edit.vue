@@ -158,12 +158,9 @@ function szakaszvaltozas() {
 
 <style>
 #map {
-    height: 500px;
+    height: 35rem;
 }
 
-#save {
-    border: 1px solid #787E8B;
-}
 </style>
 
 <template>
@@ -187,7 +184,7 @@ function szakaszvaltozas() {
                         <div>
                             <div class="flex flex-col items-center">
                                 <div>
-                                    <select v-model="kekturak" @change="turavaltozas" class="mt-10">
+                                    <select v-model="kekturak" @change="turavaltozas" class="mt-8 inp">
                                         <option value="AK">Alföldi Kéktúra</option>
                                         <option value="DDK">Dél-Dunántúli Kéktúra</option>
                                         <option value="OKT">Országos Kéktúra</option>
@@ -195,7 +192,7 @@ function szakaszvaltozas() {
                                 </div>
 
                                 <div>
-                                    <select class="mt-2" v-model="szakasz" @change="szakaszvaltozas">
+                                    <select class="mt-2 inp" v-model="szakasz" @change="szakaszvaltozas">
                                         <option v-for="sz in szakaszok" v-bind:value="sz.id">
                                             {{ sz.nev }}
                                         </option>
@@ -206,23 +203,23 @@ function szakaszvaltozas() {
                                     <p>{{ stagename }}</p>
                                 </div>
 
-                                <div class="w-min mt-8">
-                                    <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))">
+                                <div class="mt-8">
+                                    <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))"  class="flex flex-col items-center">
 
                                         <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.nev"
-                                            class="mb-5" required>
+                                            class="mb-5 inp" required>
                                         <input type="text" placeholder="szélesség" id="szel" v-model="form.szelesseg"
-                                            class="mb-5" disabled required>
+                                            class="mb-5 inp" disabled required>
                                         <input type="text" placeholder="hosszúság" id="hossz" v-model="form.hosszusag"
-                                            class="mb-5" disabled required>
+                                            class="mb-5 inp" disabled required>
                                         <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
-                                            v-model="form.leiras"></textarea>
-                                        <input type="submit" value="Mentés" id="save">
+                                            v-model="form.leiras" class="mb-5 inp"></textarea>
+                                        <input type="submit" value="Mentés" class="submit">
                                     </form>
                                 </div>
 
                                 <form @submit.prevent="form.delete(route('custompoints.destroy', props.cpoint.id))">
-                                    <input type="submit" value="Törlés" id="delete">
+                                    <input type="submit" value="Törlés" id="delete" class="delete">
                                 </form>
                             </div>
 

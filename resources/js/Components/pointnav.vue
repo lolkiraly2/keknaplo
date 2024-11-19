@@ -1,15 +1,15 @@
 <script setup>
-import { Link } from '@inertiajs/vue3'
+import NavLink from '@/Components/NavLink.vue';
 </script>
 
 <template>
     <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                <Link :href="route('custompoints.index')">
+                <NavLink :href="route('custompoints.index')" :active="route().current('custompoints.index')">
                     Saját pontjaim
-                </Link>
+                </NavLink>
 
-                <Link :href="route('custompoints.create')">
+                <NavLink :href="route('custompoints.create')" :active="route().current('custompoints.create')">
                     Új pont rögzítés
-                </Link>
+                </NavLink>
             </div>
 </template>
