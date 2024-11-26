@@ -3,7 +3,7 @@ import NavLink from '@/Components/NavLink.vue';
 </script>
 
 <template>
-    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+    <div class="space-x-8 my-px ms-10 flex">
                 <NavLink :href="route('custompoints.index')" :active="route().current('custompoints.index')">
                     Saját pontjaim
                 </NavLink>

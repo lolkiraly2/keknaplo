@@ -75,8 +75,12 @@ icon.value = "ico/sav-kek.ico";
                 <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden">
                     <div class="pt-2 pb-3 space-y-1">
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
+                        <ResponsiveNavLink :href="route('login')" :active="route().current('login')">
+                            Bejelentkezés
+                        </ResponsiveNavLink>
+
+                        <ResponsiveNavLink :href="route('register')" :active="route().current('register')">
+                            Regisztráció
                         </ResponsiveNavLink>
                     </div>
 

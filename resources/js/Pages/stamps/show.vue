@@ -47,32 +47,32 @@ h1 {
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <h1 class="text-center mt-3">Pecsét adatai</h1>
-          <div class="flex">
-            <div class="basis-2/5" id="szakaszok">
+          <div class="flex md:flex-row flex-col-reverse">
+            <div class="md:w-2/5 w-full" id="szakaszok">
               <div class="flex flex-col">
-                <div class="mx-3 mb-3">
+                <div class="px-3 my-3">
                   <a v-bind:href="stamp.lenyomat_url" target="_blank"><img v-bind:src="stamp.lenyomat_url"
-                      alt="Pecsét lenyomat" class="rounded-lg"></a>
+                      alt="Pecsét lenyomat" class="rounded-lg w-full"></a>
                 </div>
 
-                <div class="m-3">
+                <div class="px-3 my-3">
                   <a v-bind:href="stamp.kep1_url" target="_blank"><img v-bind:src="stamp.kep1_url"
                       alt="Első kép a pecsétről" class="rounded-lg"></a>
                 </div>
 
-                <div v-if="stamp.kep2_url != ''" class="m-3">
+                <div v-if="stamp.kep2_url != ''" class="px-3 my-3">
                   <a v-bind:href="stamp.kep2_url" target="_blank"><img v-bind:src="stamp.kep2_url"
                       alt="Második kép a pecsétről" class="rounded-lg"></a>
                 </div>
 
-                <div v-if="stamp.kep3_url != ''" class="m-3">
+                <div v-if="stamp.kep3_url != ''" class="px-3 my-3">
                   <a v-bind:href="stamp.kep3_url" target="_blank"><img v-bind:src="stamp.kep3_url"
                       alt="Harmadik kép a pecsétről" class="rounded-lg"></a>
                 </div>
               </div>
             </div>
 
-            <div class="basis-3/5 mx-10">
+            <div class="md:w-3/5 w-full md:mx-10">
               <div class="grid grid-cols-2 mb-4">
                 <div class="pl-5 m-1">Pecsét azonosító:</div>
                 <div class="pr-5 m-1">{{ stamp.mtsz_id }}</div>
@@ -91,7 +91,7 @@ h1 {
               </div>
 
 
-              <fieldset class="hozzaszolasok h-[30rem] border overflow-scroll overflow-y-visible">
+              <fieldset class="hozzaszolasok h-[30rem] border overflow-y-scroll">
                 <legend class="ml-2">Hozzászólások</legend>
                 <div v-for="comment in comments" class=" border m-3 p-1">
                   <div class="flex justify-between px-3 mb-2">

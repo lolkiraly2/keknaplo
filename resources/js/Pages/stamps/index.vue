@@ -109,7 +109,7 @@ const hikename = name(props.hike);
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex">
-            <div class="basis-1/4" id="szakaszok">
+            <div class="md:basis-1/4 basis-1/2" id="szakaszok">
               <details v-for="stage in stages">
 
                 <summary class="hover:text-sky-600">{{ stage.nev }}. szakasz</summary>

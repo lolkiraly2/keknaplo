@@ -176,12 +176,12 @@ function szakaszvaltozas() {
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-                    <div class="grid grid-cols-4">
-                        <div class="col-span-3 z-0">
+                    <div class="flex sm:flex-row flex-col-reverse">
+                        <div class="z-0 md:w-3/4 w-full md:pr-3 px-3">
                             <div id="map"></div>
                         </div>
 
-                        <div>
+                        <div class="md:w-1/4 w-full">
                             <div class="flex flex-col items-center">
                                 <div>
                                     <select v-model="kekturak" @change="turavaltozas" class="mt-8 inp">

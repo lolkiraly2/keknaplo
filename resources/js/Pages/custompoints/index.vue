@@ -20,20 +20,17 @@ const props = defineProps({
         </template>
 
         <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                    <h3 class="text-center mt-2">Saját pont neve</h3>
 
-                    <table class="w-full whitespace-nowrap">
-                        <tr class="text-left font-bold">
-                            <th class="pb-4 pt-6 px-6">Saját pont neve</th>
-                            <th class="pb-4 pt-6 px-6"></th>
-                        </tr>
+                    <div class="flex justify-between items-center" v-for="point in points">
+                        <Link :href="route('custompoints.show', point.id)" class="ml-3">{{ point.nev }}</Link>
+                        <button class="edit">
+                            <Link :href="route('custompoints.edit', point.id)">szerkesztés</Link>
+                        </button>
+                    </div>
 
-                        <tr v-for="point in points">
-                            <td class="px-6"><Link :href="route('custompoints.show',point.id)">{{ point.nev }}</Link></td>
-                            <td class="text-right px-6"><button class="editbutton"><Link :href="route('custompoints.edit',point.id)">szerkesztés</Link></button></td>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </div>

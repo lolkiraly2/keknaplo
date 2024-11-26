@@ -29,7 +29,7 @@ icon.value = "ico/sav-kek.ico";
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:items-center">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Főoldal
                                 </NavLink>
@@ -40,7 +40,7 @@ icon.value = "ico/sav-kek.ico";
 
                                 <NavLink :href="route('custompoints.index')">
                                     Saját pont
-                                </NavLink> 
+                                </NavLink>
 
                                 <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
                                     Korlátozások
@@ -51,7 +51,7 @@ icon.value = "ico/sav-kek.ico";
 
                         </div>
 
-                            
+
 
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
                             <!-- Settings Dropdown -->
@@ -107,9 +107,53 @@ icon.value = "ico/sav-kek.ico";
                 <!-- Responsive Navigation Menu -->
                 <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden">
-                    <div class="pt-2 pb-3 space-y-1">
+                    <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
+                            Főoldal
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('map')" :active="route().current('map')">
+                            Térkép
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('custompoints.index')"
+                            :active="route().current('custompoints.index')">
+                            Sajátpont
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('restrictions')" :active="route().current('restrictions')">
+                            Korlátozások
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <p 
+                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
+                            Pecsétek
+                        </p>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'OKT' })" class="pl-4 pb-1 pt-0">
+                            • Országos Kéktúra
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'DDK' })"  class="pl-4 pb-1">
+                            • Rockenbauer Pál Dél-dunántúli Kéktúra
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'AK' })" class="pl-4 pb-1">
+                            • Alföldi Kéktúra 
                         </ResponsiveNavLink>
                     </div>
 

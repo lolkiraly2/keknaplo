@@ -60,8 +60,6 @@ import { Link } from '@inertiajs/vue3';
 
         </div>
 
-
-
       </PopoverPanel>
     </transition>
   </Popover>
