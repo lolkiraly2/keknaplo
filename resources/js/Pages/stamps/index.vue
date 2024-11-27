@@ -1,8 +1,8 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { onMounted, nextTick } from 'vue';
-import { Link } from '@inertiajs/vue3';
+import { onMounted, nextTick, ref } from 'vue';
+import { Link, router } from '@inertiajs/vue3';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
@@ -11,10 +11,12 @@ import 'leaflet.markercluster';
 const props = defineProps({
   stamps: Object,
   hike: String,
-  stages: Object
+  stages: Object,
+  stagestamps: Object
 })
 
 let map;
+const szakasz = ref('0');
 
 onMounted(() => {
   InitMap();
@@ -56,15 +58,10 @@ function AddStampsToMap() {
   });
 
   var markers = L.markerClusterGroup();
-  let usedstamp = [];
 
   Object.entries(props.stamps).forEach(([key, value]) => {
-    if (!usedstamp.includes(value.mtsz_id)) {
-      let marker = L.marker([value.szelesseg, value.hosszusag], { icon: icon }).bindPopup("Pecsét helye:" + value.helyszin);
-      markers.addLayer(marker);
-      usedstamp.push(value.mtsz_id);
-    }
-
+    let marker = L.marker([value.szelesseg, value.hosszusag], { icon: icon }).bindPopup("Pecsét helye:" + value.helyszin);
+    markers.addLayer(marker);
   });
   // console.log("szél " + props.stamps[0].szelesseg + " hossz " + props.stamps[0].hosszusag + "hossz " + length)
   map.addLayer(markers);
@@ -84,6 +81,15 @@ function name($h) {
 }
 
 const hikename = name(props.hike);
+
+function reloadPartialProps(stage) {
+  router.reload({
+    only: ['stagestamps'],
+    data: { stage },
+    preserveState: true,
+    replace: true
+  });
+}
 </script>
 
 <style>
@@ -110,16 +116,21 @@ const hikename = name(props.hike);
 
           <div class="flex">
             <div class="md:basis-1/4 basis-1/2" id="szakaszok">
-              <details v-for="stage in stages">
+              <div class="flex justify-center">
+                <select v-model="szakasz" @change="reloadPartialProps($event.target.value)" class="my-5 inp">
+                  <option value="0" disabled>Válassz szakaszt!</option>
+                  <option v-for="stage in stages" :value="stage.id">{{ stage.nev }}</option>
+                </select>
+              </div>
 
-                <summary class="hover:text-sky-600">{{ stage.nev }}. szakasz</summary>
-                <p v-for=" stamp in stamps">
-                  <Link :href="route('stamps.show', stamp.mtsz_id)" class="hover:text-sky-600">
-                  <span v-if="stamp.stage_id === stage.id">{{ stamp.mtsz_id }} - {{ stamp.nev }}</span>
+
+              <div>
+                <p v-for="stagestamp in stagestamps" class="ml-3">
+                  <Link :href="route('stamps.show', stagestamp.mtsz_id)" class="transition ease-in-out hover:duration-500 hover:text-sky-600">
+                  {{ stagestamp.mtsz_id }} - {{ stagestamp.nev }}
                   </Link>
                 </p>
-
-              </details>
+              </div>
 
             </div>
 

@@ -28,12 +28,15 @@ class StampController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index($hike): Response
+    public function index($hike, Request $request): Response
     {
         $number = $this->GetHikeId($hike);
+        $stage_id = $request->query('stage');
 
         return Inertia::render('stamps/index', [
-            'stamps' => Hike::find($number)->stamps->select('mtsz_id', 'nev', 'hosszusag', 'szelesseg', 'helyszin', 'stage_id'),
+            'stamps' => Hike::find($number)->stamps->unique('mtsz_id')->select('mtsz_id', 'nev', 'hosszusag', 'szelesseg', 'helyszin', 'stage_id'),
+
+            'stagestamps' => fn () => Stamp::where('stage_id',$stage_id)->get(),
             'hike' => $hike,
             'stages' => Hike::find($number)->stages->select('id', 'nev')
         ]);

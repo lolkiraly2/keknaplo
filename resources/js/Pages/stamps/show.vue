@@ -91,7 +91,7 @@ h1 {
               </div>
 
 
-              <fieldset class="hozzaszolasok h-[30rem] border overflow-y-scroll">
+              <fieldset class="h-[30rem] border overflow-y-scroll">
                 <legend class="ml-2">Hozzászólások</legend>
                 <div v-for="comment in comments" class=" border m-3 p-1">
                   <div class="flex justify-between px-3 mb-2">
@@ -127,7 +127,7 @@ h1 {
 
                   <div class="flex m-3 items-center">
                     <label for="leiras" class="mr-2">Szöveg:</label>
-                    <textarea id="leiras" placeholder="Rövid leírás" rows="3" cols="50" v-model="form.leiras" class="inp"></textarea>
+                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.leiras" class="inp w-3/4"></textarea>
                   </div>
 
                   <input type="submit" value="Küldés" id="save"
