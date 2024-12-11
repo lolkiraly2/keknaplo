@@ -94,7 +94,7 @@ h1 {
               <fieldset class="h-[30rem] border overflow-y-scroll">
                 <legend class="ml-2">Hozzászólások</legend>
                 <div v-for="comment in comments" class=" border m-3 p-1">
-                  <div class="flex justify-between px-3 mb-2">
+                  <div class="flex lg:flex-row flex-col lg:justify-between px-3 mb-2">
                     <p>{{ comment.username }} </p>
                     <p>Érintés napja: {{ comment.eszleles_datum }}</p>
                     <p>Állapot: {{ comment.allapot }}</p>
@@ -104,7 +104,7 @@ h1 {
                 </div>
               </fieldset>
 
-              <fieldset class="newcomment mt-10 border">
+              <fieldset class="newcomment mt-10 border mb-2">
                 <legend class="ml-2">Új hozzászólás</legend>
                 <form @submit.prevent="form.post(route('stampcomments.store'))">
                   <div class="flex m-3 items-center">

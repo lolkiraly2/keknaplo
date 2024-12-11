@@ -114,8 +114,8 @@ function reloadPartialProps(stage) {
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-          <div class="flex">
-            <div class="md:basis-1/4 basis-1/2" id="szakaszok">
+          <div class="flex md:flex-row flex-col">
+            <div class="md:w-1/4 w-full" id="szakaszok">
               <div class="flex justify-center">
                 <select v-model="szakasz" @change="reloadPartialProps($event.target.value)" class="my-5 inp">
                   <option value="0" disabled>Válassz szakaszt!</option>
@@ -124,7 +124,7 @@ function reloadPartialProps(stage) {
               </div>
 
 
-              <div>
+              <div class="md:mb-0 mb-3 mx-1">
                 <p v-for="stagestamp in stagestamps" class="ml-3">
                   <Link :href="route('stamps.show', stagestamp.mtsz_id)" class="transition ease-in-out hover:duration-500 hover:text-sky-600">
                   {{ stagestamp.mtsz_id }} - {{ stagestamp.nev }}
@@ -134,7 +134,7 @@ function reloadPartialProps(stage) {
 
             </div>
 
-            <div class="basis-3/4">
+            <div class="md:w-3/4 w-full">
               <div id="map"></div>
             </div>
           </div>

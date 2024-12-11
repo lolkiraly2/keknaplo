@@ -1,10 +1,9 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import 'leaflet-gpx';
 import { FeatureLayer } from "esri-leaflet";
 
 onMounted(() => {
@@ -26,7 +25,7 @@ function InitMap() {
 
   const fr = new FeatureLayer({
     url: 'https://turistaterkepek.hu/server/rest/services/alapadatok/korlatozasok/MapServer/0',
-    style: (feature) => {
+    style: () => {
       return {
         color: 'orange',
         weight: 2,
@@ -44,7 +43,6 @@ function InitMap() {
       layer.feature.properties
     );
   });
-
 
 }
 </script>
