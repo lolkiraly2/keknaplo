@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Hike;
-use App\Models\Stamp;
-use App\Models\StampComment;
 use Inertia\Inertia;
+use App\Models\Stage;
+use App\Models\Stamp;
 use Inertia\Response;
+use App\Models\StampComment;
 use Illuminate\Http\Request;
 
 class StampController extends Controller
@@ -38,7 +39,8 @@ class StampController extends Controller
 
             'stagestamps' => fn () => Stamp::where('stage_id',$stage_id)->get(),
             'hike' => $hike,
-            'stages' => Hike::find($number)->stages->select('id', 'nev')
+            'stages' => Hike::find($number)->stages->select('id', 'nev'),
+            'stage' => Stage::select("nev")->find($stage_id)
         ]);
     }
 

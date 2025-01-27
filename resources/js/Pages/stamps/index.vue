@@ -12,10 +12,12 @@ const props = defineProps({
   stamps: Object,
   hike: String,
   stages: Object,
-  stagestamps: Object
+  stagestamps: Object,
+  stage: Object
 })
 
 let map;
+let zgpx;
 const szakasz = ref('0');
 
 onMounted(() => {
@@ -84,11 +86,23 @@ const hikename = name(props.hike);
 
 function reloadPartialProps(stage) {
   router.reload({
-    only: ['stagestamps'],
+    only: ['stagestamps','stage'],
     data: { stage },
     preserveState: true,
-    replace: true
+    replace: true,
+    onSuccess: () => {
+      ZoomToStage(); 
+    },
   });
+}
+
+function ZoomToStage() {
+  let url = "../gpx/" + props.hike + "/" + props.stage.nev + ".gpx";
+  zgpx = new L.GPX(url, {
+    async: true,
+  }).on('loaded', function (e) {
+    map.flyToBounds(e.target.getBounds());
+  })
 }
 </script>
 
@@ -126,7 +140,8 @@ function reloadPartialProps(stage) {
 
               <div class="md:mb-0 mb-3 mx-1">
                 <p v-for="stagestamp in stagestamps" class="ml-3">
-                  <Link :href="route('stamps.show', stagestamp.mtsz_id)" class="transition ease-in-out hover:duration-500 hover:text-sky-600">
+                  <Link :href="route('stamps.show', stagestamp.mtsz_id)"
+                    class="transition ease-in-out hover:duration-500 hover:text-sky-600">
                   {{ stagestamp.mtsz_id }} - {{ stagestamp.nev }}
                   </Link>
                 </p>
