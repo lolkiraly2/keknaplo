@@ -23,6 +23,7 @@
         "@vueuse/core": "^10.11.0",
         "esri-leaflet": "^3.0.12",
         "leaflet": "^1.9.4",
+        "leaflet-extra-markers": "^1.2.2",
         "leaflet-gpx": "^2.0.0",
         "leaflet.markercluster": "^1.5.3"
     }

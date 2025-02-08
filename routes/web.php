@@ -48,4 +48,8 @@ Route::get('/mapteszt', function () {
     return view('maps');
 })->middleware(['auth', 'verified'])->name('probaterkep');
 
+Route::get('/customroute', function () {
+    return Inertia::render('customroute/customroute');
+})->name('customroute.customroute');
+
 require __DIR__.'/auth.php';
