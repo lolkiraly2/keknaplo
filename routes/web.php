@@ -9,6 +9,7 @@ use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
+use App\Http\Controllers\RouterController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -51,5 +52,7 @@ Route::get('/mapteszt', function () {
 Route::get('/customroute', function () {
     return Inertia::render('customroute/customroute');
 })->name('customroute.customroute');
+
+Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 
 require __DIR__.'/auth.php';
