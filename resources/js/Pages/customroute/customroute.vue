@@ -1,13 +1,16 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, nextTick } from 'vue';
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import * as L from "leaflet";
 import 'leaflet-gpx';
 import 'leaflet-extra-markers';
 import 'leaflet-extra-markers/dist/css/leaflet.extra-markers.min.css';
 import axios from 'axios';
+import '@raruto/leaflet-elevation/src/index.js';
+import '@raruto/leaflet-elevation/src/index.css';
+import 'leaflet-i18n';
 
 let map;
 const points = ref([]);
@@ -21,11 +24,27 @@ const elevationLoss = ref(0);
 const elevationMax = ref(0);
 const elevationMin = ref(0);
 const loading = ref(false);
+let controlElevation;
+
+let huLabels = {
+  "Total Length: ": "Táv: ",
+  "Max Elevation: ": "Legmagasabb pont: ",
+  "Min Elevation: ": "Legalacsonyabb pont: ",
+  "Avg Elevation: ": "Szint átlag: ",
+  "Total Time: ": "Idő: ",
+  "Total Ascent: ": "Emelkedés: ",
+  "Total Descent: ": "Lejtés: ",
+  "x: ": "Táv: ",
+  "y: ": "Szint: "
+};
 onMounted(() => {
   InitMap();
 })
 
 function InitMap() {
+  L.registerLocale('hu', huLabels);
+  L.setLocale('hu');
+
   map = L.map('map', {
   }).setView([47.234, 18.600], 7);
 
@@ -90,6 +109,8 @@ function RemoveMapElements() {
   if (routeGPX != null)
     map.removeLayer(routeGPX);
   routeGPX = null;
+  controlElevation.remove();
+  controlElevation.clear();
 }
 
 async function PlanRoute() {
@@ -123,6 +144,12 @@ function addGPXtoMap(u) {
   if (routeGPX != null)
     map.removeLayer(routeGPX);
 
+  if (controlElevation != null) {
+    controlElevation.remove();
+    controlElevation.clear();
+  }
+
+
   routeGPX = new L.GPX(u, {
     async: true,
     markers: {
@@ -138,12 +165,83 @@ function addGPXtoMap(u) {
   }).on('loaded', (e) => {
     map.flyToBounds(e.target.getBounds());
     km.value = (e.target.get_distance() / 1000).toFixed(2);
-    elevationGain.value = e.target.get_elevation_gain();
-    elevationLoss.value = e.target.get_elevation_loss();
-    elevationMax.value = e.target.get_elevation_max();
-    elevationMin.value = e.target.get_elevation_min();
-    console.log("Távolság: ", km.value);
+    elevationGain.value = e.target.get_elevation_gain().toFixed(2);
+    elevationLoss.value = e.target.get_elevation_loss().toFixed(2);
+    elevationMax.value = e.target.get_elevation_max().toFixed(2);
+    elevationMin.value = e.target.get_elevation_min().toFixed(2);
+    //console.log("Távolság: ", km.value);
   }).addTo(map);
+
+  controlElevation = L.control.elevation({
+    srcFolder: 'http://unpkg.com/@raruto/leaflet-elevation/src/',
+    theme: "lightblue-theme",
+
+    // Chart container outside/inside map container
+    detached: true,
+
+    // if (detached), the elevation chart container
+    elevationDiv: "#elevation-div",
+
+    // if (!detached) initial state of chart profile control
+    collapsed: false,
+
+    // Toggle close icon visibility
+    closeBtn: true,
+
+    // Autoupdate map center on chart mouseover.
+    followMarker: true,
+
+    // Autoupdate map bounds on chart update.
+    autofitBounds: true,
+
+    // Altitude chart profile: true || "summary" || "disabled" || false
+    altitude: true,
+
+    // Display time info: true || "summary" || false
+    time: true,
+
+    // Display distance info: true || "summary" || false
+    distance: true,
+
+    // Summary track info style: "inline" || "multiline" || false
+    summary: 'inline',
+
+    // Download link: "link" || false || "modal"
+    downloadLink: 'link',
+
+    // Toggle chart ruler filter
+    ruler: false,
+
+    // Toggle chart legend filter
+    legend: false,
+
+    // Toggle "leaflet-almostover" integration
+    almostOver: true,
+
+    // Toggle "leaflet-distance-markers" integration
+    distanceMarkers: false,
+
+    // Toggle "leaflet-edgescale" integration
+    edgeScale: false,
+
+    // Toggle "leaflet-hotline" integration
+    hotline: false,
+
+    // Display track datetimes: true || false
+    timestamps: false,
+
+    preferCanvas: true,
+  }).addTo(map)
+
+  controlElevation.load(routeXML);
+
+  console.log(document.querySelector("#page"))
+  setTimeout(function () {
+    document.querySelector("#page").scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
+  }, 100);
 }
 </script>
 
@@ -167,7 +265,7 @@ function addGPXtoMap(u) {
     </template>
 
     <div class="py-12">
-      <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 relative z-0">
+      <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex md:flex-row flex-col">

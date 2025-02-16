@@ -42,7 +42,8 @@ class RouterController extends Controller
         $pyCommandOut = shell_exec($pyCommand);
 
         //convert script output to array
-        $elevations = array_map(fn($num) => number_format((float) $num, 0, '.', ''), explode("\n", trim($pyCommandOut)));
+        // $elevations = array_map(fn($num) => number_format((float) $num, 2, '.', ''), explode("\n", trim($pyCommandOut)));
+        $elevations = array_map('floatval', explode("\n", trim($pyCommandOut)));
         
         // $eleGain = 0;
         // $eleLoss = 0;
