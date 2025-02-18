@@ -35,12 +35,12 @@ class StampController extends Controller
         $stage_id = $request->query('stage');
 
         return Inertia::render('stamps/index', [
-            'stamps' => Hike::find($number)->stamps->unique('mtsz_id')->select('mtsz_id', 'nev', 'hosszusag', 'szelesseg', 'helyszin', 'stage_id'),
+            'stamps' => Hike::find($number)->stamps->unique('mtsz_id')->select('mtsz_id', 'name', 'lon', 'lat', 'location', 'stage_id'),
 
             'stagestamps' => fn () => Stamp::where('stage_id',$stage_id)->get(),
             'hike' => $hike,
-            'stages' => Hike::find($number)->stages->select('id', 'nev'),
-            'stage' => Stage::select("nev")->find($stage_id)
+            'stages' => Hike::find($number)->stages->select('id', 'name'),
+            'stage' => Stage::select("name")->find($stage_id)
         ]);
     }
 
@@ -49,9 +49,16 @@ class StampController extends Controller
      */
     public function show($stamp): Response
     {
+        $comments = StampComment::where('stamp_mtsz_id', $stamp)->get();
+        $names = [];
+        foreach($comments as $comment){
+            array_push($names, $comment->user()->get()->value('name'));
+        }
+
         return Inertia::render('stamps/show', [
             'stamp' => Stamp::where('mtsz_id', $stamp)->get()->first(),
-            'comments' => StampComment::where('stamp_name', $stamp)->get()
+            'comments' => StampComment::where('stamp_mtsz_id', $stamp)->get(),
+            'names' => $names
         ]);
     }
 }

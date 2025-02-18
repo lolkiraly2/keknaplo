@@ -31,9 +31,9 @@ class CpointController extends Controller
     public function create()
     {
         return Inertia::render('custompoints/create', [
-            'oktstages' => Stage::select('id', 'nev')->where('nev', 'like', "OKT%")->get(),
-            'ddkstages' => Stage::select('id', 'nev')->where('nev', 'like', "DDK%")->get(),
-            'akstages' => Stage::select('id', 'nev')->where('nev', 'like', "AK%")->get(),
+            'oktstages' => Stage::select('id', 'name')->where('name', 'like', "OKT%")->get(),
+            'ddkstages' => Stage::select('id', 'name')->where('name', 'like', "DDK%")->get(),
+            'akstages' => Stage::select('id', 'name')->where('name', 'like', "AK%")->get(),
         ]);
     }
 
@@ -56,11 +56,11 @@ class CpointController extends Controller
         return Inertia::render('custompoints/show', [
             'cpoint' => [
                 'id' => $custompoin->id,
-                'nev' => $custompoin->nev,
+                'name' => $custompoin->name,
                 'stage_id' => $custompoin->stage_id,
-                'szelesseg' => $custompoin->szelesseg,
-                'hosszusag' => $custompoin->hosszusag,
-                'leiras' => $custompoin->leiras,
+                'lat' => $custompoin->lat,
+                'lon' => $custompoin->lon,
+                'description' => $custompoin->description,
             ],
         ]);
     }
@@ -70,18 +70,18 @@ class CpointController extends Controller
      */
     public function edit(Cpoint $custompoint): Response
     {
-        $stage = Stage::where('id', $custompoint->stage_id)->value('nev');
+        $stage = Stage::where('id', $custompoint->stage_id)->value('name');
         return Inertia::render('custompoints/edit', [
-            'oktstages' => Stage::select('id', 'nev')->where('nev', 'like', "OKT%")->get(),
-            'ddkstages' => Stage::select('id', 'nev')->where('nev', 'like', "DDK%")->get(),
-            'akstages' => Stage::select('id', 'nev')->where('nev', 'like', "AK%")->get(),
+            'oktstages' => Stage::select('id', 'name')->where('name', 'like', "OKT%")->get(),
+            'ddkstages' => Stage::select('id', 'name')->where('name', 'like', "DDK%")->get(),
+            'akstages' => Stage::select('id', 'name')->where('name', 'like', "AK%")->get(),
             'cpoint' => [
                 'id' => $custompoint->id,
-                'nev' => $custompoint->nev,
+                'name' => $custompoint->name,
                 'stage_id' => $custompoint->stage_id,
-                'szelesseg' => $custompoint->szelesseg,
-                'hosszusag' => $custompoint->hosszusag,
-                'leiras' => $custompoint->leiras,
+                'lat' => $custompoint->lat,
+                'lon' => $custompoint->lon,
+                'description' => $custompoint->description,
             ],
             'stage' => $stage
         ]);
@@ -109,10 +109,10 @@ class CpointController extends Controller
     {
         return request()->validate(
             [
-                'nev' => ['required', 'max:50'],
-                'szelesseg' => ['required', 'max:50'],
-                'hosszusag' => ['required', 'max:50'],
-                'leiras' => ['min:0', 'max:50'],
+                'name' => ['required', 'max:50'],
+                'lat' => ['required'],
+                'lon' => ['required'],
+                'description' => ['min:0', 'max:50'],
                 'stage_id' => ['required'],
                 'user_id' => ['required'],
             ],

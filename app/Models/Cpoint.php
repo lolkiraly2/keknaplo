@@ -13,4 +13,8 @@ class Cpoint extends Model
     public function stage(){
         return $this->belongsTo(Stage::class);
     }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

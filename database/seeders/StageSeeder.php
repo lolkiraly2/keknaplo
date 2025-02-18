@@ -15,265 +15,265 @@ class StageSeeder extends Seeder
     public function run(): void
     {
         //túramozgalmak
-        Hike::create(['nev' => 'OKT']);
-        Hike::create(['nev' => 'DDK']);
-        Hike::create(['nev' => 'AK']);
+        Hike::create(['name' => 'OKT']);
+        Hike::create(['name' => 'DDK']);
+        Hike::create(['name' => 'AK']);
 
         //DDK szakaszok
         stage::create([
-            'nev' => 'DDK-01',
+            'name' => 'DDK-01',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-02',
+            'name' => 'DDK-02',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-03',
+            'name' => 'DDK-03',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-04',
+            'name' => 'DDK-04',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-05',
+            'name' => 'DDK-05',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-06',
+            'name' => 'DDK-06',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-07',
+            'name' => 'DDK-07',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-08',
+            'name' => 'DDK-08',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-09',
+            'name' => 'DDK-09',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-10',
+            'name' => 'DDK-10',
             'hike_id' => 2
         ]);
 
         stage::create([
-            'nev' => 'DDK-11',
+            'name' => 'DDK-11',
             'hike_id' => 2
         ]);
 
         //OKT szakaszok
         stage::create([
-            'nev' => 'OKT-01',
+            'name' => 'OKT-01',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-02',
+            'name' => 'OKT-02',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-03',
+            'name' => 'OKT-03',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-04',
+            'name' => 'OKT-04',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-05',
+            'name' => 'OKT-05',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-06',
+            'name' => 'OKT-06',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-07',
+            'name' => 'OKT-07',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-08',
+            'name' => 'OKT-08',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-09',
+            'name' => 'OKT-09',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-10',
+            'name' => 'OKT-10',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-11',
+            'name' => 'OKT-11',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-12',
+            'name' => 'OKT-12',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-13',
+            'name' => 'OKT-13',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-14',
+            'name' => 'OKT-14',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-15',
+            'name' => 'OKT-15',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-16',
+            'name' => 'OKT-16',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-17',
+            'name' => 'OKT-17',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-18',
+            'name' => 'OKT-18',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-19',
+            'name' => 'OKT-19',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-20',
+            'name' => 'OKT-20',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-21',
+            'name' => 'OKT-21',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-22',
+            'name' => 'OKT-22',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-23',
+            'name' => 'OKT-23',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-24',
+            'name' => 'OKT-24',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-25',
+            'name' => 'OKT-25',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-26',
+            'name' => 'OKT-26',
             'hike_id' => 1
         ]);
 
         stage::create([
-            'nev' => 'OKT-27',
+            'name' => 'OKT-27',
             'hike_id' => 1
         ]);
 
         //AK szakaszok
         stage::create([
-            'nev' => 'AK-01',
+            'name' => 'AK-01',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-02',
+            'name' => 'AK-02',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-03',
+            'name' => 'AK-03',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-04',
+            'name' => 'AK-04',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-05',
+            'name' => 'AK-05',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-06',
+            'name' => 'AK-06',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-07',
+            'name' => 'AK-07',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-08',
+            'name' => 'AK-08',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-09',
+            'name' => 'AK-09',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-10',
+            'name' => 'AK-10',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-11',
+            'name' => 'AK-11',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-12',
+            'name' => 'AK-12',
             'hike_id' => 3
         ]);
 
         stage::create([
-            'nev' => 'AK-13',
+            'name' => 'AK-13',
             'hike_id' => 3
         ]);
     }

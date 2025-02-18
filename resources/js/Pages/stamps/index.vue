@@ -19,6 +19,7 @@ const props = defineProps({
 let map;
 let zgpx;
 const szakasz = ref('0');
+const stagename = ref('');
 
 onMounted(() => {
   InitMap();
@@ -62,7 +63,7 @@ function AddStampsToMap() {
   var markers = L.markerClusterGroup();
 
   Object.entries(props.stamps).forEach(([key, value]) => {
-    let marker = L.marker([value.szelesseg, value.hosszusag], { icon: icon }).bindPopup("Pecsét helye:" + value.helyszin);
+    let marker = L.marker([value.lat, value.lon], { icon: icon });//.bindPopup("Pecsét helye:" + value.helyszin);
     markers.addLayer(marker);
   });
   // console.log("szél " + props.stamps[0].szelesseg + " hossz " + props.stamps[0].hosszusag + "hossz " + length)
@@ -86,22 +87,23 @@ const hikename = name(props.hike);
 
 function reloadPartialProps(stage) {
   router.reload({
-    only: ['stagestamps','stage'],
+    only: ['stagestamps', 'stage'],
     data: { stage },
     preserveState: true,
     replace: true,
     onSuccess: () => {
-      ZoomToStage(); 
+      ZoomToStage();
     },
   });
 }
 
 function ZoomToStage() {
-  let url = "../gpx/" + props.hike + "/" + props.stage.nev + ".gpx";
+  let url = "../gpx/" + props.hike + "/" + props.stage.name + ".gpx";
   zgpx = new L.GPX(url, {
     async: true,
   }).on('loaded', function (e) {
     map.flyToBounds(e.target.getBounds());
+    stagename.value = e.target.get_desc();
   })
 }
 </script>
@@ -133,16 +135,19 @@ function ZoomToStage() {
               <div class="flex justify-center">
                 <select v-model="szakasz" @change="reloadPartialProps($event.target.value)" class="my-5 inp">
                   <option value="0" disabled>Válassz szakaszt!</option>
-                  <option v-for="stage in stages" :value="stage.id">{{ stage.nev }}</option>
+                  <option v-for="stage in stages" :value="stage.id">{{ stage.name }}</option>
                 </select>
               </div>
 
+              <div>
+                <p class="text-center mb-3">{{ stagename }}</p>
+              </div>
 
               <div class="md:mb-0 mb-3 mx-1">
                 <p v-for="stagestamp in stagestamps" class="ml-3">
                   <Link :href="route('stamps.show', stagestamp.mtsz_id)"
                     class="transition ease-in-out hover:duration-500 hover:text-sky-600">
-                  {{ stagestamp.mtsz_id }} - {{ stagestamp.nev }}
+                  {{ stagestamp.mtsz_id }} - {{ stagestamp.name }}
                   </Link>
                 </p>
               </div>

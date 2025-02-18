@@ -25,7 +25,7 @@ const props = defineProps({
                     <h3 class="text-center mt-2">Saját pont neve</h3>
 
                     <div class="flex justify-between items-center" v-for="point in points">
-                        <Link :href="route('custompoints.show', point.id)" class="ml-3">{{ point.nev }}</Link>
+                        <Link :href="route('custompoints.show', point.id)" class="ml-3">{{ point.name }}</Link>
                         <button class="edit">
                             <Link :href="route('custompoints.edit', point.id)">szerkesztés</Link>
                         </button>

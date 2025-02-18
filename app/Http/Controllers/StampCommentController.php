@@ -47,11 +47,11 @@ class StampCommentController extends Controller
     {
         return request()->validate(
             [
-                'eszleles_datum' => ['required'],
-                'allapot' => ['required'],
-                'leiras' => ['min:0', 'max:250'],
-                'stamp_name' => ['required'],
-                'username' => ['required'],
+                'detection' => ['required'],
+                'state' => ['required'],
+                'comment' => ['min:0', 'max:250'],
+                'stamp_mtsz_id' => ['required'],
+                'user_id' => ['required'],
             ],
             [
                 'datum.required' => "A dátum nem lehet üres!",

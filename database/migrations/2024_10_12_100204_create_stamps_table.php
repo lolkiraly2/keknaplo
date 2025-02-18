@@ -13,21 +13,21 @@ return new class extends Migration
     {
         Schema::create('stamps', function (Blueprint $table) {
             $table->id();
-            $table->string('mtsz_id');
-            $table->string('pecset_id');
+            $table->string('mtsz_id', 20);
+            $table->string('stamp_id', 20);
             $table->foreignId('stage_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string('nev');
-            $table->string('helyszin');
-            $table->string('helyszin_leiras');
-            $table->string('cim');
-            $table->string('elerhetoseg');
-            $table->string('nyitvatartas');
-            $table->double('szelesseg');
-            $table->double('hosszusag');
-            $table->string('lenyomat_url');
-            $table->string('kep1_url');
-            $table->string('kep2_url')->nullable();
-            $table->string('kep3_url')->nullable();
+            $table->string('name', 60);
+            $table->string('location', 255);
+            $table->string('location_description', 255);
+            $table->string('address', 255);
+            $table->enum('availability', ['Folyamatos', 'Nyitvatartás szerint']);
+            $table->string('opening_hours',128);
+            $table->double('lat');
+            $table->double('lon');
+            $table->string('stamp_url', 128);
+            $table->string('picture1_url', 128);
+            $table->string('picture2_url', 128)->nullable();
+            $table->string('picture3_url', 128)->nullable();
             $table->timestamps();
         });
     }

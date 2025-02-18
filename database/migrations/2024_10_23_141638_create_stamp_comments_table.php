@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('stamp_comments', function (Blueprint $table) {
             $table->id();
-            $table->enum('allapot', ['Rendben', 'Sérült', 'Hiányzik']);
-            $table->string('username');
-            $table->string('stamp_name');
-            $table->string('leiras');
-            $table->date('eszleles_datum');
+            $table->enum('state', ['Rendben', 'Sérült', 'Hiányzik']);
+            $table->foreignId('user_id')->constrained();
+            $table->string('stamp_mtsz_id',20);
+            $table->date('detection');
+            $table->string('comment', 500);
             $table->timestamps();
         });
     }

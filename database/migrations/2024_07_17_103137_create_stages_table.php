@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('stages', function (Blueprint $table) {
             $table->id();
-            $table->string('nev',20);
+            $table->string('name',128);
             $table->foreignId('hike_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

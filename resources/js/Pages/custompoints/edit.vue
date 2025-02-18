@@ -9,7 +9,6 @@ import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
 const user = page.props.auth.user
-console.log(user.name)
 const props = defineProps({
     oktstages: Array,
     ddkstages: Array,
@@ -27,19 +26,16 @@ const map = ref(null);
 const stagename = ref('');
 
 const form = useForm({
-    nev: props.cpoint.nev,
+    name: props.cpoint.name,
     stage_id: props.cpoint.stage_id,
-    szelesseg: props.cpoint.szelesseg,
-    hosszusag: props.cpoint.hosszusag,
-    leiras: props.cpoint.leiras,
-    user_id: props.cpoint.user_id
-
+    lat: props.cpoint.lat,
+    lon: props.cpoint.lon,
+    description: props.cpoint.description,
+    user_id: user.id
 })
-form.user_id = user.id
 
 onMounted(() => {
     InitMap();
-    console.log(user.id)
 })
 
 function InitMap() {
@@ -57,9 +53,9 @@ function InitMap() {
         kekturak.value = "BFK";
     let url = "../../gpx/" + kekturak.value + "/" + props.stage + ".gpx";
     szakasz.value = props.cpoint.stage_id
-    turavaltozas();
+    HikeChanged();
     addGPXtoMap(url)
-    marker.value = new L.marker([props.cpoint.szelesseg, props.cpoint.hosszusag]).addTo(map.value);
+    marker.value = new L.marker([props.cpoint.lat, props.cpoint.lon]).addTo(map.value);
 
     map.value.on('click', NewMarker);
 }
@@ -75,11 +71,11 @@ function NewMarker(e) {
     // console.log("new marker")
 
     //console.log(this.marker)
-    form.szelesseg = marker.value._latlng.lat
-    form.hosszusag = marker.value._latlng.lng
+    form.lat = marker.value._latlng.lat
+    form.lon = marker.value._latlng.lng
 }
 
-function turavaltozas() {
+function HikeChanged() {
     if (kekturak.value == "OKT")
         szakaszok.value = props.oktstages
     if (kekturak.value == "AK")
@@ -107,9 +103,9 @@ function addGPXtoMap(u) {
 
 }
 
-function szakaszvaltozas() {
-    form.szelesseg = null;
-    form.hosszusag = null;
+function StageChanged() {
+    form.lat = null;
+    form.lon = null;
     form.stage_id = szakasz.value;
     // form.stage_id = this.szakasz;
     if (marker.value) map.value.removeLayer(marker.value);
@@ -121,7 +117,7 @@ function szakaszvaltozas() {
         //console.log(this.ddkstages[0])
         for (let i = 0; i < props.ddkstages.length; i++)
             if (i + 1 == szakasz.value) {
-                sznev = props.ddkstages[i].nev;
+                sznev = props.ddkstages[i].name;
                 break;
             }
         url += "DDK/" + sznev + ".gpx";
@@ -132,8 +128,8 @@ function szakaszvaltozas() {
     if (kekturak.value == "OKT") {
         for (let i = 0; i < props.oktstages.length; i++)
             if (i + 12 == szakasz.value) {
-                //console.log(this.oktstages[i].nev);
-                sznev = props.oktstages[i].nev;
+                //console.log(this.oktstages[i].name);
+                sznev = props.oktstages[i].name;
                 break;
             }
 
@@ -145,8 +141,8 @@ function szakaszvaltozas() {
     if (kekturak.value == "AK") {
         for (let i = 0; i < props.akstages.length; i++)
             if (i + 39 == szakasz.value) {
-                //console.log(this.aktstages[i].nev);
-                sznev = props.akstages[i].nev;
+                //console.log(this.aktstages[i].name);
+                sznev = props.akstages[i].name;
                 break;
             }
 
@@ -184,7 +180,7 @@ function szakaszvaltozas() {
                         <div class="lg:w-1/4 md:w-2/5 w-full">
                             <div class="flex flex-col items-center">
                                 <div>
-                                    <select v-model="kekturak" @change="turavaltozas" class="mt-8 inp">
+                                    <select v-model="kekturak" @change="HikeChanged" class="mt-8 inp">
                                         <option value="AK">Alföldi Kéktúra</option>
                                         <option value="DDK">Dél-Dunántúli Kéktúra</option>
                                         <option value="OKT">Országos Kéktúra</option>
@@ -192,9 +188,9 @@ function szakaszvaltozas() {
                                 </div>
 
                                 <div>
-                                    <select class="mt-2 inp" v-model="szakasz" @change="szakaszvaltozas">
+                                    <select class="mt-2 inp" v-model="szakasz" @change="StageChanged">
                                         <option v-for="sz in szakaszok" v-bind:value="sz.id">
-                                            {{ sz.nev }}
+                                            {{ sz.name }}
                                         </option>
                                     </select>
                                 </div>
@@ -206,14 +202,14 @@ function szakaszvaltozas() {
                                 <div class="mt-8">
                                     <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))"  class="flex flex-col items-center">
 
-                                        <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.nev"
+                                        <input type="text" placeholder="Saját pont neve" id="name" v-model="form.name"
                                             class="mb-5 inp" required>
-                                        <input type="text" placeholder="szélesség" id="szel" v-model="form.szelesseg"
+                                        <input type="text" placeholder="szélesség" id="szel" v-model="form.lat"
                                             class="mb-5 inp" disabled required>
-                                        <input type="text" placeholder="hosszúság" id="hossz" v-model="form.hosszusag"
+                                        <input type="text" placeholder="hosszúság" id="hossz" v-model="form.lon"
                                             class="mb-5 inp" disabled required>
-                                        <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
-                                            v-model="form.leiras" class="mb-5 inp"></textarea>
+                                        <textarea id="description" placeholder="Rövid leírás (opcionális)"
+                                            v-model="form.description" class="mb-5 inp"></textarea>
                                         <input type="submit" value="Mentés" class="submit">
                                     </form>
                                 </div>
