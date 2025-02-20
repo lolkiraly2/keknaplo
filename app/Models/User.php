@@ -44,4 +44,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function stampComments(){
+        return $this->Hasmany(StampComment::class);
+    }
+
+    public function croutes(){
+        return $this->Hasmany(CustomRoute::class);
+    }
 }

@@ -46,8 +46,8 @@ icon.value = "ico/sav-kek.ico";
                                     Korlátozások
                                 </NavLink>
 
-                                <NavLink :href="route('customroute.customroute')" :active="route().current('customroute.customroute')">
-                                    Túra tervező
+                                <NavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
+                                    Saját túráim
                                 </NavLink>
 
                                 <pecsetek></pecsetek>
@@ -137,8 +137,8 @@ icon.value = "ico/sav-kek.ico";
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('customroute.customroute')" :active="route().current('customroute.customroute')">
-                            Túra tervező
+                        <ResponsiveNavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
+                            Saját túráim
                         </ResponsiveNavLink>
                     </div>
 

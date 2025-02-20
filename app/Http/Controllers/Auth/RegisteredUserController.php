@@ -9,6 +9,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules;
 use Inertia\Inertia;
 use Inertia\Response;
@@ -44,6 +45,10 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
+        //make folders for user's routes
+        Storage::makeDirectory($request->email);
+        Storage::makeDirectory( $request->email . '/croutes');
+        Storage::makeDirectory($request->email . '/blueroutes');
         Auth::login($user);
 
         return redirect(route('dashboard', absolute: false));

@@ -1,6 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import CrouteNav from '@/Components/CrouteNav.vue';
+import { Head, useForm, usePage } from '@inertiajs/vue3';
 import { onMounted, ref, nextTick } from 'vue';
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
@@ -24,7 +25,16 @@ const elevationLoss = ref(0);
 const elevationMax = ref(0);
 const elevationMin = ref(0);
 const loading = ref(false);
+const showForm = ref(false)
 let controlElevation;
+
+const page = usePage();
+const user = page.props.auth.user
+const form = useForm({
+    name: null,
+    user_id: user.id,
+    gpx: null
+})
 
 let huLabels = {
   "Total Length: ": "Táv: ",
@@ -111,6 +121,7 @@ function RemoveMapElements() {
   routeGPX = null;
   controlElevation.remove();
   controlElevation.clear();
+  showForm.value = false;
 }
 
 async function PlanRoute() {
@@ -119,6 +130,7 @@ async function PlanRoute() {
     alert("Legalább két pontot adjon meg!");
   }
   else {
+    showForm.value = false;
     let latLongArray = [];
     points.value.forEach((point) => {
       latLongArray.push([point._latlng.lat, point._latlng.lng]);
@@ -132,6 +144,8 @@ async function PlanRoute() {
       loading.value = false;
       routeXML = response.data.route;
       addGPXtoMap(routeXML);
+      showForm.value = true;
+      form.gpx = routeXML;
 
     } catch (error) {
       console.error("Error fetching the route:", error);
@@ -235,13 +249,14 @@ function addGPXtoMap(u) {
 
   controlElevation.load(routeXML);
 
-  console.log(document.querySelector("#page"))
+  //console.log(document.querySelector("#page"))
   setTimeout(function () {
     document.querySelector("#page").scrollIntoView({
       behavior: "smooth",
       block: "end",
     });
   }, 100);
+
 }
 </script>
 
@@ -261,7 +276,7 @@ function addGPXtoMap(u) {
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">Túra tervező</h2>
+      <CrouteNav></CrouteNav>
     </template>
 
     <div class="py-12">
@@ -292,6 +307,12 @@ function addGPXtoMap(u) {
               <p>Szint csökkenés: {{ elevationLoss }}</p>
               <p>Max magasság: {{ elevationMax }}</p>
               <p>Min magasság: {{ elevationMin }}</p>
+
+              <form v-show="showForm" @submit.prevent="form.post(route('customroutes.store'))">
+                <input type="text" placeholder="Túra neve" id="nev" v-model="form.name"
+                class="mb-5 inp" required><br>
+                <input type="submit" value="Mentés" id="save" class="submit">
+              </form>
             </div>
 
             <div class="md:w-3/4 w-full">

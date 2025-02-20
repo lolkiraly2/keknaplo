@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
+use App\Http\Controllers\CustomRouteController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
@@ -52,6 +53,8 @@ Route::get('/mapteszt', function () {
 Route::get('/customroute', function () {
     return Inertia::render('customroute/customroute');
 })->name('customroute.customroute');
+
+Route::resource('customroutes', CustomRouteController::class)->middleware(['auth', 'verified']);
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 
