@@ -1,12 +1,15 @@
 <script setup>
 import CrouteNav from '@/Components/CrouteNav.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
-import { Link } from '@inertiajs/vue3';
+import { Head, Link, router } from '@inertiajs/vue3';
 
 const props = defineProps({
     customroutes: Object
 })
+
+function remove(routeId){
+    router.delete(route('customroutes.destroy' , routeId));
+}
 </script>
 
 <template>
@@ -25,10 +28,16 @@ const props = defineProps({
                     <h3 class="text-center mt-2">Saját túráim</h3>
 
                     <div class="flex justify-between items-center" v-for="croute in customroutes">
-                        <Link :href="route('custompoints.show', croute.id)" class="ml-3">{{ croute.name }}</Link>
-                        <button class="edit">
-                            <Link :href="route('custompoints.edit', croute.id)">szerkesztés</Link>
-                        </button>
+                        <p class="ml-3">{{ croute.name }}</p>
+                        <div>
+                            <button class="edit">
+                                <Link :href="route('customroutes.show', croute.id)">Megtekintés</Link>
+                            </button>
+                            <button class="delete" @click="remove(croute.id)">
+                                Törlés
+                            </button>
+                        </div>
+
                     </div>
 
                 </div>

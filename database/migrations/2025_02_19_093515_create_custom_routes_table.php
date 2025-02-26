@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('custom_routes', function (Blueprint $table) {
+        Schema::create('customroutes', function (Blueprint $table) {
             $table->id();
             $table->string('name', 64);
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('custom_routes');
+        Schema::dropIfExists('customroutes');
     }
 };

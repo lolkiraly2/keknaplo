@@ -51,9 +51,15 @@ class CustomRouteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id): Response
     {
-        //
+        $route = CustomRoute::find($id);
+        $email = Auth::user()->email;
+        $filename = $email . "/croutes/" . $route->name . ".gpx";
+        return Inertia::render('customroutes/show',[
+            'gpx' => Storage::get($filename),
+            'name' => $route->name
+        ]);
     }
 
     /**
@@ -75,8 +81,14 @@ class CustomRouteController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $id): RedirectResponse
     {
-        //
+        $route = CustomRoute::find($id);
+        $email = Auth::user()->email;
+        $filename = $email . "/croutes/" . $route->name . ".gpx";
+
+        $route->delete();
+        Storage::delete($filename);
+        return to_route('customroutes.index');
     }
 }
