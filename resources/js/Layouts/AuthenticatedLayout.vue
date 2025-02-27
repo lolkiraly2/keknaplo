@@ -50,6 +50,10 @@ icon.value = "ico/sav-kek.ico";
                                     Saját túráim
                                 </NavLink>
 
+                                <NavLink :href="route('grouphikes.index')" :active="route().current('customroutes.index')">
+                                   Csoportos túrák
+                                </NavLink>
+
                                 <pecsetek></pecsetek>
                             </div>
 

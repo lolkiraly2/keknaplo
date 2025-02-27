@@ -52,4 +52,8 @@ class User extends Authenticatable
     public function croutes(){
         return $this->Hasmany(CustomRoute::class);
     }
+
+    public function mygrouphikes(){
+        return $this->Hasmany(GrouphikeParticipant::class);
+    }
 }

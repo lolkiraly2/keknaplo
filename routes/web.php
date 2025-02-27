@@ -8,9 +8,11 @@ use Illuminate\Foundation\Application;
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
 use App\Http\Controllers\CustomRouteController;
+use App\Http\Controllers\GrouphikeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
+use App\Models\GrouphikeComment;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -55,6 +57,8 @@ Route::get('/customroute', function () {
 })->name('customroute.customroute');
 
 Route::resource('customroutes', CustomRouteController::class)->middleware(['auth', 'verified']);
+
+Route::resource('grouphikes', GrouphikeController::class)->middleware(['auth', 'verified']);
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 
