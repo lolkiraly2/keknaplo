@@ -50,7 +50,7 @@ icon.value = "ico/sav-kek.ico";
                                     Saját túráim
                                 </NavLink>
 
-                                <NavLink :href="route('grouphikes.index')" :active="route().current('customroutes.index')">
+                                <NavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
                                    Csoportos túrák
                                 </NavLink>
 
@@ -144,6 +144,12 @@ icon.value = "ico/sav-kek.ico";
                         <ResponsiveNavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
                             Saját túráim
                         </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
+                                   Csoportos túrák
+                                </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">

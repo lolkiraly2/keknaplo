@@ -14,7 +14,7 @@ function remove(routeId){
 
 <template>
 
-    <Head title="Saját pont" />
+    <Head title="Saját túráim" />
 
     <AuthenticatedLayout>
         <template #header>
@@ -27,13 +27,13 @@ function remove(routeId){
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h3 class="text-center mt-2">Saját túráim</h3>
 
-                    <div class="flex justify-between items-center" v-for="croute in customroutes">
-                        <p class="ml-3">{{ croute.name }}</p>
+                    <div class="flex justify-between items-center px-4 my-2" v-for="croute in customroutes">
+                        <p>{{ croute.name }}</p>
                         <div>
                             <button class="edit">
                                 <Link :href="route('customroutes.show', croute.id)">Megtekintés</Link>
                             </button>
-                            <button class="delete" @click="remove(croute.id)">
+                            <button class="delete2" @click="remove(croute.id)">
                                 Törlés
                             </button>
                         </div>

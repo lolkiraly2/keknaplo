@@ -9,16 +9,16 @@ import NavLink from '@/Components/NavLink.vue';
             Nyilvános túrák
         </NavLink>
 
-        <NavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
+        <NavLink :href="route('grouphikes.mygrouphikes')" :active="route().current('grouphikes.mygrouphikes')">
             Túrát vezetek
         </NavLink>
 
         <NavLink :href="route('grouphikes.create')" :active="route().current('grouphikes.create')">
-            új csoportos túra
+            Új csoportos túra
         </NavLink>
 
         <NavLink :href="route('customroutes.create')" :active="route().current('customroutes.create')">
-            csatlakozás privát túrához
+            Csatlakozás privát túrához
         </NavLink>
     </div>
 </template>

@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
 
-    <Head title="Nyilvános túrák" />
+    <Head title="Általam szervezett túrák" />
 
     <AuthenticatedLayout>
         <template #header>
@@ -22,7 +22,7 @@ const props = defineProps({
         <div class="py-12">
             <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Nyilvános túrák</h3>
+                    <h3 class="text-center mt-2">Általam szervezett túrák</h3>
 
                     <div class="flex justify-between items-center" v-for="grouphike in grouphikes">
                         <p class="ml-3">{{ grouphike.name }}</p>

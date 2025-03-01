@@ -15,13 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('name', 64);
             $table->string('start_point_name', 50);
-            $table->string('end_point_name ', 50);
+            $table->string('end_point_name', 50);
             $table->string('location', 50);
             $table->date('date');
+            $table->time('gatheringtime');
+            $table->time('starttime');
             $table->boolean('public');
-            $table->password_hash('password')->nullable();
+            $table->string('password')->nullable();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('customroute_id')->constrained();
+            $table->string('description', 500);
             $table->timestamps();
         });
     }

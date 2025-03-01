@@ -59,6 +59,7 @@ Route::get('/customroute', function () {
 Route::resource('customroutes', CustomRouteController::class)->middleware(['auth', 'verified']);
 
 Route::resource('grouphikes', GrouphikeController::class)->middleware(['auth', 'verified']);
+Route::get('mygrouphikes', [GrouphikeController::class, 'mygrouphikes'])->middleware(['auth', 'verified'])->name('grouphikes.mygrouphikes');
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 

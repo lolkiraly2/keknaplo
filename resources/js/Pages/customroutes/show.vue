@@ -136,7 +136,7 @@ function addGPXtoMap() {
 
 <template>
 
-  <Head title="Túra tervező" />
+  <Head title="Túra megtekintő" />
 
   <AuthenticatedLayout>
     <template #header>
