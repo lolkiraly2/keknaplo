@@ -22,6 +22,7 @@ return new class extends Migration
             $table->time('starttime');
             $table->boolean('public');
             $table->string('password')->nullable();
+            $table->integer('maxparticipants');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('customroute_id')->constrained();
             $table->string('description', 500);

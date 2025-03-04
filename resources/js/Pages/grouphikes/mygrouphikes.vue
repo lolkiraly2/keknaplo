@@ -30,6 +30,10 @@ const props = defineProps({
                             <button class="edit">
                                 <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
                             </button>
+
+                            <button class="edit">
+                                <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
+                            </button>
                         </div>
 
                     </div>

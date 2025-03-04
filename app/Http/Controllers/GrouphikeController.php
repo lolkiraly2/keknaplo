@@ -10,6 +10,7 @@ use App\Models\CustomRoute;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Storage;
 
 class GrouphikeController extends Controller
 {
@@ -49,31 +50,48 @@ class GrouphikeController extends Controller
     {
         Grouphike::create($this->validateGrouphike());
 
-        return to_route('grouphikes.index');
+        return to_route('grouphikes.mygrouphikes');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Grouphike $grouphike)
     {
-        //
+        $uid = Auth::user()->id;
+        if ($grouphike->public == 0 && ($grouphike->user_id != $uid /* || Nem szerepel a jeletkezők között*/)) {
+            return redirect()->route('grouphikes.index');
+        }
+
+        $route = CustomRoute::find($grouphike->customroute_id);
+        $email = User::find($grouphike->user_id)->email;
+        $filename = $email . "/croutes/" . $route->name . ".gpx";
+        return Inertia::render('grouphikes/show', [
+            'gpx' => Storage::get($filename),
+            'organizer' => User::find($grouphike->user_id)->name,
+            'grouphike' => $grouphike
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Grouphike $grouphike): Response
     {
-        //
+        $uid = Auth::user()->id;
+        return Inertia::render('grouphikes/edit', [
+            'myroutes' => User::find($uid)->croutes,
+            'grouphike' => $grouphike
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Grouphike $grouphike): RedirectResponse
     {
-        //
+        $grouphike->update($this->validateGrouphike());
+        return to_route('grouphikes.mygrouphikes');
     }
 
     /**
@@ -96,10 +114,11 @@ class GrouphikeController extends Controller
                 'gatheringtime' => ['required'],
                 'starttime' => ['required'],
                 'public' => ['required'],
-                'description' => ['required','max:500'],
+                'description' => ['required', 'max:500'],
                 'customroute_id' => ['required'],
                 'user_id' => ['required'],
-                'password' => ['min:0']
+                'password' => ['min:0'],
+                'maxparticipants' => ['required', 'min:1', 'max:100']
             ],
             [
                 'name.required' => "A név nem lehet üres!",
@@ -116,7 +135,10 @@ class GrouphikeController extends Controller
                 'customroute_id.required' => "Válasszon útvonalat a megtervezett túrái közül!",
                 'starttime.required' => "Indulás időpntja nem lehet üres!",
                 'description.required' => "Leírás nem lehet üres!",
-                'description.max' => "Leírás túl hosszú! (Maximum: :max karakter)"
+                'description.max' => "Leírás túl hosszú! (Maximum: :max karakter)",
+                'maxparticipants.required' => 'A túra létszáma nem lehet üres!',
+                'maxparticipants.min' => 'A túra létszáma legalább 1!',
+                'maxparticipants.max' => 'A túra létszáma maximum 100!'
             ]
         );
     }

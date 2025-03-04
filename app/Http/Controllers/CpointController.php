@@ -68,8 +68,13 @@ class CpointController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Cpoint $custompoint): Response
+    public function edit(Cpoint $custompoint)
     {
+        $uid = Auth::user()->id;
+        if ($custompoint->user_id != $uid){
+            return redirect()->route('custompoints.index');
+        }
+
         $stage = Stage::where('id', $custompoint->stage_id)->value('name');
         return Inertia::render('custompoints/edit', [
             'oktstages' => Stage::select('id', 'name')->where('name', 'like', "OKT%")->get(),
