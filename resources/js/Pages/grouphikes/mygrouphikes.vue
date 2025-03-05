@@ -7,6 +7,9 @@ const props = defineProps({
     grouphikes: Object
 })
 
+function remove(routeId){
+    router.delete(route('customroutes.destroy' , routeId));
+}
 </script>
 
 <template>
@@ -33,6 +36,10 @@ const props = defineProps({
 
                             <button class="edit">
                                 <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
+                            </button>
+
+                            <button class="delete2" @click="remove(grouphike.id)">
+                                Törlés
                             </button>
                         </div>
 

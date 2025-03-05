@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('stamp_comments', function (Blueprint $table) {
             $table->id();
             $table->enum('state', ['Rendben', 'Sérült', 'Hiányzik']);
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('stamp_mtsz_id',20);
             $table->date('detection');
             $table->string('comment', 500);

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->double('lat');
             $table->double('lon');
             $table->string('description')->nullable();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

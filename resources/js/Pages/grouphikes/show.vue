@@ -2,7 +2,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import grouphikeNav from '@/Components/grouphikeNav.vue';
 import { onMounted, computed } from 'vue';
-import { Head, usePage } from '@inertiajs/vue3';
+import { Head, usePage, useForm } from '@inertiajs/vue3';
 import "leaflet/dist/leaflet.css";
 import * as L from "leaflet";
 import 'leaflet-extra-markers';
@@ -17,7 +17,14 @@ const user = page.props.auth.user
 const props = defineProps({
   gpx: String,
   organizer: String,
-  grouphike: Object
+  grouphike: Object,
+  participants: Array,
+  isJoined: Boolean
+})
+
+const form = useForm({
+  grouphike_id: props.grouphike.id,
+  user_id: user.id
 })
 
 let map;
@@ -125,8 +132,8 @@ function addGPXtoMap() {
 }
 
 const isOrganizer = computed(() => {
-      return props.grouphike.user_id === user.id;
-    });
+  return props.grouphike.user_id === user.id;
+});
 </script>
 
 <style>
@@ -151,16 +158,17 @@ const isOrganizer = computed(() => {
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex flex-col mt-3">
-            <h2 class="text-center font-black text-2xl mb-3">{{ grouphike.name }}</h2>
+
             <div class="flex flex-row">
 
               <div class="z-0 lg:w-6/10 md:w-3/5 w-full md:pr-3">
+                <h2 class="text-center font-black text-2xl mb-3">{{ grouphike.name }}</h2>
                 <div id="map"></div>
               </div>
 
               <div class="lg:w-4/10 md:w-2/5 w-full">
-                <div class="grid grid-cols-2 gap-6 px-[10%]">
-                  <h3 class="col-span-2 text-center ">Információk</h3>
+                <h2 class="text-center font-black text-2xl mb-3">Információk</h2>
+                <div class="grid grid-cols-2 gap-6 px-[10%]">               
                   <p>Túra napja:</p>
                   <p>{{ grouphike.date }}</p>
                   <p>Gyülekező: </p>
@@ -180,13 +188,28 @@ const isOrganizer = computed(() => {
                   <p>Maxium létszám:</p>
                   <p>{{ grouphike.maxparticipants }}</p>
                   <p>Eddig jelentkezettek száma:</p>
-                  <p> <!-- Később lesz meg  --></p>
-                  <button v-show="!isOrganizer" class="col-span-2 join">Csatlakozás</button>
+                  <p> {{ participants.length }}</p>
+
+                  <form @submit.prevent="form.post(route('grouphikes.join'))"
+                    class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">
+                    <input type="submit" value="Csatlakozás" id="delete" class="join">
+                  </form>
+
+                  <form @submit.prevent="form.post(route('grouphikes.cancel'))"
+                    class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && isJoined">
+                    <input type="submit" value="Lejelentkezés" id="delete" class="join">
+                  </form>
+
+                </div>
+                <!-- grid ends -->
+
+                <div class="mx-[10%] p-5 my-5 border-2 border-solid rounded-lg">
+                  <h2 class="text-center font-black text-xl">Résztvevők: </h2>
+                  <p v-for="participant in participants">{{ participant }}</p>
                 </div>
               </div>
 
             </div>
-
 
           </div>
 

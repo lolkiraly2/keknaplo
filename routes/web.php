@@ -43,23 +43,26 @@ Route::get('/restrictions', function () {
 })->middleware(['auth', 'verified'])->name('restrictions');
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
-ROute::resource('stampcomments', StampCommentController::class)->middleware(['auth', 'verified']);
+
+ROute::resource('stampcomments', StampCommentController::class)->only([
+    'store',
+])->middleware(['auth', 'verified']);
 
 Route::get('/stamps/{hike}', [StampController::class, 'index'])->name('stamps.index');
 Route::get('/stamps/{stamp}/show', [StampController::class, 'show'])->name('stamps.show');
 
-Route::get('/mapteszt', function () {
-    return view('maps');
-})->middleware(['auth', 'verified'])->name('probaterkep');
+Route::resource('customroutes', CustomRouteController::class)->except([
+    'edit', 'update'
+])->middleware(['auth', 'verified']);
 
-Route::get('/customroute', function () {
-    return Inertia::render('customroute/customroute');
-})->name('customroute.customroute');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::resource('grouphikes', GrouphikeController::class);
 
-Route::resource('customroutes', CustomRouteController::class)->middleware(['auth', 'verified']);
-
-Route::resource('grouphikes', GrouphikeController::class)->middleware(['auth', 'verified']);
-Route::get('mygrouphikes', [GrouphikeController::class, 'mygrouphikes'])->middleware(['auth', 'verified'])->name('grouphikes.mygrouphikes');
+    Route::get('mygrouphikes', [GrouphikeController::class, 'mygrouphikes'])->name('grouphikes.mygrouphikes');
+    Route::get('futurehikes', [GrouphikeController::class, 'futurehikes'])->name('grouphikes.futurehikes');
+    Route::post('grouphikes/join', [GrouphikeController::class, 'join'])->name('grouphikes.join');
+    Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
+});
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 

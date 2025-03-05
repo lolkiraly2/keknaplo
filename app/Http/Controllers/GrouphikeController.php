@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use Inertia\Response;
 use App\Models\Grouphike;
 use App\Models\CustomRoute;
+use App\Models\GrouphikeParticipant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
@@ -29,6 +30,18 @@ class GrouphikeController extends Controller
         $uid = Auth::user()->id;
         return Inertia::render('grouphikes/mygrouphikes', [
             'grouphikes' => Grouphike::where('user_id', $uid)->get()
+        ]);
+    }
+
+    public function futurehikes(): Response
+    {
+        $uid = Auth::user()->id;
+        $hikeids = Auth::user()->joinedhikes->pluck('grouphike_id');
+        $grouphikes = Grouphike::find($hikeids)->pluck('name');
+        
+        return Inertia::render('grouphikes/futurehikes', [
+            'hikeids' => $hikeids,
+            'futurehikes' => $grouphikes 
         ]);
     }
 
@@ -66,10 +79,17 @@ class GrouphikeController extends Controller
         $route = CustomRoute::find($grouphike->customroute_id);
         $email = User::find($grouphike->user_id)->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
+
+        $participantsid = Grouphike::find($grouphike->id)->participants->pluck('user_id');
+        $participants = User::find($participantsid)->pluck('name');
+        $isJoined = $participantsid->contains($uid);
+
         return Inertia::render('grouphikes/show', [
             'gpx' => Storage::get($filename),
             'organizer' => User::find($grouphike->user_id)->name,
-            'grouphike' => $grouphike
+            'grouphike' => $grouphike,
+            'participants' => $participants,
+            'isJoined' => $isJoined
         ]);
     }
 
@@ -100,6 +120,26 @@ class GrouphikeController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function join(Request $request): RedirectResponse
+    {
+        GrouphikeParticipant::create([
+            'grouphike_id' => request('grouphike_id'),
+            'user_id' => request('user_id')
+        ]);
+
+        return redirect()->back();
+    }
+
+    public function cancel(Request $request): RedirectResponse
+    {
+        $uid = Auth::user()->id;
+        $gid = request('grouphike_id');
+        $participant = GrouphikeParticipant::where('grouphike_id', $gid)->where('user_id', $uid)->first();
+        $participant->delete();
+
+       return redirect()->back();
     }
 
     public function validateGrouphike(): array

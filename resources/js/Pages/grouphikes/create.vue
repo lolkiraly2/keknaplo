@@ -2,10 +2,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm, usePage } from '@inertiajs/vue3';
 import grouphikeNav from '@/Components/grouphikeNav.vue';
-import { ref, onMounted, computed } from 'vue'
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import 'leaflet-gpx/gpx.js';
+import {computed } from 'vue';
 
 const page = usePage();
 const user = page.props.auth.user
@@ -31,37 +28,12 @@ const form = useForm({
     description: null
 })
 
-let map;
-
-onMounted(() => {
-    InitMap();
-})
-
-function InitMap() {
-    map = L.map('map').setView([47.234, 18.600], 7);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői'
-    }).addTo(map);
-
-    L.tileLayer.wms('https://turistaterkepek.hu/server/services/Turistaut_nyilvantartas/nyilvantartaswms/MapServer/WMSServer', {
-        layers: '00',
-        format: 'image/png',
-        transparent: true
-    }).addTo(map);
-}
-
 const isInvalid = computed(() => {
       return form.starttime < form.gatheringtime;
     });
 
 </script>
 
-<style>
-#map {
-    height: 500px;
-}
-</style>
 
 <template>
 
@@ -76,11 +48,8 @@ const isInvalid = computed(() => {
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-                    <div class="flex flex-col-reverse">
-                        <div class="w-full md:pr-3 px-3">
-                            <div id="map"></div>
-                        </div>
-
+                    <div class="flex flex-col">
+                
                         <div class=" w-full">
                             <div class="flex flex-col justify-center">
 
@@ -114,7 +83,7 @@ const isInvalid = computed(() => {
 
                                         <label for="starttime">indulás: </label>
                                         <input type="time" id="starttime" v-model="form.starttime" class="inp" required>
-                                        <p v-if="isInvalid" class="text-red-600 text-center col-span-2">Az indulás ideje nem lehet korábban az indulás idejénél!</p>
+                                        <p v-if="isInvalid" class="text-red-600 text-center col-span-2">Az indulás ideje nem lehet korábban a gyülekező idejénél!</p>
 
                                         <label for="public">Nyílvános-e: <br>
                                             <span class="text-red-600">Később nem

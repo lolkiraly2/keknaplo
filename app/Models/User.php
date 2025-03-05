@@ -54,6 +54,10 @@ class User extends Authenticatable
     }
 
     public function mygrouphikes(){
+        return $this->Hasmany(Grouphike::class);
+    }
+
+    public function joinedhikes(){
         return $this->Hasmany(GrouphikeParticipant::class);
     }
 }

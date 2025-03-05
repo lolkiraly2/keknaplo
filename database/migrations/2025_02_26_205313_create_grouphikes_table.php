@@ -23,8 +23,8 @@ return new class extends Migration
             $table->boolean('public');
             $table->string('password')->nullable();
             $table->integer('maxparticipants');
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('customroute_id')->constrained();
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('customroute_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('description', 500);
             $table->timestamps();
         });

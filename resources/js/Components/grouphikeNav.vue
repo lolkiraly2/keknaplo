@@ -9,6 +9,10 @@ import NavLink from '@/Components/NavLink.vue';
             Nyilvános túrák
         </NavLink>
 
+        <NavLink :href="route('grouphikes.futurehikes')" :active="route().current('grouphikes.futurehikes')">
+            Közelgő túráim
+        </NavLink>
+
         <NavLink :href="route('grouphikes.mygrouphikes')" :active="route().current('grouphikes.mygrouphikes')">
             Túrát vezetek
         </NavLink>

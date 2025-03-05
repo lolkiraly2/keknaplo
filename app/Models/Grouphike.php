@@ -19,7 +19,7 @@ class Grouphike extends Model
         return $this->belongsTo(CustomRoute::class);
     }
 
-    public function participant(){
+    public function participants(){
         return $this->Hasmany(GrouphikeParticipant::class);
     }
 
