@@ -5,23 +5,25 @@ import { onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import 'leaflet-gpx';
+import { FeatureLayer } from "esri-leaflet";
 
 onMounted(() => {
   InitMap();
 })
 
+let map;
 function InitMap() {
-  map.value = L.map('map').setView([47.234, 18.600], 7);
+  map = L.map('map').setView([47.234, 18.600], 7);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> és közreműködői, Térképadatok: <a href="https://turistaterkepek.hu/">MTSZ Térinformatikai Portál</a>'
-  }).addTo(map.value);
+  }).addTo(map);
 
   L.tileLayer.wms('https://turistaterkepek.hu/server/services/Turistaut_nyilvantartas/nyilvantartaswms/MapServer/WMSServer', {
     layers: '00',
     format: 'image/png',
     transparent: true
-  }).addTo(map.value);
+  }).addTo(map);
 }
 </script>
 

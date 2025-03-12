@@ -21,7 +21,7 @@ import NavLink from '@/Components/NavLink.vue';
             Új csoportos túra
         </NavLink>
 
-        <NavLink :href="route('customroutes.create')" :active="route().current('customroutes.create')">
+        <NavLink :href="route('grouphikes.join_private_hike')" :active="route().current('grouphikes.join_private_hike')">
             Csatlakozás privát túrához
         </NavLink>
     </div>

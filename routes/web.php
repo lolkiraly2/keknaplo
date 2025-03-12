@@ -60,6 +60,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('mygrouphikes', [GrouphikeController::class, 'mygrouphikes'])->name('grouphikes.mygrouphikes');
     Route::get('futurehikes', [GrouphikeController::class, 'futurehikes'])->name('grouphikes.futurehikes');
+    Route::get('join_private_hike', [GrouphikeController::class, 'join_private_hike'])->name('grouphikes.join_private_hike');
+    Route::post('join_private_hike_store', [GrouphikeController::class, 'join_private_hike_store'])->name('grouphikes.join_private_hike_store');
     Route::post('grouphikes/join', [GrouphikeController::class, 'join'])->name('grouphikes.join');
     Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
 });

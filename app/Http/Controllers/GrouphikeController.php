@@ -7,9 +7,10 @@ use Inertia\Inertia;
 use Inertia\Response;
 use App\Models\Grouphike;
 use App\Models\CustomRoute;
-use App\Models\GrouphikeParticipant;
 use Illuminate\Http\Request;
+use App\Models\GrouphikeParticipant;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Storage;
 
@@ -38,10 +39,10 @@ class GrouphikeController extends Controller
         $uid = Auth::user()->id;
         $hikeids = Auth::user()->joinedhikes->pluck('grouphike_id');
         $grouphikes = Grouphike::find($hikeids)->pluck('name');
-        
+
         return Inertia::render('grouphikes/futurehikes', [
             'hikeids' => $hikeids,
-            'futurehikes' => $grouphikes 
+            'futurehikes' => $grouphikes
         ]);
     }
 
@@ -72,17 +73,18 @@ class GrouphikeController extends Controller
     public function show(Grouphike $grouphike)
     {
         $uid = Auth::user()->id;
-        if ($grouphike->public == 0 && ($grouphike->user_id != $uid /* || Nem szerepel a jeletkezők között*/)) {
+
+        $participantsid = Grouphike::find($grouphike->id)->participants->pluck('user_id');
+        $participants = User::find($participantsid)->pluck('name');
+        $isJoined = $participantsid->contains($uid);
+       
+        if (( $grouphike->public == 0 && !$isJoined ) && ( $grouphike->public == 0 && $grouphike->user_id != $uid )){
             return redirect()->route('grouphikes.index');
         }
 
         $route = CustomRoute::find($grouphike->customroute_id);
         $email = User::find($grouphike->user_id)->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
-
-        $participantsid = Grouphike::find($grouphike->id)->participants->pluck('user_id');
-        $participants = User::find($participantsid)->pluck('name');
-        $isJoined = $participantsid->contains($uid);
 
         return Inertia::render('grouphikes/show', [
             'gpx' => Storage::get($filename),
@@ -96,9 +98,13 @@ class GrouphikeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Grouphike $grouphike): Response
+    public function edit(Grouphike $grouphike)
     {
         $uid = Auth::user()->id;
+        if ($grouphike->public == 0 && $grouphike->user_id != $uid ){
+            return redirect()->route('grouphikes.index');
+        }
+
         return Inertia::render('grouphikes/edit', [
             'myroutes' => User::find($uid)->croutes,
             'grouphike' => $grouphike
@@ -139,7 +145,44 @@ class GrouphikeController extends Controller
         $participant = GrouphikeParticipant::where('grouphike_id', $gid)->where('user_id', $uid)->first();
         $participant->delete();
 
-       return redirect()->back();
+        return redirect()->back();
+    }
+
+    public function join_private_hike(): Response
+    {
+        return Inertia::render('grouphikes/joinprivatehike');
+    }
+
+    public function join_private_hike_store()
+    {
+        $findhike = false;
+        $inputemail = request('email');
+        $inputpassword = request('password');
+        $grouphikes = Grouphike::select('id','public','user_id','password')->get();
+        $i = 0;
+        while ($i < count($grouphikes)) {
+            $user = User::find($grouphikes[$i]->user_id);
+
+            if ($grouphikes[$i]->public == 0 && Hash::check($inputpassword,$grouphikes[$i]->password) && $user->email == $inputemail) {
+                $findhike = true;
+                break;
+                dd($findhike, $grouphikes, $inputemail, $inputpassword);
+            }
+            $i++;
+        }
+
+        if ($findhike) {
+            $uid = Auth::user()->id;
+            GrouphikeParticipant::create([
+                'grouphike_id' => $grouphikes[$i]->id,
+                'user_id' => $uid
+            ]);
+            return redirect()->route('grouphikes.futurehikes');
+        } else {
+            return redirect()->back();
+        }
+
+        dd($grouphikes);
     }
 
     public function validateGrouphike(): array

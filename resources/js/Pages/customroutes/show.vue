@@ -12,8 +12,8 @@ import '@raruto/leaflet-elevation/src/index.css';
 import 'leaflet-i18n';
 
 const props = defineProps({
-    gpx: String,
-    name: String
+  gpx: String,
+  name: String
 })
 
 let map;
@@ -122,6 +122,16 @@ function addGPXtoMap() {
   controlElevation.load(props.gpx);
 
 }
+
+function downloadGPX() {
+  const blob = new Blob([props.gpx], { type: "application/gpx+xml" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = props.name + ".gpx";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 </script>
 
 <style>
@@ -147,10 +157,10 @@ function addGPXtoMap() {
       <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-          <div class="flex flex-col"> 
-              <h2 class="text-center font-black my-2">{{ props.name }}</h2>
-              <div id="map" class="w-full"></div>
-
+          <div class="flex flex-col">
+            <h2 class="text-center font-black my-2">{{ props.name }}</h2>
+            <div id="map" class="w-full"></div>
+            <button @click="downloadGPX" class="join">Útvonal letöltése</button>
           </div>
 
         </div>
