@@ -138,7 +138,8 @@ async function PlanRoute() {
     loading.value = true;
     try {
       const response = await axios.post('/api/get-route', {
-        points: latLongArray
+        points: latLongArray,
+        mode : 0
       });
 
       loading.value = false;

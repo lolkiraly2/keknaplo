@@ -35,19 +35,19 @@ icon.value = "ico/sav-kek.ico";
                                 </NavLink>
 
                                 <NavLink :href="route('map')" :active="route().current('map')">
-                                    Térkép
+                                   Haladás
                                 </NavLink>
 
                                 <NavLink :href="route('custompoints.index')">
                                     Saját pont
                                 </NavLink>
 
-                                <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
-                                    Korlátozások
+                                <NavLink :href="route('bluehikes.index')">
+                                    Kék szakaszaim
                                 </NavLink>
 
                                 <NavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
-                                    Saját túráim
+                                    Túráim
                                 </NavLink>
 
                                 <NavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
@@ -55,6 +55,10 @@ icon.value = "ico/sav-kek.ico";
                                 </NavLink>
 
                                 <pecsetek></pecsetek>
+
+                                <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
+                                    Korlátozások
+                                </NavLink>
                             </div>
 
                         </div>
@@ -123,26 +127,26 @@ icon.value = "ico/sav-kek.ico";
 
                     <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('map')" :active="route().current('map')">
-                            Térkép
+                            Haladás
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('custompoints.index')"
                             :active="route().current('custompoints.index')">
-                            Sajátpont
+                            Saját pont
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('restrictions')" :active="route().current('restrictions')">
-                            Korlátozások
+                        <ResponsiveNavLink :href="route('bluehikes.index')" :active="route().current('bluehikes.index')">
+                           Kék szakaszaim
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
-                            Saját túráim
+                            Túráim
                         </ResponsiveNavLink>
                     </div>
 
@@ -174,6 +178,12 @@ icon.value = "ico/sav-kek.ico";
                     <div class="pt-0 pb-0 space-y-1">
                         <ResponsiveNavLink :href="route('stamps.index', { hike: 'AK' })" class="pl-4 pb-1">
                             • Alföldi Kéktúra 
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('restrictions')" :active="route().current('restrictions')">
+                            Korlátozások
                         </ResponsiveNavLink>
                     </div>
 

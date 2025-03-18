@@ -13,6 +13,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
 use App\Models\GrouphikeComment;
+use App\Http\Controllers\BlueHikeController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -65,6 +66,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('grouphikes/join', [GrouphikeController::class, 'join'])->name('grouphikes.join');
     Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
 });
+
+Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified']);
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 

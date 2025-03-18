@@ -17,7 +17,10 @@ class RouterController extends Controller
             $pointsCommand .= "--lat" . $i + 1 . "=" . $points[$i][0] . " --lon" . $i + 1 . "=" . $points[$i][1] . " ";
         }
 
-        $databasePath = "C:\Users\szebi\Documents\\routino\data3";
+        if ($request->input('mode') == 0)
+            $databasePath = "C:\Users\szebi\Documents\\routino\data";
+        else
+        $databasePath = "C:\Users\szebi\Documents\\routino\data2";
 
         $command = "router --dir=$databasePath --shortest --profile=hike $pointsCommand --output-gpx-track --output-stdout";
 
