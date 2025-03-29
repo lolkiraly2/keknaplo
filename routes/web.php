@@ -67,7 +67,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
 });
 
-Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified']);
+Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified'])->except('create');
+Route::get('/bluehikes/create/{hike}', [BlueHikeController::class, 'create'])->middleware(['auth', 'verified'])->name('bluehikes.create');
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 

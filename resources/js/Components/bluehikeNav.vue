@@ -1,5 +1,6 @@
 <script setup>
 import NavLink from '@/Components/NavLink.vue';
+import StageNav from './StageNav.vue';
 </script>
 
 <template>
@@ -13,16 +14,6 @@ import NavLink from '@/Components/NavLink.vue';
             Tervezett szakaszaim
         </NavLink>
 
-        <NavLink :href="route('grouphikes.mygrouphikes')" :active="route().current('grouphikes.mygrouphikes')">
-            Új OKT szakasz
-        </NavLink>
-
-        <NavLink :href="route('grouphikes.create')" :active="route().current('grouphikes.create')">
-            Új DDK szakasz
-        </NavLink>
-
-        <NavLink :href="route('grouphikes.join_private_hike')" :active="route().current('grouphikes.join_private_hike')">
-            Új AK szakasz
-        </NavLink>
+        <StageNav></StageNav>
     </div>
 </template>

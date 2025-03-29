@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('name', 64);
+            $table->boolean("isCustomStart");
             $table->integer("start_point");
+            $table->boolean("isCustomEnd");
             $table->integer("end_point");
             $table->boolean("completed");
             $table->timestamps();

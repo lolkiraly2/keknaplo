@@ -49,6 +49,10 @@ class User extends Authenticatable
         return $this->Hasmany(StampComment::class);
     }
 
+    public function cpoints(){
+        return $this->Hasmany(Cpoint::class);
+    }
+
     public function croutes(){
         return $this->Hasmany(CustomRoute::class);
     }
