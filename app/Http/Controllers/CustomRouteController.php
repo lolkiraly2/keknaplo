@@ -51,9 +51,14 @@ class CustomRouteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id): Response
+    public function show(string $id)
     {
         $route = CustomRoute::find($id);
+        $uid = Auth::user()->id;
+        if ($route->user_id != $uid){
+            return redirect()->route('customroutes.index');
+        }
+
         $email = Auth::user()->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
         return Inertia::render('customroutes/show',[
