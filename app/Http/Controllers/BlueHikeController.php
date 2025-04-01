@@ -80,9 +80,20 @@ class BlueHikeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(BlueHike $bluehike)
     {
-        //
+        $uid = Auth::user()->id;
+        if ($bluehike->user_id != $uid){
+            return redirect()->route('bluehikes.index');
+        }
+
+        $route = BlueHike::find($bluehike->id);
+        $email = Auth::user()->email;
+        $filename = $email . "/blueroutes/" . $route->name . ".gpx";
+        return Inertia::render('bluehikes/show',[
+            'gpx' => Storage::get($filename),
+            'name' => $route->name
+        ]);
     }
 
     /**
