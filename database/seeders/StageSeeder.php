@@ -15,9 +15,19 @@ class StageSeeder extends Seeder
     public function run(): void
     {
         //túramozgalmak
-        Hike::create(['name' => 'OKT']);
-        Hike::create(['name' => 'DDK']);
-        Hike::create(['name' => 'AK']);
+        Hike::create(['name' => 'OKT',
+            'distance' => 1173
+        ]);
+        Hike::create(['name' => 'DDK',
+            'distance' => 542
+        ]);
+        Hike::create(['name' => 'AK',
+            'distance' => 871
+        ]);
+
+        Hike::create(['name' => 'OKK',
+        'distance' => 2585
+    ]);
 
         //DDK szakaszok
         stage::create([

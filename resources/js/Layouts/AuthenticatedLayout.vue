@@ -7,10 +7,11 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import pecsetek from '@/Components/pecsetek.vue';
+import ProgressNav from '@/Components/ProgressNav.vue';
 import { Link } from '@inertiajs/vue3';
 const showingNavigationDropdown = ref(false);
 const icon = useFavicon();
-icon.value = "ico/sav-kek.ico";
+icon.value = "/storage/sav-kek.jpg";
 </script>
 
 <template>
@@ -34,9 +35,7 @@ icon.value = "ico/sav-kek.ico";
                                     Főoldal
                                 </NavLink>
 
-                                <NavLink :href="route('map')" :active="route().current('map')">
-                                   Haladás
-                                </NavLink>
+                                <ProgressNav></ProgressNav>
 
                                 <NavLink :href="route('custompoints.index')">
                                     Saját pont
@@ -126,8 +125,33 @@ icon.value = "ico/sav-kek.ico";
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('map')" :active="route().current('map')">
+                        <p 
+                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
                             Haladás
+                        </p>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'OKT' })" class="pl-4 pb-1 pt-0">
+                            • Országos Kéktúra
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'DDK' })"  class="pl-4 pb-1">
+                            • Rockenbauer Pál Dél-dunántúli Kéktúra
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'AK' })" class="pl-4 pb-1">
+                            • Alföldi Kéktúra 
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-0 pb-0 space-y-1">
+                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'OKK' })" class="pl-4 pb-1">
+                            • Országos Kékkör
                         </ResponsiveNavLink>
                     </div>
 

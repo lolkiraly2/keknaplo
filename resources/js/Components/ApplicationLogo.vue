@@ -1,3 +1,3 @@
 <template>
-    <img :src="'/ico/sav-kek.jpg'" >
+    <img src="/storage/sav-kek.jpg" >
 </template>

@@ -25,6 +25,20 @@ class BlueHikeController extends Controller
 
             case 'AK':
                 return 3;
+            case 'OKK':
+                return 4;
+        }
+    }
+
+    public function GetBluehikeRouteName($h)
+    {
+        switch ($h) {
+            case 'OKT':
+                return "okt_teljes.gpx";
+            case 'DDK':
+                return "ddk_teljes.gpx";
+            case 'AK':
+                return "ak_teljes.gpx";
         }
     }
 
@@ -39,20 +53,61 @@ class BlueHikeController extends Controller
     }
 
     /**
+     * Show bluehike progress on map
+     */
+    public function progress($hike): Response
+    {
+        $hikeid = $this->GetHikeId($hike);
+        $bluehikes = BlueHike::where('user_id', Auth::user()->id)->get();
+        $progress = [];
+        $hikeurls = [];
+        $distancesum = 0;
+        if ($hike != "OKK") {
+            array_push($hikeurls, asset(Storage::url($this->GetBluehikeRouteName($hike))));
+            foreach ($bluehikes as $bluehike) {
+                if ($bluehike->hike_id == $hikeid) {
+                    $filename = Auth::user()->email . "/blueroutes/" . $bluehike->name . ".gpx";
+                    array_push($progress, Storage::get($filename));
+                    $distancesum += $bluehike->distance;
+                }
+            }
+        } else {
+            array_push($hikeurls, asset(Storage::url("okt_teljes.gpx")));
+            array_push($hikeurls, asset(Storage::url("ddk_teljes.gpx")));
+            array_push($hikeurls, asset(Storage::url("ak_teljes.gpx")));
+            foreach ($bluehikes as $bluehike) {
+                $filename = Auth::user()->email . "/blueroutes/" . $bluehike->name . ".gpx";
+                array_push($progress, Storage::get($filename));
+                $distancesum += $bluehike->distance;
+            }
+        }
+
+        return Inertia::render('bluehikes/progress', [
+            'bluestages' => $progress,
+            'hikeUrls' => $hikeurls,
+            'emptypicture' => asset(Storage::url("empty.png")),
+            'distancesum' => $distancesum,
+            'hike' => $hike,
+            'totalDistance' => Hike::find($hikeid)->distance,
+        ]);
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
-    public function create($hike,Request $request): Response
+    public function create($hike, Request $request): Response
     {
-        $hikeid= $this->GetHikeId($hike);
+        $hikeid = $this->GetHikeId($hike);
         $stages = Hike::find($hikeid)->stages;
         // $startstage_id = $request->query('startstage');
 
         return Inertia::render('bluehikes/create', [
             'stages' => $stages,
-            'startpoints' => Inertia::lazy(fn () => Stage::find($request->query('startstage'))->stamps->select('id', 'mtsz_id', 'name','lat','lon')),
-            'endpoints' => Inertia::lazy(fn () => Stage::find($request->query('endstage'))->stamps->select('id', 'mtsz_id', 'name','lat','lon')),
-            'customstartpoints' => Inertia::lazy(fn () => User::find(Auth::user()->id)->cpoints->where('stage_id',$request->query('startstage'))->values()->toArray()),
-            'customendpoints' => Inertia::lazy(fn () => User::find(Auth::user()->id)->cpoints->where('stage_id',$request->query('endstage'))->values()->toArray())
+            'startpoints' => Inertia::lazy(fn() => Stage::find($request->query('startstage'))->stamps->select('id', 'mtsz_id', 'name', 'lat', 'lon')),
+            'endpoints' => Inertia::lazy(fn() => Stage::find($request->query('endstage'))->stamps->select('id', 'mtsz_id', 'name', 'lat', 'lon')),
+            'customstartpoints' => Inertia::lazy(fn() => User::find(Auth::user()->id)->cpoints->where('stage_id', $request->query('startstage'))->values()->toArray()),
+            'customendpoints' => Inertia::lazy(fn() => User::find(Auth::user()->id)->cpoints->where('stage_id', $request->query('endstage'))->values()->toArray()),
+            'hike_id' => $hikeid,
         ]);
     }
 
@@ -66,13 +121,15 @@ class BlueHikeController extends Controller
         BlueHike::create([
             'name' => $request['name'],
             'user_id' => $request['user_id'],
+            'hike_id' => $request['hike_id'],
             'isCustomStart' => $request['isCustomStart'],
             'start_point' => $request['start_point'],
             'isCustomEnd' => $request['isCustomEnd'],
             'end_point' => $request['end_point'],
-            'completed' => $request['completed']
+            'completed' => $request['completed'],
+            'distance' => $request['distance']
         ]);
-        
+
         Storage::disk('local')->put($filename, $request->gpx);
         return to_route('bluehikes.index');
     }
@@ -83,14 +140,14 @@ class BlueHikeController extends Controller
     public function show(BlueHike $bluehike)
     {
         $uid = Auth::user()->id;
-        if ($bluehike->user_id != $uid){
+        if ($bluehike->user_id != $uid) {
             return redirect()->route('bluehikes.index');
         }
 
         $route = BlueHike::find($bluehike->id);
         $email = Auth::user()->email;
         $filename = $email . "/blueroutes/" . $route->name . ".gpx";
-        return Inertia::render('bluehikes/show',[
+        return Inertia::render('bluehikes/show', [
             'gpx' => Storage::get($filename),
             'name' => $route->name
         ]);

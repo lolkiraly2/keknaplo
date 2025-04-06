@@ -29,7 +29,8 @@ const props = defineProps({
     startpoints: Object,
     customstartpoints: Object,
     endpoints: Object,
-    customendpoints: Object
+    customendpoints: Object,
+    hike_id: Number,
 })
 
 let map;
@@ -40,8 +41,6 @@ let routeXML;
 let attrs = useAttrs()
 const startcpoints = ref([]);
 const endcpoints = ref([]);
-const startstage = ref(0);
-const endstage = ref(0);
 const startvalue = ref(0);
 const endvalue = ref(0);
 const loading = ref(false);
@@ -52,12 +51,14 @@ const isCustomEnd = ref(false)
 const form = useForm({
     name: null,
     user_id: attrs.auth.user.id,
+    hike_id: props.hike_id,
     isCustomStart: null,
     start_point: null,
     isCustomEnd: null,
     end_point: null,
     completed: 1,
-    gpx: null
+    gpx: null,
+    distance: null,
 })
 
 function InitMap() {
@@ -82,16 +83,16 @@ onMounted(() => {
 })
 
 function SetStartPoints() {
-    if (isCustomStart.value){
+    if (isCustomStart.value) {
         startcpoints.value = props.customstartpoints;
         form.isCustomStart = 1;
     }
-        
-    else{
+
+    else {
         startcpoints.value = props.startpoints;
         form.isCustomStart = 0;
     }
-        
+
     startvalue.value = 0;
     if (startpoint != null)
         map.removeLayer(startpoint);
@@ -110,12 +111,12 @@ function ReloadStartPoints(startstage) {
 }
 
 function SetEndPoints() {
-    if (isCustomEnd.value){
+    if (isCustomEnd.value) {
         endcpoints.value = props.customendpoints;
         form.isCustomEnd = 1;
     }
-        
-    else{
+
+    else {
         endcpoints.value = props.endpoints;
         form.isCustomEnd = 0;
     }
@@ -232,8 +233,11 @@ function addGPXtoMap(u) {
     }).addTo(map)
 
     controlElevation.load(routeXML);
-}
 
+    controlElevation.on('eledata_loaded', function (e) {
+        form.distance = (e.track_info.distance).toFixed(2);
+    });
+}
 </script>
 
 <style>
@@ -266,8 +270,7 @@ function addGPXtoMap(u) {
                                     <p>Saját pontot haszálok</p>
                                 </div>
 
-                                <select class="inp w-3/4 mx-auto" @change="ReloadStartPoints($event.target.value)"
-                                    v-model="startstage">
+                                <select class="inp w-3/4 mx-auto" @change="ReloadStartPoints($event.target.value)">
                                     <option value="0" disabled selected>Válassz szakaszt!</option>
                                     <option v-for="stage in stages" v-bind:value="stage.id">
                                         {{ stage.name }}
@@ -285,8 +288,7 @@ function addGPXtoMap(u) {
                                 <h3 class="text-center">Végpont</h3>
 
                                 <div class="flex flex-row justify-center items-center mb-2">
-                                    <input type="checkbox" class="mr-2" v-model="isCustomEnd"
-                                        @change="SetEndPoints()">
+                                    <input type="checkbox" class="mr-2" v-model="isCustomEnd" @change="SetEndPoints()">
                                     <p>Saját pontot haszálok</p>
                                 </div>
 

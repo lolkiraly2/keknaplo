@@ -15,39 +15,47 @@
     border-radius: 5px;
 }
 
-a{
+a {
     text-decoration: solid;
 }
 
-h3{
+h3 {
     font-weight: bold;
 }
 
 
-.inp{
+.inp {
     @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm;
 }
 
-.submit{
+.submit {
     @apply px-4 py-2 mb-5 w-fit bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-gray-700 hover:duration-500 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
-.edit{
+.edit {
     @apply px-4 py-2 mr-3 my-1 w-fit bg-blue-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-blue-900 hover:duration-500 focus:bg-blue-900 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
-.join{
+.join {
     @apply px-4 py-2 mx-auto mb-3 w-fit bg-blue-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-blue-900 hover:duration-500 focus:bg-blue-900 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
-.delete{
+.delete {
     @apply px-4 py-2 mb-5 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-red-700 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
-.delete2{
+.delete2 {
     @apply px-4 py-2 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-red-700 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
-.plannerbutton{
-    @apply px-4 py-2 mb-5  bg-blue-800 border border-transparent rounded-md font-semibold  text-white uppercase tracking-widest transition ease-in-out hover:bg-blue-700 hover:duration-500 focus:bg-blue-700 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+.plannerbutton {
+    @apply px-4 py-2 mb-5 bg-blue-800 border border-transparent rounded-md font-semibold text-white uppercase tracking-widest transition ease-in-out hover:bg-blue-700 hover:duration-500 focus:bg-blue-700 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+#progressbar {
+    background-color: rgb(15, 109, 210);
+    border-radius: 13px;
+    padding: 3px;
+    width: 100%;
+    height: 20px;
 }
