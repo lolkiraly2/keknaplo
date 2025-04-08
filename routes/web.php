@@ -1,10 +1,6 @@
 <?php
-
 use Inertia\Inertia;
-use PhpParser\Node\Stmt\Return_;
-use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Application;
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
 use App\Http\Controllers\CustomRouteController;
@@ -12,7 +8,6 @@ use App\Http\Controllers\GrouphikeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
-use App\Models\GrouphikeComment;
 use App\Http\Controllers\BlueHikeController;
 
 Route::get('/', function () {
