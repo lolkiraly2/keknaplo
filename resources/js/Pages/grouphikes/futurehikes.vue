@@ -23,9 +23,9 @@ const props = defineProps({
         <div class="py-12">
             <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Közelgő túráim</h3>
+                    <h3 class="text-center font-black text-2xl mt-2">Közelgő túráim</h3>
 
-                    <div class="flex justify-between items-center" v-for="(futurehike, index) in futurehikes">
+                    <div class="flex justify-between items-center mx-10" v-for="(futurehike, index) in futurehikes">
                         <p class="ml-3">{{ futurehike}}</p>
                         <div>
                             <button class="edit">

@@ -25,11 +25,11 @@ function remove(routeId){
         <div class="py-12">
             <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Saját túráim</h3>
+                    <h3 class="text-center font-black text-2xl mt-2">Saját túráim</h3>
 
-                    <div class="flex justify-between items-center px-4 my-2" v-for="croute in customroutes">
-                        <p>{{ croute.name }}</p>
-                        <div>
+                    <div class="flex justify-between items-center px-5 my-2" v-for="croute in customroutes">
+                        <p class="hyphens-auto">{{ croute.name }}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
                             <button class="edit">
                                 <Link :href="route('customroutes.show', croute.id)">Megtekintés</Link>
                             </button>

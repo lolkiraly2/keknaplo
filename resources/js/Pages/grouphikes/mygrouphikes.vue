@@ -23,13 +23,14 @@ function remove(routeId){
         </template>
 
         <div class="py-12">
-            <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
+            <div class="w-3/4 sm:w-2/3 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Általam szervezett túrák</h3>
+                    <h3 class="text-center font-black text-2xl mt-4">Általam szervezett túrák</h3>
 
-                    <div class="flex justify-between items-center" v-for="grouphike in grouphikes">
+                    <div class="flex justify-between items-center border-b-4 py-2" v-for="grouphike in grouphikes">
                         <p class="ml-3">{{ grouphike.name }}</p>
-                        <div>
+                        <div class="grid grid-cols-1 justify-items-center md:justify-items-start
+                         md:grid-cols-3 gap-3 py-1">
                             <button class="edit">
                                 <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
                             </button>

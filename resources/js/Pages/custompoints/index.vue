@@ -22,9 +22,9 @@ const props = defineProps({
         <div class="py-12">
             <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Saját pont neve</h3>
+                    <h3 class="text-center font-black text-2xl mt-2">Saját pont neve</h3>
 
-                    <div class="flex justify-between items-center" v-for="point in points">
+                    <div class="flex justify-between items-center px-10" v-for="point in points">
                         <Link :href="route('custompoints.show', point.id)" class="ml-3">{{ point.name }}</Link>
                         <button class="edit">
                             <Link :href="route('custompoints.edit', point.id)">szerkesztés</Link>
