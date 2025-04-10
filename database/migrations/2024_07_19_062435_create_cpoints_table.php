@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('cpoints', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 60);
+            $table->string('name', 64);
             $table->foreignId('stage_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->double('lat');
             $table->double('lon');
-            $table->string('description')->nullable();
+            $table->string('description', 255)->nullable();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

@@ -143,7 +143,6 @@ function StageChanged() {
 #map {
     height: 500px;
 }
-
 </style>
 
 <template>
@@ -188,8 +187,16 @@ function StageChanged() {
                                     <p>{{ stagename }}</p>
                                 </div>
 
-                                <div class="mt-8">
-                                    <form @submit.prevent="form.post(route('custompoints.store'))" class="flex flex-col items-center">
+                                <div class="mt-6">
+                                    <ul>
+                                        <li v-for="(item, index) in form.errors" :key="index"
+                                            class="text-red-500 text-sm px-3 mb-2">
+                                            {{ item }}
+                                        </li>
+                                    </ul>
+
+                                    <form @submit.prevent="form.post(route('custompoints.store'))"
+                                        class="flex flex-col items-center">
 
                                         <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.name"
                                             class="mb-5 inp" required>
@@ -199,8 +206,7 @@ function StageChanged() {
                                             class="mb-5 inp" disabled required>
                                         <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
                                             v-model="form.description" class="mb-5 inp"></textarea>
-                                        <input type="submit" value="Rögzítés" id="save"
-                                            class="submit">
+                                        <input type="submit" value="Rögzítés" id="save" class="submit">
                                     </form>
                                 </div>
 

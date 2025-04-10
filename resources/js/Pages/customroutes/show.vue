@@ -158,7 +158,7 @@ function downloadGPX() {
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex flex-col">
-            <h2 class="text-center font-black my-2">{{ props.name }}</h2>
+            <h2 class="text-center font-black text-xl my-2">{{ props.name }}</h2>
             <div id="map" class="w-full"></div>
             <button @click="downloadGPX" class="join">Útvonal letöltése</button>
           </div>

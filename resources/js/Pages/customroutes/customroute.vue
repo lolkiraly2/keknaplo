@@ -19,11 +19,6 @@ let markerGroup = L.layerGroup();
 let marker;
 let routeXML;
 let routeGPX;
-const km = ref(0);
-const elevationGain = ref(0);
-const elevationLoss = ref(0);
-const elevationMax = ref(0);
-const elevationMin = ref(0);
 const loading = ref(false);
 const showForm = ref(false)
 let controlElevation;
@@ -31,9 +26,9 @@ let controlElevation;
 const page = usePage();
 const user = page.props.auth.user
 const form = useForm({
-    name: null,
-    user_id: user.id,
-    gpx: null
+  name: null,
+  user_id: user.id,
+  gpx: null
 })
 
 let huLabels = {
@@ -106,12 +101,6 @@ const deleteRow = (index) => {
 };
 
 function RemoveMapElements() {
-  km.value = 0;
-  elevationGain.value = 0;
-  elevationLoss.value = 0;
-  elevationMax.value = 0;
-  elevationMin.value = 0;
-
   map.removeLayer(markerGroup);
   markerGroup = L.layerGroup()
   markerGroup.addTo(map);
@@ -139,7 +128,7 @@ async function PlanRoute() {
     try {
       const response = await axios.post('/api/get-route', {
         points: latLongArray,
-        mode : 0
+        mode: 0
       });
 
       loading.value = false;
@@ -163,29 +152,6 @@ function addGPXtoMap(u) {
     controlElevation.remove();
     controlElevation.clear();
   }
-
-
-  routeGPX = new L.GPX(u, {
-    async: true,
-    markers: {
-      startIcon: '../gpx/empty.png',
-      endIcon: '../gpx/empty.png',
-    },
-    polyline_options: [{
-      color: 'black',
-      opacity: 0.5,
-      weight: 3,
-      lineCap: 'round'
-    }],
-  }).on('loaded', (e) => {
-    map.flyToBounds(e.target.getBounds());
-    km.value = (e.target.get_distance() / 1000).toFixed(2);
-    elevationGain.value = e.target.get_elevation_gain().toFixed(2);
-    elevationLoss.value = e.target.get_elevation_loss().toFixed(2);
-    elevationMax.value = e.target.get_elevation_max().toFixed(2);
-    elevationMin.value = e.target.get_elevation_min().toFixed(2);
-    //console.log("Távolság: ", km.value);
-  }).addTo(map);
 
   controlElevation = L.control.elevation({
     srcFolder: 'http://unpkg.com/@raruto/leaflet-elevation/src/',
@@ -303,17 +269,16 @@ function addGPXtoMap(u) {
 
               <button class="plannerbutton" @click="PlanRoute()">Tervezés</button>
               <img v-show="loading" src="../../../../public/ico/Walking.gif" alt="" height="200" width="50">
-              <p>táv: {{ km }} km</p>
-              <p>szint emelkedés: {{ elevationGain }} </p>
-              <p>Szint csökkenés: {{ elevationLoss }}</p>
-              <p>Max magasság: {{ elevationMax }}</p>
-              <p>Min magasság: {{ elevationMin }}</p>
 
               <form v-show="showForm" @submit.prevent="form.post(route('customroutes.store'))">
-                <input type="text" placeholder="Túra neve" id="nev" v-model="form.name"
-                class="mb-5 inp" required><br>
+                <input type="text" placeholder="Túra neve" id="nev" v-model="form.name" class="mb-5 inp" required><br>
                 <input type="submit" value="Mentés" id="save" class="submit">
               </form>
+              <ul class="w-1/2">
+                <li v-for="(item, index) in form.errors" :key="index" class="text-red-500 text-sm px-3 mb-2">
+                  {{ item }}
+                </li>
+              </ul>
             </div>
 
             <div class="md:w-3/4 w-full">

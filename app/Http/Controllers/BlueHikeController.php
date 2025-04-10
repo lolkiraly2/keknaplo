@@ -118,17 +118,7 @@ class BlueHikeController extends Controller
     {
         $email = Auth::user()->email;
         $filename = $email . "/blueroutes/" . $request->name . ".gpx";
-        BlueHike::create([
-            'name' => $request['name'],
-            'user_id' => $request['user_id'],
-            'hike_id' => $request['hike_id'],
-            'isCustomStart' => $request['isCustomStart'],
-            'start_point' => $request['start_point'],
-            'isCustomEnd' => $request['isCustomEnd'],
-            'end_point' => $request['end_point'],
-            'completed' => $request['completed'],
-            'distance' => $request['distance']
-        ]);
+        BlueHike::create($this->validate());
 
         Storage::disk('local')->put($filename, $request->gpx);
         return to_route('bluehikes.index');
@@ -175,5 +165,26 @@ class BlueHikeController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function validate(): array
+    {
+        return request()->validate(
+            [
+                'name' => ['required', 'max:64'],
+                'user_id' => ['required'],
+                'hike_id' => ['required'],
+                'isCustomStart' => ['required'],
+                'start_point' => ['required'],
+                'isCustomEnd' => ['required'],
+                'end_point' => ['required'],
+                'completed' => ['required'],
+                'distance' => ['required']
+            ],
+            [
+                'name.required' => "A név nem lehet üres!",
+                'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
+            ]
+        );
     }
 }

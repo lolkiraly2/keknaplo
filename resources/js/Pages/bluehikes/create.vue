@@ -176,6 +176,11 @@ const AddEndPoint = (id) => {
 };
 
 async function PlanRoute() {
+    if (startpoint == null || endpoint == null) {
+        alert("Válasszon ki egy kezdő és egy végpontot!");
+        return;
+    }
+
     let latLongArray = [];
 
     latLongArray.push([startpoint._latlng.lat, startpoint._latlng.lng]);
@@ -310,6 +315,13 @@ function addGPXtoMap(u) {
                                 <button class="plannerbutton mx-auto w-3/4" @click="PlanRoute()">Tervezés</button>
                                 <img v-show="loading" src="../../../../public/ico/Walking.gif" alt="" height="200"
                                     width="50">
+
+                                <ul>
+                                    <li v-for="(item, index) in form.errors" :key="index"
+                                        class="text-red-500 text-sm px-3">
+                                        {{ item }}
+                                    </li>
+                                </ul>
 
                                 <form v-show="showForm" @submit.prevent="form.post(route('bluehikes.store'))">
                                     <div class="grid gap-3 px-5 mt-1">

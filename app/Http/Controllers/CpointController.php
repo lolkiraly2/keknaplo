@@ -114,26 +114,16 @@ class CpointController extends Controller
     {
         return request()->validate(
             [
-                'name' => ['required', 'max:50'],
+                'name' => ['required', 'max:64'],
                 'lat' => ['required'],
                 'lon' => ['required'],
-                'description' => ['min:0', 'max:50'],
+                'description' => ['min:0', 'max:255'],
                 'stage_id' => ['required'],
                 'user_id' => ['required'],
             ],
             [
                 'name.required' => "A név nem lehet üres!",
                 'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
-                'postcode.required' => "Az irányítószám nem lehet üres!",
-                'postcode.integer' => "Az irányítószám csak szám lehet!",
-                'postcode.between' => "Irányítószámnak :min és :max közötti számot adjon meg!",
-                'city.required' => "A város nem lehet üres!",
-                'city.max' => "Túl hosszú városnév (Maximum: :max karakter)!",
-                'street.required' => "Az utca nem lehet üres!",
-                'number.required' => "A házszám nem lehet üres!",
-                'number.integer' => "Házszám csak szám lehet!",
-                'contact.required' => "Az email nem lehet üres!",
-                'contact.email' => "Hibás formátum!"
             ]
         );
     }

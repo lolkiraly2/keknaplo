@@ -38,14 +38,10 @@ class CustomRouteController extends Controller
     {
         $email = Auth::user()->email;
         $filename = $email . "/croutes/" . $request->name . ".gpx";
-        CustomRoute::create([
-            'name' => $request['name'],
-            'user_id' => $request['user_id']
-        ]);
-        
+        CustomRoute::create($this->validate());
+
         Storage::disk('local')->put($filename, $request->gpx);
         return to_route('customroutes.index');
-        
     }
 
     /**
@@ -55,13 +51,13 @@ class CustomRouteController extends Controller
     {
         $route = CustomRoute::find($id);
         $uid = Auth::user()->id;
-        if ($route->user_id != $uid){
+        if ($route->user_id != $uid) {
             return redirect()->route('customroutes.index');
         }
 
         $email = Auth::user()->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
-        return Inertia::render('customroutes/show',[
+        return Inertia::render('customroutes/show', [
             'gpx' => Storage::get($filename),
             'name' => $route->name
         ]);
@@ -95,5 +91,20 @@ class CustomRouteController extends Controller
         $route->delete();
         Storage::delete($filename);
         return to_route('customroutes.index');
+    }
+
+    public function validate(): array
+    {
+        return request()->validate(
+            [
+                'name' => ['required', 'max:64'],
+                'user_id' => ['required'],
+                'gpx' => ['required'],
+            ],
+            [
+                'name.required' => "A név nem lehet üres!",
+                'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
+            ]
+        );
     }
 }

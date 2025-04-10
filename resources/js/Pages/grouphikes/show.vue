@@ -134,6 +134,16 @@ function addGPXtoMap() {
 const isOrganizer = computed(() => {
   return props.grouphike.user_id === user.id;
 });
+
+function downloadGPX() {
+  const blob = new Blob([props.gpx], { type: "application/gpx+xml" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = props.grouphike.name + ".gpx";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 </script>
 
 <style>
@@ -189,6 +199,8 @@ const isOrganizer = computed(() => {
                   <p>{{ grouphike.maxparticipants }}</p>
                   <p>Eddig jelentkezettek száma:</p>
                   <p> {{ participants.length }}</p>
+                  <p>Útvonal:</p>
+                 <button class="gpx" @click="downloadGPX">gpx</button>
 
                   <form @submit.prevent="form.post(route('grouphikes.join'))"
                     class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">

@@ -156,7 +156,6 @@ function StageChanged() {
 #map {
     height: 35rem;
 }
-
 </style>
 
 <template>
@@ -199,8 +198,16 @@ function StageChanged() {
                                     <p>{{ stagename }}</p>
                                 </div>
 
-                                <div class="mt-8">
-                                    <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))"  class="flex flex-col items-center">
+                                <div class="mt-6">
+                                    <ul>
+                                        <li v-for="(item, index) in form.errors" :key="index"
+                                            class="text-red-500 text-sm px-3 mb-2">
+                                            {{ item }}
+                                        </li>
+                                    </ul>
+
+                                    <form @submit.prevent="form.put(route('custompoints.update', props.cpoint.id))"
+                                        class="flex flex-col items-center">
 
                                         <input type="text" placeholder="Saját pont neve" id="name" v-model="form.name"
                                             class="mb-5 inp" required>

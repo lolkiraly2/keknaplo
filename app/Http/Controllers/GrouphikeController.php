@@ -205,7 +205,7 @@ class GrouphikeController extends Controller
             ],
             [
                 'name.required' => "A név nem lehet üres!",
-                'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
+                'name.max' => "Túl hosszú név! (Maximum: :max karakter)",
                 'start_point_name.required' => "Kiindulópont neve nem lehet üres!",
                 'start_point_name.max' => "Kiindulópont neve túl hosszú! (Maximum: :max karakter)",
                 'end_point_name.required' => "Végppontpont neve nem lehet üres!",
@@ -221,7 +221,8 @@ class GrouphikeController extends Controller
                 'description.max' => "Leírás túl hosszú! (Maximum: :max karakter)",
                 'maxparticipants.required' => 'A túra létszáma nem lehet üres!',
                 'maxparticipants.min' => 'A túra létszáma legalább 1!',
-                'maxparticipants.max' => 'A túra létszáma maximum 100!'
+                'maxparticipants.max' => 'A túra létszáma maximum 100!',
+                'public.required' => 'A túra nyilvános vagy privát?'
             ]
         );
     }
