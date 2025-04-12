@@ -124,6 +124,7 @@ class CpointController extends Controller
             [
                 'name.required' => "A név nem lehet üres!",
                 'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
+                'stage_id.required' => "Válassz szakaszt!",
             ]
         );
     }

@@ -75,10 +75,10 @@ function InitMap() {
 
       <div class="flex flex-col">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">Táv: {{ distancesum }} km/{{ totalDistance
-        }} km</h2>
+        }} km ({{ progresspercent }}%)</h2>
 
         <div id="progressbar">
-          <div class="h-full rounded-xl bg-white" :style="{width: progresspercent + '%'}"></div>
+          <div class="h-full rounded-xl bg-white" :style="{ width: progresspercent + '%' }"></div>
         </div>
       </div>
 

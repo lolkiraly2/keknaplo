@@ -24,7 +24,7 @@ function remove(routeId){
         <div class="py-12">
             <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center mt-2">Kéktúra szakaszaim</h3>
+                    <h3 class="text-center font-black text-2xl mt-2">Kéktúra szakaszaim</h3>
 
                     <div class="flex justify-between items-center px-8 my-2" v-for="bluehike in bluehikes">
                         <p>{{ bluehike.name }}</p>

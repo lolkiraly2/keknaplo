@@ -9,6 +9,7 @@ const props = defineProps({
 })
 const page = usePage();
 const user = page.props.auth.user
+let colors = []
 
 const today = new Date().toISOString().split('T')[0];
 
@@ -20,6 +21,15 @@ const form = useForm({
   stamp_mtsz_id: props.stamp.mtsz_id
 })
 
+props.comments.forEach((comment) => {
+  if (comment.state == 'Rendben') {
+    colors.push('border-green-400')
+  } else if (comment.state == 'Sérült') {
+    colors.push('border-yellow-400')
+  } else if (comment.state == 'Hiányzik') {
+    colors.push('border-red-400')
+  }
+})
 </script>
 
 <style>
@@ -90,9 +100,9 @@ h1 {
               </div>
 
 
-              <fieldset class="h-[30rem] border overflow-y-scroll">
+              <fieldset class="h-[30rem] border-2 rounded-md overflow-y-scroll">
                 <legend class="ml-2">Hozzászólások</legend>
-                <div v-for="(comment,index) in comments" class=" border m-3 p-1">
+                <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1" :class="colors[index]">
                   <div class="flex lg:flex-row flex-col lg:justify-between px-3 mb-2">
                     <p>{{ names[index] }} </p>
                     <p>Érintés napja: {{ comment.detection }}</p>
@@ -103,7 +113,7 @@ h1 {
                 </div>
               </fieldset>
 
-              <fieldset class="newcomment mt-10 border mb-2">
+              <fieldset class="newcomment mt-10 border-2 rounded-md mb-2">
                 <legend class="ml-2">Új hozzászólás</legend>
                 <form @submit.prevent="form.post(route('stampcomments.store'))">
                   <div class="flex m-3 items-center">
@@ -126,7 +136,8 @@ h1 {
 
                   <div class="flex m-3 items-center">
                     <label for="leiras" class="mr-2">Szöveg:</label>
-                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.comment" class="inp w-3/4"></textarea>
+                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.comment"
+                      class="inp w-3/4"></textarea>
                   </div>
 
                   <input type="submit" value="Küldés" id="save"
