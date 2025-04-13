@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, useForm, usePage } from '@inertiajs/vue3';
+import { Head, useForm, usePage, router } from '@inertiajs/vue3';
 
 const props = defineProps({
   stamp: Object,
@@ -30,6 +30,24 @@ props.comments.forEach((comment) => {
     colors.push('border-red-400')
   }
 })
+
+function submit() {
+  form.post(route('stampcomments.store'), {
+    onSuccess: () => {
+      router.reload() // ← This forces a prop reload from the server for the current page
+      colors = []
+      props.comments.forEach((comment) => {
+        if (comment.state == 'Rendben') {
+          colors.push('border-green-400')
+        } else if (comment.state == 'Sérült') {
+          colors.push('border-yellow-400')
+        } else if (comment.state == 'Hiányzik') {
+          colors.push('border-red-400')
+        }
+      })
+    }
+  })
+}
 </script>
 
 <style>
@@ -102,7 +120,8 @@ h1 {
 
               <fieldset class="h-[30rem] border-2 rounded-md overflow-y-scroll">
                 <legend class="ml-2">Hozzászólások</legend>
-                <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1" :class="colors[index]">
+                <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1"
+                  :class="colors[index]">
                   <div class="flex lg:flex-row flex-col lg:justify-between px-3 mb-2">
                     <p>{{ names[index] }} </p>
                     <p>Érintés napja: {{ comment.detection }}</p>
@@ -115,7 +134,12 @@ h1 {
 
               <fieldset class="newcomment mt-10 border-2 rounded-md mb-2">
                 <legend class="ml-2">Új hozzászólás</legend>
-                <form @submit.prevent="form.post(route('stampcomments.store'))">
+                <ul>
+                  <li v-for="(item, index) in form.errors" :key="index" class="text-red-500 text-sm px-3 mb-2">
+                    {{ item }}
+                  </li>
+                </ul>
+                <form @submit.prevent="submit">
                   <div class="flex m-3 items-center">
                     <label for="datum" class="mr-2">Túra napja: </label>
                     <input type="date" placeholder="Saját pont neve" id="datum" v-model="form.detection"
@@ -125,7 +149,7 @@ h1 {
                   <div class="flex items-center m-3">
                     <p class="mr-2">Pecsét állapot: </p>
                     <input type="radio" id="ok" v-model="form.state" class="" name="states" value="Rendben">
-                    <label for="ok" class="mx-2" required>Hibátlan</label>
+                    <label for="ok" class="mx-2" required>Rendben van</label>
 
                     <input type="radio" id="damaged" v-model="form.state" class="" name="states" value="Sérült">
                     <label for="damaged" class="mx-2">Sérült</label>
@@ -136,7 +160,7 @@ h1 {
 
                   <div class="flex m-3 items-center">
                     <label for="leiras" class="mr-2">Szöveg:</label>
-                    <textarea id="leiras" placeholder="Rövid leírás" v-model="form.comment"
+                    <textarea id="leiras" placeholder="Hozzászólás" v-model="form.comment"
                       class="inp w-3/4"></textarea>
                   </div>
 

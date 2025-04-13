@@ -49,7 +49,7 @@ class StampController extends Controller
      */
     public function show($stamp): Response
     {
-        $comments = StampComment::where('stamp_mtsz_id', $stamp)->get();
+        $comments = StampComment::where('stamp_mtsz_id', $stamp)->orderByDesc('id')->get();
         $names = [];
         foreach($comments as $comment){
             array_push($names, $comment->user()->get()->value('name'));
@@ -57,7 +57,7 @@ class StampController extends Controller
 
         return Inertia::render('stamps/show', [
             'stamp' => Stamp::where('mtsz_id', $stamp)->get()->first(),
-            'comments' => StampComment::where('stamp_mtsz_id', $stamp)->get(),
+            'comments' => $comments,
             'names' => $names
         ]);
     }

@@ -200,7 +200,7 @@ function downloadGPX() {
                   <p>Eddig jelentkezettek száma:</p>
                   <p> {{ participants.length }}</p>
                   <p>Útvonal:</p>
-                 <button class="gpx" @click="downloadGPX">gpx</button>
+                 <button class="gpx" @click="downloadGPX">gpx letöltés</button>
 
                   <form @submit.prevent="form.post(route('grouphikes.join'))"
                     class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">

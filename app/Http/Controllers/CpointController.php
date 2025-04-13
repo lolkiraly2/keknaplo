@@ -21,7 +21,7 @@ class CpointController extends Controller
     {
         $uid = Auth::user()->id;
         return Inertia::render('custompoints/index', [
-            'points' => Cpoint::where('user_id', $uid)->get()
+            'points' => Cpoint::where('user_id', $uid)->orderBy('name')->get(),
         ]);
     }
 

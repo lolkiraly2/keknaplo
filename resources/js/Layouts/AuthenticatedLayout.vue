@@ -31,14 +31,11 @@ icon.value = "/storage/sav-kek.jpg";
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:items-center">
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Főoldal
-                                </NavLink>
 
                                 <ProgressNav></ProgressNav>
 
                                 <NavLink :href="route('custompoints.index')">
-                                    Saját pont
+                                    Saját pontjaim
                                 </NavLink>
 
                                 <NavLink :href="route('bluehikes.index')">
@@ -118,11 +115,6 @@ icon.value = "/storage/sav-kek.jpg";
                 <!-- Responsive Navigation Menu -->
                 <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden">
-                    <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Főoldal
-                        </ResponsiveNavLink>
-                    </div>
 
                     <div class="pt-1 pb-2 space-y-1">
                         <p 
@@ -158,7 +150,7 @@ icon.value = "/storage/sav-kek.jpg";
                     <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('custompoints.index')"
                             :active="route().current('custompoints.index')">
-                            Saját pont
+                            Saját pontjaim
                         </ResponsiveNavLink>
                     </div>
 

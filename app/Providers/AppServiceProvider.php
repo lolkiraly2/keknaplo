@@ -25,9 +25,9 @@ class AppServiceProvider extends ServiceProvider
             return (new MailMessage)
                 ->subject('Email cím megerősítése')
                 ->greeting('Üdvözlöm!')
-                ->line('Kattinton az alábbi gombra az email címének megerősítéséhez.')
+                ->line('Kattintson az alábbi gombra az email címének megerősítéséhez.')
                 ->action('Email-cím megerősítése', $url)
-                ->line('Ha nem Ön kérte a megerősítést, akkor figyelmen kívül hagyhatja ezt az üzenetet.');
+                ->line('Ha nem ön regisztrált, akkor figyelmen kívül hagyhatja ezt az üzenetet.');
         });
     }
 }

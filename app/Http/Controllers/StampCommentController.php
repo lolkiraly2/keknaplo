@@ -16,7 +16,7 @@ class StampCommentController extends Controller
     {
         StampComment::create($this->validateComment());
 
-        return back();
+        return redirect()->back();
     }
 
     /**
@@ -54,8 +54,10 @@ class StampCommentController extends Controller
                 'user_id' => ['required'],
             ],
             [
-                'datum.required' => "A dátum nem lehet üres!",
-                'name.required' => "Pecsét állapot hiányzik",
+                'detection.required' => "A dátum nem lehet üres!",
+                'state.required' => "Pecsét állapot nem lett megadva!",
+                'comment.min' => "A megjegyzés nem lehet kevesebb mint 0 karakter!",
+                'comment.max' => "A megjegyzés nem lehet több mint 250 karakter!",
             ]
         );
     }

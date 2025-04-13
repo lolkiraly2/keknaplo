@@ -101,7 +101,7 @@ class GrouphikeController extends Controller
     public function edit(Grouphike $grouphike)
     {
         $uid = Auth::user()->id;
-        if ($grouphike->public == 0 && $grouphike->user_id != $uid ){
+        if ($grouphike->user_id != $uid ){
             return redirect()->route('grouphikes.index');
         }
 
