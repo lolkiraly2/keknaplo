@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\ValidationException;
 
 class GrouphikeController extends Controller
 {
@@ -26,6 +27,9 @@ class GrouphikeController extends Controller
         ]);
     }
 
+    /**
+     * Display user's grouphikes.
+     */
     public function mygrouphikes(): Response
     {
         $uid = Auth::user()->id;
@@ -34,11 +38,17 @@ class GrouphikeController extends Controller
         ]);
     }
 
+    /**
+     * Display user's future grouphikes.
+     */
     public function futurehikes(): Response
     {
-        $uid = Auth::user()->id;
         $hikeids = Auth::user()->joinedhikes->pluck('grouphike_id');
-        $grouphikes = Grouphike::find($hikeids)->pluck('name');
+        $grouphikes = [];
+        foreach ($hikeids as $hikeid) {
+            $name = Grouphike::find($hikeid)->name;
+            array_push($grouphikes, $name);
+        }
 
         return Inertia::render('grouphikes/futurehikes', [
             'hikeids' => $hikeids,
@@ -86,12 +96,20 @@ class GrouphikeController extends Controller
         $email = User::find($grouphike->user_id)->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
 
+        $names = [];
+        $comments = Grouphike::find($grouphike->id)->comments;
+        foreach($comments as $comment){
+            array_push($names, $comment->user()->get()->value('name'));
+        }
+
         return Inertia::render('grouphikes/show', [
             'gpx' => Storage::get($filename),
             'organizer' => User::find($grouphike->user_id)->name,
             'grouphike' => $grouphike,
             'participants' => $participants,
-            'isJoined' => $isJoined
+            'isJoined' => $isJoined,
+            'comments' => $comments,
+            'names' => $names
         ]);
     }
 
@@ -166,7 +184,7 @@ class GrouphikeController extends Controller
             if ($grouphikes[$i]->public == 0 && Hash::check($inputpassword,$grouphikes[$i]->password) && $user->email == $inputemail) {
                 $findhike = true;
                 break;
-                dd($findhike, $grouphikes, $inputemail, $inputpassword);
+                // dd($findhike, $grouphikes, $inputemail, $inputpassword);
             }
             $i++;
         }
@@ -179,10 +197,11 @@ class GrouphikeController extends Controller
             ]);
             return redirect()->route('grouphikes.futurehikes');
         } else {
+            throw ValidationException::withMessages([
+                'join' => 'Hibás email vagy jelszó!'
+            ]);
             return redirect()->back();
         }
-
-        dd($grouphikes);
     }
 
     public function validateGrouphike(): array

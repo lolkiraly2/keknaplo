@@ -24,7 +24,7 @@ class Grouphike extends Model
     }
 
     public function comments(){
-        return $this->Hasmany(GrouphikeComment::class);
+        return $this->Hasmany(GrouphikeComment::class)->orderByDesc('id');
     }
 
     public function setPasswordAttribute($value)

@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
 use App\Http\Controllers\BlueHikeController;
+use App\Http\Controllers\GrouphikeCommentController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -40,7 +41,7 @@ Route::get('/restrictions', function () {
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);
 
-ROute::resource('stampcomments', StampCommentController::class)->only([
+Route::resource('stampcomments', StampCommentController::class)->only([
     'store',
 ])->middleware(['auth', 'verified']);
 
@@ -61,6 +62,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('grouphikes/join', [GrouphikeController::class, 'join'])->name('grouphikes.join');
     Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
 });
+
+Route::resource('grouphikecomments',GrouphikeCommentController::class)->only([
+    'store',
+])->middleware(['auth', 'verified']);
 
 Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified'])->except('create');
 Route::get('/bluehikes/create/{hike}', [BlueHikeController::class, 'create'])->middleware(['auth', 'verified'])->name('bluehikes.create');

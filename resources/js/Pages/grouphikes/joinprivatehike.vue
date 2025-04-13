@@ -29,7 +29,12 @@ const form = useForm({
                             <div class="flex flex-col justify-center">
 
                                 <div class="mt-8">
-                                    <h2 class="text-center font-black text-2xl mb-10">Csatlakozás privát túrához</h2>
+                                    <h2 class="text-center font-black text-2xl mb-5">Csatlakozás privát túrához</h2>
+
+                                    <div class="error px-[20%] text-red-600 w-fit mx-auto mb-5">
+                                        <p v-for="(error, key) in form.errors" :key="key">{{ error }}</p>
+                                    </div>
+
                                     <form @submit.prevent="form.post(route('grouphikes.join_private_hike_store'))"
                                         class="grid grid-cols-2 gap-6 px-[20%]">
 
@@ -42,10 +47,6 @@ const form = useForm({
 
                                         <input type="submit" value="Csatlakozás" id="save" class="submit">
                                     </form>
-
-                                    <div class="error px-[20%] text-red-600">
-                                        <p v-for="(error, key) in form.errors" :key="key">{{ error }}</p>
-                                    </div>
                                 </div>
 
                             </div>

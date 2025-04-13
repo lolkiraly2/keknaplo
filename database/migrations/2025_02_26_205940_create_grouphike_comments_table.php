@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('grouphike_comments', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('grouphike_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->string('comment', 500);
             $table->timestamps();
         });
     }

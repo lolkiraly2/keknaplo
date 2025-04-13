@@ -34,7 +34,7 @@ props.comments.forEach((comment) => {
 function submit() {
   form.post(route('stampcomments.store'), {
     onSuccess: () => {
-      router.reload() // ← This forces a prop reload from the server for the current page
+      router.reload()
       colors = []
       props.comments.forEach((comment) => {
         if (comment.state == 'Rendben') {
@@ -45,6 +45,7 @@ function submit() {
           colors.push('border-red-400')
         }
       })
+      form.reset()
     }
   })
 }

@@ -10,6 +10,7 @@ import 'leaflet-extra-markers/dist/css/leaflet.extra-markers.min.css';
 import '@raruto/leaflet-elevation/src/index.js';
 import '@raruto/leaflet-elevation/src/index.css';
 import 'leaflet-i18n';
+import dayjs from 'dayjs'
 
 const page = usePage();
 const user = page.props.auth.user
@@ -19,12 +20,20 @@ const props = defineProps({
   organizer: String,
   grouphike: Object,
   participants: Array,
-  isJoined: Boolean
+  isJoined: Boolean,
+  comments: Object,
+  names: Array
 })
 
 const form = useForm({
   grouphike_id: props.grouphike.id,
   user_id: user.id
+})
+
+const messageform = useForm({
+  grouphike_id: props.grouphike.id,
+  comment: null,
+  user_id: user.id,
 })
 
 let map;
@@ -144,6 +153,13 @@ function downloadGPX() {
   link.click();
   document.body.removeChild(link);
 }
+function submit() {
+  messageform.post(route('grouphikecomments.store'), {
+    onSuccess: () => {
+      messageform.comment = null;
+    }
+  })
+}
 </script>
 
 <style>
@@ -169,16 +185,44 @@ function downloadGPX() {
 
           <div class="flex flex-col mt-3">
 
-            <div class="flex flex-row">
+            <div class="flex md:flex-row flex-col-reverse">
 
               <div class="z-0 lg:w-6/10 md:w-3/5 w-full md:pr-3">
-                <h2 class="text-center font-black text-2xl mb-3">{{ grouphike.name }}</h2>
+                <h1 class="text-center font-black text-2xl mb-3">{{ grouphike.name }}</h1>
                 <div id="map"></div>
+
+                <h2 class="text-center font-black text-2xl my-3 mb-5">Üzenfő fal</h2>
+                <div class="px-5">
+                  <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1">
+                    <div class="flex flex-col lg:justify-between px-3 mb-2">
+                      <div class="flex flex-row">
+                        <p>{{ names[index] }}</p>
+                        <p class="mx-1">|</p>
+                        <p >{{ dayjs(comment.created_at).format('YYYY.MM.DD HH:mm') }} </p>
+                      </div>
+
+                      <p class="ml-2">{{ comment.comment }}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <form v-show="isOrganizer || isJoined" @submit.prevent="submit">
+                  <div class="flex m-3 items-center justify-center">
+                    <label for="leiras" class="mr-2"></label>
+                    <textarea id="leiras" placeholder="Hozzászólás" v-model="messageform.comment"
+                      class="inp w-3/4"></textarea>
+                  </div>
+
+                  <div class="flex m-3 items-center justify-center">
+                    <input type="submit" value="Küldés" id="save"
+                      class="bg-blue-700 rounded-full hover:bg-blue-800 transition text-white px-5 py-2.5 my-3 mx-auto">
+                  </div>
+                </form>
               </div>
 
               <div class="lg:w-4/10 md:w-2/5 w-full">
-                <h2 class="text-center font-black text-2xl mb-3">Információk</h2>
-                <div class="grid grid-cols-2 gap-6 px-[10%]">               
+                <h1 class="text-center font-black text-2xl mb-3">Információk</h1>
+                <div class="grid grid-cols-2 gap-6 px-[10%]">
                   <p>Túra napja:</p>
                   <p>{{ grouphike.date }}</p>
                   <p>Gyülekező: </p>
@@ -200,7 +244,7 @@ function downloadGPX() {
                   <p>Eddig jelentkezettek száma:</p>
                   <p> {{ participants.length }}</p>
                   <p>Útvonal:</p>
-                 <button class="gpx" @click="downloadGPX">gpx letöltés</button>
+                  <button class="gpx" @click="downloadGPX">gpx letöltés</button>
 
                   <form @submit.prevent="form.post(route('grouphikes.join'))"
                     class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">

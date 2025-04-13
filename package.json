@@ -22,6 +22,7 @@
         "@heroicons/vue": "^2.1.5",
         "@raruto/leaflet-elevation": "^2.5.1",
         "@vueuse/core": "^10.11.0",
+        "dayjs": "^1.11.13",
         "esri-leaflet": "^3.0.12",
         "leaflet": "^1.9.4",
         "leaflet-extra-markers": "^1.2.2",
