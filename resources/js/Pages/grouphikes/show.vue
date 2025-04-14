@@ -191,7 +191,7 @@ function submit() {
                 <h1 class="text-center font-black text-2xl mb-3">{{ grouphike.name }}</h1>
                 <div id="map"></div>
 
-                <h2 class="text-center font-black text-2xl my-3 mb-5">Üzenfő fal</h2>
+                <h2 class="text-center font-black text-2xl my-3 mb-5">Üzenfőfal</h2>
                 <div class="px-5">
                   <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1">
                     <div class="flex flex-col lg:justify-between px-3 mb-2">
@@ -222,7 +222,7 @@ function submit() {
 
               <div class="lg:w-4/10 md:w-2/5 w-full">
                 <h1 class="text-center font-black text-2xl mb-3">Információk</h1>
-                <div class="grid grid-cols-2 gap-6 px-[10%]">
+                <div class="grid grid-cols-2 gap-6 px-[10%] items-center">
                   <p>Túra napja:</p>
                   <p>{{ grouphike.date }}</p>
                   <p>Gyülekező: </p>
@@ -237,14 +237,14 @@ function submit() {
                   <p>{{ grouphike.location }}</p>
                   <p>Szervező: </p>
                   <p>{{ organizer }}</p>
-                  <p>Leírás: </p>
-                  <p>{{ grouphike.description }}</p>
                   <p>Maxium létszám:</p>
                   <p>{{ grouphike.maxparticipants }}</p>
                   <p>Eddig jelentkezettek száma:</p>
                   <p> {{ participants.length }}</p>
                   <p>Útvonal:</p>
-                  <button class="gpx" @click="downloadGPX">gpx letöltés</button>
+                  <button class="mb-0 gpx" @click="downloadGPX">gpx letöltés</button>
+                  <p class="col-span-2 text-center">Leírás: </p>
+                  <p class="col-span-2">{{ grouphike.description }}</p>
 
                   <form @submit.prevent="form.post(route('grouphikes.join'))"
                     class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">

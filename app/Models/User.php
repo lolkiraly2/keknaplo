@@ -51,22 +51,22 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function cpoints(){
-        return $this->Hasmany(Cpoint::class);
+        return $this->Hasmany(Cpoint::class)->orderBy('name');
     }
 
     public function croutes(){
-        return $this->Hasmany(CustomRoute::class);
+        return $this->Hasmany(CustomRoute::class)->orderBy('name');
     }
 
     public function mygrouphikes(){
-        return $this->Hasmany(Grouphike::class);
+        return $this->Hasmany(Grouphike::class)->orderBy('name');
     }
 
     public function joinedhikes(){
-        return $this->Hasmany(GrouphikeParticipant::class);
+        return $this->Hasmany(GrouphikeParticipant::class)->orderBy('id');
     }
 
     public function bluehikes(){
-        return $this->Hasmany(BlueHike::class);
+        return $this->Hasmany(BlueHike::class)->orderBy('name');
     }
 }

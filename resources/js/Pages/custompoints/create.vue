@@ -140,6 +140,10 @@ function StageChanged() {
 </script>
 
 <style>
+.leaflet-grab {
+  cursor: auto;
+}
+
 #map {
     height: 500px;
 }

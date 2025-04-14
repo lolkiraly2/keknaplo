@@ -1,14 +1,14 @@
 <script setup>
 import grouphikeNav from '@/Components/grouphikeNav.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link } from '@inertiajs/vue3';
+import { Head, Link, router } from '@inertiajs/vue3';
 
 const props = defineProps({
     grouphikes: Object
 })
 
-function remove(routeId){
-    router.delete(route('customroutes.destroy' , routeId));
+function remove(grouphikeid){
+    router.delete(route('grouphikes.destroy', grouphikeid));
 }
 </script>
 

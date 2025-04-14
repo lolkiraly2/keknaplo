@@ -17,9 +17,8 @@ class CustomRouteController extends Controller
      */
     public function index(): Response
     {
-        $uid = Auth::user()->id;
         return Inertia::render('customroutes/index', [
-            'customroutes' => CustomRoute::where('user_id', $uid)->get()
+            'customroutes' => Auth::user()->croutes
         ]);
     }
 

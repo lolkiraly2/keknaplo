@@ -48,7 +48,7 @@ class BlueHikeController extends Controller
     public function index(): Response
     {
         return Inertia::render('bluehikes/index', [
-            'bluehikes' => BlueHike::where('user_id', Auth::user()->id)->get()
+            'bluehikes' => Auth::user()->bluehikes
         ]);
     }
 

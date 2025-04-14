@@ -23,7 +23,7 @@ class GrouphikeController extends Controller
     public function index(): Response
     {
         return Inertia::render('grouphikes/index', [
-            'grouphikes' => Grouphike::where('public', 1)->get()
+            'grouphikes' => Grouphike::where('public', 1)->orderBy('name')->get()
         ]);
     }
 
@@ -34,7 +34,7 @@ class GrouphikeController extends Controller
     {
         $uid = Auth::user()->id;
         return Inertia::render('grouphikes/mygrouphikes', [
-            'grouphikes' => Grouphike::where('user_id', $uid)->get()
+            'grouphikes' => Auth::user()->mygrouphikes
         ]);
     }
 
@@ -141,9 +141,10 @@ class GrouphikeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Grouphike $grouphike): RedirectResponse
     {
-        //
+        $grouphike->delete();
+        return to_route('grouphikes.mygrouphikes');
     }
 
     public function join(Request $request): RedirectResponse

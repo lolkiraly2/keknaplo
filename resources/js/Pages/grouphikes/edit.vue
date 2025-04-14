@@ -60,9 +60,9 @@ const isInvalid = computed(() => {
                             <div class="flex flex-col justify-center">
 
                                 <div class="mt-8">
-                                    <h2 class="text-center font-black text-2xl mb-10">Új csoportos túra tervezés</h2>
+                                    <h2 class="text-center font-black text-2xl mb-10">Csoportos túra módosítása</h2>
                                     <form @submit.prevent="form.put(route('grouphikes.update',props.grouphike.id))"
-                                        class="grid grid-cols-2 gap-6 px-[20%]">
+                                        class="grid grid-cols-2 gap-6 px-[20%] items-center">
 
 
                                         <label for="name">Túra neve: </label>
@@ -91,7 +91,7 @@ const isInvalid = computed(() => {
                                         <input type="time" id="starttime" v-model="form.starttime" class="inp" required>
                                         <p v-if="isInvalid" class="text-red-600 text-center col-span-2">Az indulás ideje nem lehet korábban a gyülekező idejénél!</p>
 
-                                        <label for="public">Nyílvános-e: </label>
+                                        <label for="public">Publikus-e: </label>
                                         <select id="public" v-model="form.public" disabled class="inp">
                                             <option value="1">Publikus</option>
                                             <option value="0">Privát</option>

@@ -164,7 +164,7 @@ function addGPXtoMap(u) {
     elevationDiv: "#elevation-div",
 
     // if (!detached) initial state of chart profile control
-    collapsed: false,
+    collapsed: true,
 
     // Toggle close icon visibility
     closeBtn: true,

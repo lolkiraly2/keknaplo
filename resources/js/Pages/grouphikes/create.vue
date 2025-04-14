@@ -56,7 +56,7 @@ const isInvalid = computed(() => {
                                 <div class="mt-8">
                                     <h2 class="text-center font-black text-2xl mb-10">Új csoportos túra tervezés</h2>
                                     <form @submit.prevent="form.post(route('grouphikes.store'))"
-                                        class="grid grid-cols-2 gap-6 px-[20%]">
+                                        class="grid grid-cols-2 gap-6 px-[20%] items-center">
 
 
                                         <label for="name">Túra neve: <span class="text-red-600"
@@ -108,7 +108,7 @@ const isInvalid = computed(() => {
                                             Az indulás ideje nem lehet korábban a gyülekező idejénél!
                                         </p>
 
-                                        <label for="public">Nyílvános-e: <span class="text-red-600"
+                                        <label for="public">Publikus-e: <span class="text-red-600"
                                                 v-if="form.errors.public"><br>{{
                                                     form.errors.public
                                                 }}</span><br>

@@ -18,7 +18,15 @@ class PasswordController extends Controller
         $validated = $request->validate([
             'current_password' => ['required', 'current_password'],
             'password' => ['required', Password::defaults(), 'confirmed'],
-        ]);
+        ],
+        [
+            'current_password.required' => 'A jelszó megadása kötelező.',
+            'current_password.current_password' => 'A megadott jelszó helytelen.',
+            'password.required' => 'A jelszó megadása kötelező.',
+            'password.confirmed' => 'A két jelszó nem egyezik.',
+            'password.min' => 'A jelszónak legalább :min karakter hosszúnak kell lennie.',
+        ]
+    );
 
         $request->user()->update([
             'password' => Hash::make($validated['password']),
