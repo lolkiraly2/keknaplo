@@ -87,8 +87,8 @@ class GrouphikeController extends Controller
         $participantsid = Grouphike::find($grouphike->id)->participants->pluck('user_id');
         $participants = User::find($participantsid)->pluck('name');
         $isJoined = $participantsid->contains($uid);
-       
-        if (( $grouphike->public == 0 && !$isJoined ) && ( $grouphike->public == 0 && $grouphike->user_id != $uid )){
+
+        if (($grouphike->public == 0 && !$isJoined) && ($grouphike->public == 0 && $grouphike->user_id != $uid)) {
             return redirect()->route('grouphikes.index');
         }
 
@@ -98,7 +98,7 @@ class GrouphikeController extends Controller
 
         $names = [];
         $comments = Grouphike::find($grouphike->id)->comments;
-        foreach($comments as $comment){
+        foreach ($comments as $comment) {
             array_push($names, $comment->user()->get()->value('name'));
         }
 
@@ -119,7 +119,7 @@ class GrouphikeController extends Controller
     public function edit(Grouphike $grouphike)
     {
         $uid = Auth::user()->id;
-        if ($grouphike->user_id != $uid ){
+        if ($grouphike->user_id != $uid) {
             return redirect()->route('grouphikes.index');
         }
 
@@ -177,12 +177,12 @@ class GrouphikeController extends Controller
         $findhike = false;
         $inputemail = request('email');
         $inputpassword = request('password');
-        $grouphikes = Grouphike::select('id','public','user_id','password')->get();
+        $grouphikes = Grouphike::select('id', 'public', 'user_id', 'password')->get();
         $i = 0;
         while ($i < count($grouphikes)) {
             $user = User::find($grouphikes[$i]->user_id);
 
-            if ($grouphikes[$i]->public == 0 && Hash::check($inputpassword,$grouphikes[$i]->password) && $user->email == $inputemail) {
+            if ($grouphikes[$i]->public == 0 && Hash::check($inputpassword, $grouphikes[$i]->password) && $user->email == $inputemail) {
                 $findhike = true;
                 break;
                 // dd($findhike, $grouphikes, $inputemail, $inputpassword);

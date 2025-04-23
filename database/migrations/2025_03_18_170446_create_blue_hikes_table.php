@@ -22,6 +22,7 @@ return new class extends Migration
             $table->boolean("isCustomEnd");
             $table->integer("end_point");
             $table->boolean("completed");
+            $table->json('diary')->nullable();
             $table->timestamps();
         });
     }

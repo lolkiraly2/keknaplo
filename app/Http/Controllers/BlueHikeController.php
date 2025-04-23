@@ -8,8 +8,10 @@ use Inertia\Inertia;
 use App\Models\Stage;
 use Inertia\Response;
 use App\Models\BlueHike;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 
 class BlueHikeController extends Controller
@@ -58,7 +60,7 @@ class BlueHikeController extends Controller
     public function progress($hike): Response
     {
         $hikeid = $this->GetHikeId($hike);
-        $bluehikes = BlueHike::where('user_id', Auth::user()->id)->get();
+        $bluehikes =  Auth::user()->bluehikes;
         $progress = [];
         $hikeurls = [];
         $distancesum = 0;
@@ -114,7 +116,7 @@ class BlueHikeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         $email = Auth::user()->email;
         $filename = $email . "/blueroutes/" . $request->name . ".gpx";
@@ -129,17 +131,15 @@ class BlueHikeController extends Controller
      */
     public function show(BlueHike $bluehike)
     {
-        $uid = Auth::user()->id;
-        if ($bluehike->user_id != $uid) {
+        if ($bluehike->user_id != Auth::user()->id) {
             return redirect()->route('bluehikes.index');
         }
 
-        $route = BlueHike::find($bluehike->id);
         $email = Auth::user()->email;
-        $filename = $email . "/blueroutes/" . $route->name . ".gpx";
+        $filename = $email . "/blueroutes/" . $bluehike->name . ".gpx";
         return Inertia::render('bluehikes/show', [
             'gpx' => Storage::get($filename),
-            'name' => $route->name
+            'bluehike' => $bluehike
         ]);
     }
 
@@ -152,11 +152,26 @@ class BlueHikeController extends Controller
     }
 
     /**
+     * Save diary
+     */
+    public function savediary()
+    {
+        $bluehike = BlueHike::find(request()->bluehike_id);
+        $bluehike->diary = request()->diary;
+     
+        $bluehike->save();
+        return to_route('bluehikes.index');
+    }
+
+    /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(BlueHike $bluehike): RedirectResponse
     {
-        //
+        // dd($bluehike);
+        // $bluehike->update($this->validate());
+        
+        return to_route('bluehikes.index');
     }
 
     /**
@@ -179,7 +194,8 @@ class BlueHikeController extends Controller
                 'isCustomEnd' => ['required'],
                 'end_point' => ['required'],
                 'completed' => ['required'],
-                'distance' => ['required']
+                'distance' => ['required'],
+                'diary' => ['min:0'],
             ],
             [
                 'name.required' => "A név nem lehet üres!",
