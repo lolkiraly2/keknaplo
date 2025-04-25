@@ -30,7 +30,7 @@ function remove(grouphikeid){
                     <div class="flex justify-between items-center border-b-4 py-2" v-for="grouphike in grouphikes">
                         <p class="ml-3">{{ grouphike.name }}</p>
                         <div class="grid grid-cols-1 justify-items-center md:justify-items-start
-                         md:grid-cols-3 gap-3 py-1">
+                         md:grid-cols-3 gap-3 py-1 items-center">
                             <button class="edit">
                                 <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
                             </button>
@@ -39,7 +39,7 @@ function remove(grouphikeid){
                                 <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
                             </button>
 
-                            <button class="delete2" @click="remove(grouphike.id)">
+                            <button class="delete2 h-[30px] md:h-3/4" @click="remove(grouphike.id)">
                                 Törlés
                             </button>
                         </div>

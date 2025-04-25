@@ -21,8 +21,7 @@ const props = defineProps({
   grouphike: Object,
   participants: Array,
   isJoined: Boolean,
-  comments: Object,
-  names: Array
+  comments: Object
 })
 
 const form = useForm({
@@ -196,7 +195,7 @@ function submit() {
                   <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1">
                     <div class="flex flex-col lg:justify-between px-3 mb-2">
                       <div class="flex flex-row">
-                        <p>{{ names[index] }}</p>
+                        <p>{{ comment.user.name }}</p>
                         <p class="mx-1">|</p>
                         <p >{{ dayjs(comment.created_at).format('YYYY.MM.DD HH:mm') }} </p>
                       </div>

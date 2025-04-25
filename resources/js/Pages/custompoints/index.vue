@@ -15,18 +15,21 @@ const props = defineProps({
 
     <AuthenticatedLayout>
         <template #header>
-            <!-- <h2 class="font-semibold text-xl text-gray-800 leading-tight">Saját pont rögzítés</h2> -->
             <Pointnav></Pointnav>
         </template>
 
         <div class="py-12">
-            <div class="w-3/4 sm:w-1/2 mx-auto sm:px-6 lg:px-8">
+            <div class="w-3/4 lg:w-[60%] mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h2 class="text-center font-black text-2xl mt-2">Saját pontjaim</h2>
 
-                    <div class="flex justify-between items-center px-10" v-for="point in points">
-                        <Link :href="route('custompoints.show', point.id)" class="ml-3">{{ point.name }}</Link>
-                        <button class="edit">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 px-10 items-center border-b-4 border-gray-300 sm:border-0"
+                        v-for="point in points">
+                        <Link :href="route('custompoints.show', point.id)"
+                            class="justify-self-center sm:justify-self-start sm:ml-3 md:col-span-2">{{ point.name }}
+                        </Link>
+                        <p class="justify-self-center sm:justify-self-end">{{ point.stage.name }} </p>
+                        <button class="diary justify-self-center sm:justify-self-end">
                             <Link :href="route('custompoints.edit', point.id)">szerkesztés</Link>
                         </button>
                     </div>

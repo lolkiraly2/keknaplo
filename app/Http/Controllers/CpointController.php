@@ -8,7 +8,6 @@ use App\Models\Stage;
 use App\Models\Cpoint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\RedirectResponse;
 
 
@@ -51,16 +50,8 @@ class CpointController extends Controller
      */
     public function show(Cpoint $custompoint): Response
     {
-        dd($custompoint);
         return Inertia::render('custompoints/show', [
-            'cpoint' => [
-                'id' => $custompoin->id,
-                'name' => $custompoin->name,
-                'stage_id' => $custompoin->stage_id,
-                'lat' => $custompoin->lat,
-                'lon' => $custompoin->lon,
-                'description' => $custompoin->description,
-            ],
+            'cpoint' => $custompoint
         ]);
     }
 
@@ -79,14 +70,7 @@ class CpointController extends Controller
             'oktstages' => Stage::select('id', 'name')->where('name', 'like', "OKT%")->get(),
             'ddkstages' => Stage::select('id', 'name')->where('name', 'like', "DDK%")->get(),
             'akstages' => Stage::select('id', 'name')->where('name', 'like', "AK%")->get(),
-            'cpoint' => [
-                'id' => $custompoint->id,
-                'name' => $custompoint->name,
-                'stage_id' => $custompoint->stage_id,
-                'lat' => $custompoint->lat,
-                'lon' => $custompoint->lon,
-                'description' => $custompoint->description,
-            ],
+            'cpoint' => $custompoint,
             'stage' => $stage
         ]);
     }

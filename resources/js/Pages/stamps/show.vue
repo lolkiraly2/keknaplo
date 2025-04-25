@@ -4,8 +4,7 @@ import { Head, useForm, usePage, router } from '@inertiajs/vue3';
 
 const props = defineProps({
   stamp: Object,
-  comments: Object,
-  names: Array
+  comments: Object
 })
 const page = usePage();
 const user = page.props.auth.user
@@ -124,7 +123,7 @@ h1 {
                 <div v-for="(comment, index) in comments" class="border-[3px] rounded-md m-3 p-1"
                   :class="colors[index]">
                   <div class="flex lg:flex-row flex-col lg:justify-between px-3 mb-2">
-                    <p>{{ names[index] }} </p>
+                    <p>{{ comment.user.name }} </p>
                     <p>Érintés napja: {{ comment.detection }}</p>
                     <p>Állapot: {{ comment.state }}</p>
                   </div>

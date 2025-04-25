@@ -50,7 +50,15 @@ h3 {
 }
 
 .delete2 {
-    @apply px-4 py-2 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-red-700 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+    @apply px-4 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-red-700 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.diary {
+    @apply px-2 py-2 my-1 w-fit bg-blue-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-blue-900 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 justify-self-center md:justify-self-auto;
+}
+
+.delete3 {
+    @apply px-2 py-2 my-1 w-fit bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-red-600 hover:duration-500 focus:bg-red-700 active:bg-red-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 justify-self-center md:justify-self-auto;
 }
 
 .plannerbutton {

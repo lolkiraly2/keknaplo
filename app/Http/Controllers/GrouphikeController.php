@@ -6,7 +6,6 @@ use App\Models\User;
 use Inertia\Inertia;
 use Inertia\Response;
 use App\Models\Grouphike;
-use App\Models\CustomRoute;
 use Illuminate\Http\Request;
 use App\Models\GrouphikeParticipant;
 use Illuminate\Support\Facades\Auth;
@@ -43,16 +42,8 @@ class GrouphikeController extends Controller
      */
     public function futurehikes(): Response
     {
-        $hikeids = Auth::user()->joinedhikes->pluck('grouphike_id');
-        $grouphikes = [];
-        foreach ($hikeids as $hikeid) {
-            $name = Grouphike::find($hikeid)->name;
-            array_push($grouphikes, $name);
-        }
-
         return Inertia::render('grouphikes/futurehikes', [
-            'hikeids' => $hikeids,
-            'futurehikes' => $grouphikes
+            'futurehikes' => Auth::user()->joinedhikes
         ]);
     }
 
@@ -84,7 +75,7 @@ class GrouphikeController extends Controller
     {
         $uid = Auth::user()->id;
 
-        $participantsid = Grouphike::find($grouphike->id)->participants->pluck('user_id');
+        $participantsid = $grouphike->participants->pluck('user_id');
         $participants = User::find($participantsid)->pluck('name');
         $isJoined = $participantsid->contains($uid);
 
@@ -92,24 +83,19 @@ class GrouphikeController extends Controller
             return redirect()->route('grouphikes.index');
         }
 
-        $route = CustomRoute::find($grouphike->customroute_id);
-        $email = User::find($grouphike->user_id)->email;
+        $route = $grouphike->Customroute;
+        $email = $grouphike->user->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";
 
-        $names = [];
-        $comments = Grouphike::find($grouphike->id)->comments;
-        foreach ($comments as $comment) {
-            array_push($names, $comment->user()->get()->value('name'));
-        }
+        $comments = $grouphike->comments;
 
         return Inertia::render('grouphikes/show', [
             'gpx' => Storage::get($filename),
-            'organizer' => User::find($grouphike->user_id)->name,
+            'organizer' => $grouphike->user->name,
             'grouphike' => $grouphike,
             'participants' => $participants,
             'isJoined' => $isJoined,
-            'comments' => $comments,
-            'names' => $names
+            'comments' => $comments
         ]);
     }
 
@@ -124,7 +110,7 @@ class GrouphikeController extends Controller
         }
 
         return Inertia::render('grouphikes/edit', [
-            'myroutes' => User::find($uid)->croutes,
+            'myroutes' => Auth::user()->croutes,
             'grouphike' => $grouphike
         ]);
     }
@@ -147,7 +133,7 @@ class GrouphikeController extends Controller
         return to_route('grouphikes.mygrouphikes');
     }
 
-    public function join(Request $request): RedirectResponse
+    public function join(): RedirectResponse
     {
         GrouphikeParticipant::create([
             'grouphike_id' => request('grouphike_id'),
@@ -157,7 +143,7 @@ class GrouphikeController extends Controller
         return redirect()->back();
     }
 
-    public function cancel(Request $request): RedirectResponse
+    public function cancel(): RedirectResponse
     {
         $uid = Auth::user()->id;
         $gid = request('grouphike_id');

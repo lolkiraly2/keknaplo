@@ -11,7 +11,6 @@ use App\Models\BlueHike;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 
 class BlueHikeController extends Controller
@@ -177,9 +176,10 @@ class BlueHikeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(BlueHike $bluehike)
     {
-        //
+        $bluehike->delete();
+        return to_route('bluehikes.index');
     }
 
     public function validate(): array

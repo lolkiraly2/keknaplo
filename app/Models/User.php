@@ -51,7 +51,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function cpoints(){
-        return $this->Hasmany(Cpoint::class)->orderBy('name');
+        return $this->Hasmany(Cpoint::class)->with(['stage:id,name'])->orderBy('cpoints.name');
     }
 
     public function croutes(){
@@ -63,7 +63,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function joinedhikes(){
-        return $this->Hasmany(GrouphikeParticipant::class)->orderBy('id');
+        return $this->Hasmany(GrouphikeParticipant::class)->with(['grouphike:id,name,date'])->orderBy('id');
     }
 
     public function bluehikes(){
