@@ -318,7 +318,7 @@ function addGPXtoMap(u) {
 
                                 <ul>
                                     <li v-for="(item, index) in form.errors" :key="index"
-                                        class="text-red-500 text-sm px-3">
+                                        class="text-red-500 text-sm px-3 text-center">
                                         {{ item }}
                                     </li>
                                 </ul>

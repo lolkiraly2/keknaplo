@@ -35,6 +35,11 @@ class CustomRouteController extends Controller
      */
     public function store(Request $request)
     {
+        $names = Auth::user()->croutes->pluck('name');
+        if ($names->contains($request->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű túra már létezik!']);
+        }
+
         $email = Auth::user()->email;
         $filename = $email . "/croutes/" . $request->name . ".gpx";
         CustomRoute::create($this->validate());

@@ -30,8 +30,8 @@ const form = useForm({
 })
 
 const isInvalid = computed(() => {
-      return form.starttime < form.gatheringtime;
-    });
+    return form.starttime < form.gatheringtime;
+});
 
 </script>
 
@@ -61,63 +61,91 @@ const isInvalid = computed(() => {
 
                                 <div class="mt-8">
                                     <h2 class="text-center font-black text-2xl mb-10">Csoportos túra módosítása</h2>
-                                    <form @submit.prevent="form.put(route('grouphikes.update',props.grouphike.id))"
+                                    <form @submit.prevent="form.put(route('grouphikes.update', props.grouphike.id))"
                                         class="grid grid-cols-2 gap-6 px-[20%] items-center">
 
-
-                                        <label for="name">Túra neve: </label>
+                                        <label for="name">Túra neve: <span class="text-red-600"
+                                                v-if="form.errors.name"><br>{{
+                                                    form.errors.name
+                                                }}</span></label>
                                         <input type="text" id="name" v-model="form.name" class="inp" required>
 
-                                        <label for="start_point_name">Kiindulópont neve: </label>
+                                        <label for="start_point_name">Kiindulópont neve: <span class="text-red-600"
+                                                v-if="form.errors.start_point_name"><br>{{
+                                                    form.errors.start_point_name
+                                                }}</span></label>
                                         <input type="text" v-model="form.start_point_name" id="start_point_name"
                                             class="inp" required>
 
-                                        <label for="end_point_name">Végpont neve: </label>
+                                        <label for="end_point_name">Végpont neve: <span class="text-red-600"
+                                                v-if="form.errors.end_point_name"><br>{{
+                                                    form.errors.end_point_name
+                                                }}</span></label>
                                         <input type="text" id="end_point_name" v-model="form.end_point_name" class="inp"
                                             required>
 
-                                        <label for="location">Túra helyszíne: </label>
+                                        <label for="location">Túra helyszíne: <span class="text-red-600"
+                                                v-if="form.errors.location"><br>{{
+                                                    form.errors.location
+                                                }}</span></label>
                                         <input type="text" id="location" v-model="form.location" class="inp" required>
 
-                                        <label for="date">Túra időpontja: </label>
+                                        <label for="date">Túra időpontja: <span class="text-red-600"
+                                                v-if="form.errors.date"><br>{{
+                                                    form.errors.date
+                                                }}</span></label>
                                         <input type="date" id="date" v-model="form.date" class="inp" required
                                             v-bind:min="today">
 
-                                        <label for="gatheringtime">Gyülekező: </label>
+                                        <label for="gatheringtime">Gyülekező: <span class="text-red-600"
+                                                v-if="form.errors.gatheringtime"><br>{{
+                                                    form.errors.gatheringtime
+                                                }}</span></label>
                                         <input type="time" id="gatheringtime" v-model="form.gatheringtime" class="inp"
                                             required>
 
-                                        <label for="starttime">indulás: </label>
+                                        <label for="starttime">indulás: <span class="text-red-600"
+                                                v-if="form.errors.starttime"><br>{{
+                                                    form.errors.starttime
+                                                }}</span></label>
                                         <input type="time" id="starttime" v-model="form.starttime" class="inp" required>
-                                        <p v-if="isInvalid" class="text-red-600 text-center col-span-2">Az indulás ideje nem lehet korábban a gyülekező idejénél!</p>
+                                        <p v-if="isInvalid" class="text-red-600 text-center col-span-2">
+                                            Az indulás ideje nem lehet korábban a gyülekező idejénél!
+                                        </p>
 
                                         <label for="public">Publikus-e: </label>
-                                        <select id="public" v-model="form.public" disabled class="inp">
+                                        <select id="public" v-model="form.public" class="inp" disabled>
                                             <option value="1">Publikus</option>
                                             <option value="0">Privát</option>
                                         </select>
 
-                                        <label for="maxparticipants">Résztvevők maximális száma: </label>
-                                        <input type="number" id="maxparticipants" v-model="form.maxparticipants" min=1 max=100
-                                            class="inp" required>
+                                        <label for="maxparticipants">Résztvevők maximális száma:<span
+                                                class="text-red-600" v-if="form.errors.maxparticipants"><br>{{
+                                                    form.errors.maxparticipants
+                                                }}</span></label>
+                                        <input type="number" id="maxparticipants" v-model="form.maxparticipants" min=1
+                                            max=100 class="inp" required>
 
-                                        <label for="route">Túra útvonala: </label>
+                                        <label for="route">Túra útvonala: <span class="text-red-600"
+                                                v-if="form.errors.customroute_id"><br>{{
+                                                    form.errors.customroute_id
+                                                }}</span></label>
                                         <select id="route" v-model="form.customroute_id" class="inp">
                                             <option v-for="croute in myroutes" v-bind:value="croute.id">
                                                 {{ croute.name }}
                                             </option>
                                         </select>
-                                        <label for="description">Rövid leírás: </label>
+                                        <label for="description">Rövid leírás: <span class="text-red-600"
+                                                v-if="form.errors.description"><br>{{
+                                                    form.errors.description
+                                                }}</span></label>F
                                         <textarea id="description" v-model="form.description" class="inp"
                                             required></textarea>
 
-                                        <input type="submit" v-show="!isInvalid" value="Mentés" id="save" class="submit">
+                                        <input type="submit" v-show="!isInvalid" value="Mentés" id="save"
+                                            class="submit">
 
                                     </form>
-
-                                    <div class="error px-[20%] text-red-600">
-                                        <p v-for="(error, key) in form.errors" :key="key">{{ error }}</p>
-                                    </div>
                                 </div>
 
                             </div>

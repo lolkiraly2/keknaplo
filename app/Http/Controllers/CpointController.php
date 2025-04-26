@@ -40,6 +40,10 @@ class CpointController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+        $names = Auth::user()->cpoints->pluck('name');
+        if ($names->contains($request->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű pont már létezik!']);
+        }
         Cpoint::create($this->validatePoint());
 
         return to_route('custompoints.index');
@@ -61,7 +65,7 @@ class CpointController extends Controller
     public function edit(Cpoint $custompoint)
     {
         $uid = Auth::user()->id;
-        if ($custompoint->user_id != $uid){
+        if ($custompoint->user_id != $uid) {
             return redirect()->route('custompoints.index');
         }
 
@@ -80,6 +84,10 @@ class CpointController extends Controller
      */
     public function update(Cpoint $custompoint): RedirectResponse
     {
+        $names = Auth::user()->cpoints->pluck('name');
+        if ($names->contains($custompoint->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű pont már létezik!']);
+        }
         $custompoint->update($this->validatePoint());
         return to_route('custompoints.index');
     }

@@ -2,12 +2,14 @@
 import grouphikeNav from '@/Components/grouphikeNav.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, Link, router } from '@inertiajs/vue3';
+import dayjs from 'dayjs'
 
 const props = defineProps({
-    grouphikes: Object
+    grouphikes: Object,
+    previusgrouphikes: Object
 })
 
-function remove(grouphikeid){
+function remove(grouphikeid) {
     router.delete(route('grouphikes.destroy', grouphikeid));
 }
 </script>
@@ -19,31 +21,53 @@ function remove(grouphikeid){
     <AuthenticatedLayout>
         <template #header>
             <!-- <h2 class="font-semibold text-xl text-gray-800 leading-tight">Saját pont rögzítés</h2> -->
-           <grouphikeNav></grouphikeNav>
+            <grouphikeNav></grouphikeNav>
         </template>
 
         <div class="py-12">
-            <div class="w-3/4 sm:w-2/3 mx-auto sm:px-6 lg:px-8">
+            <div class="w-4/5 md:w-[85%] lg:w-[75%] mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center font-black text-2xl mt-4">Általam szervezett túrák</h3>
+                    <h2 class="text-center font-black text-2xl mt-4 mb-2">Általam szervezett túrák</h2>
 
-                    <div class="flex justify-between items-center border-b-4 py-2" v-for="grouphike in grouphikes">
-                        <p class="ml-3">{{ grouphike.name }}</p>
-                        <div class="grid grid-cols-1 justify-items-center md:justify-items-start
-                         md:grid-cols-3 gap-3 py-1 items-center">
-                            <button class="edit">
-                                <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
-                            </button>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 items-center px-10 border-b-4 border-gray-300 md:border-0"
+                        v-for="grouphike in grouphikes">
+                        <p class=" lg:col-span-2 justify-self-center md:justify-self-start">
+                            {{ grouphike.name }}</p>
+                        <p class="justify-self-center sm:col-start-3 md:col-start-2 lg:col-start-3">
+                            {{ dayjs(grouphike.date).format('YYYY.MM.DD') }}</p>
+                        <button class="diary md:justify-self-end">
+                            <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
+                        </button>
 
-                            <button class="edit">
-                                <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
-                            </button>
+                        <button class="diary md:justify-self-end">
+                            <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
+                        </button>
 
-                            <button class="delete2 h-[30px] md:h-3/4" @click="remove(grouphike.id)">
-                                Törlés
-                            </button>
-                        </div>
+                        <button class="delete2 h-[30px] justify-self-center md:justify-self-end"
+                            @click="remove(grouphike.id)">
+                            Törlés
+                        </button>
+                    </div>
 
+                    <h2 class="text-center font-black text-2xl mt-4 mb-2">Korábbi szervezett túrák</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 items-center px-10 border-b-4 border-gray-300 md:border-0"
+                        v-for="grouphike in previusgrouphikes">
+                        <p class=" lg:col-span-2 justify-self-center md:justify-self-start">
+                            {{ grouphike.name }}</p>
+                        <p class="justify-self-center sm:col-start-3 md:col-start-2 lg:col-start-3">
+                            {{ dayjs(grouphike.date).format('YYYY.MM.DD') }}</p>
+                        <button class="diary md:justify-self-end">
+                            <Link :href="route('grouphikes.show', grouphike.id)">Megtekintés</Link>
+                        </button>
+
+                        <button class="diary md:justify-self-end">
+                            <Link :href="route('grouphikes.edit', grouphike.id)">Szerkesztés</Link>
+                        </button>
+
+                        <button class="delete2 h-[30px] justify-self-center md:justify-self-end"
+                            @click="remove(grouphike.id)">
+                            Törlés
+                        </button>
                     </div>
 
                 </div>

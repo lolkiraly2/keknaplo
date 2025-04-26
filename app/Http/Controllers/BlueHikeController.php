@@ -20,10 +20,8 @@ class BlueHikeController extends Controller
         switch ($h) {
             case 'OKT':
                 return 1;
-
             case 'DDK':
                 return 2;
-
             case 'AK':
                 return 3;
             case 'OKK':
@@ -52,6 +50,26 @@ class BlueHikeController extends Controller
             'bluehikes' => Auth::user()->bluehikes
         ]);
     }
+
+    public function plannedhikes(): Response
+    {
+        return Inertia::render('bluehikes/plannedhikes', [
+            'plannedhikes' => Auth::user()->plannedbluehikes
+        ]);
+    }
+    
+    /**
+     * Set hike as completed
+     */
+
+    public function completehike(Request $request): RedirectResponse
+    {
+        $bluehike = BlueHike::find($request->id);
+        $bluehike->completed = 1;
+        $bluehike->save();
+        return to_route('bluehikes.index');
+    }
+
 
     /**
      * Show bluehike progress on map
@@ -117,6 +135,11 @@ class BlueHikeController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+        $names = Auth::user()->bluehikes->pluck('name');
+        if ($names->contains($request->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű túra már létezik!']);
+        }
+
         $email = Auth::user()->email;
         $filename = $email . "/blueroutes/" . $request->name . ".gpx";
         BlueHike::create($this->validate());
@@ -157,7 +180,7 @@ class BlueHikeController extends Controller
     {
         $bluehike = BlueHike::find(request()->bluehike_id);
         $bluehike->diary = request()->diary;
-     
+
         $bluehike->save();
         return to_route('bluehikes.index');
     }
@@ -169,7 +192,7 @@ class BlueHikeController extends Controller
     {
         // dd($bluehike);
         // $bluehike->update($this->validate());
-        
+
         return to_route('bluehikes.index');
     }
 
@@ -178,6 +201,8 @@ class BlueHikeController extends Controller
      */
     public function destroy(BlueHike $bluehike)
     {
+        $filename = Auth::user()->email . "/blueroutes/" . $bluehike->name . ".gpx";
+        Storage::delete($filename);
         $bluehike->delete();
         return to_route('bluehikes.index');
     }
@@ -200,6 +225,7 @@ class BlueHikeController extends Controller
             [
                 'name.required' => "A név nem lehet üres!",
                 'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
+                'distance.required' => "Hiba történt! Kattints újra a tervezés gombra és próbálja újra!",
             ]
         );
     }

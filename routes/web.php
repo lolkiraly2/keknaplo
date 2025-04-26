@@ -28,10 +28,9 @@ Route::middleware('auth')->group(function () {
 Route::get('home', function () {
 
     return Inertia::render("Home");
- 
- });
+});
 
- Route::get('/map', function () {
+Route::get('/map', function () {
     return Inertia::render('map');
 })->middleware(['auth', 'verified'])->name('map');
 
@@ -63,15 +62,21 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('grouphikes/cancel', [GrouphikeController::class, 'cancel'])->name('grouphikes.cancel');
 });
 
-Route::resource('grouphikecomments',GrouphikeCommentController::class)->only([
+Route::resource('grouphikecomments', GrouphikeCommentController::class)->only([
     'store',
 ])->middleware(['auth', 'verified']);
 
-Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified'])->except('create');
-Route::get('/bluehikes/create/{hike}', [BlueHikeController::class, 'create'])->middleware(['auth', 'verified'])->name('bluehikes.create');
-Route::get('/bluehikes/progress/{hike}', [BlueHikeController::class, 'progress'])->middleware(['auth', 'verified'])->name('bluehikes.progress');
-Route::post('/bluehikes/savediary', [BlueHikeController::class, 'savediary'])->middleware(['auth', 'verified'])->name('bluehikes.savediary');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::resource('grouphikes', GrouphikeController::class);
+
+    Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified'])->except('create');
+    Route::get('/bluehikes/create/{hike}', [BlueHikeController::class, 'create'])->name('bluehikes.create');
+    Route::get('/bluehikes/progress/{hike}', [BlueHikeController::class, 'progress'])->name('bluehikes.progress');
+    Route::post('/bluehikes/savediary', [BlueHikeController::class, 'savediary'])->name('bluehikes.savediary');
+    Route::get('/plannedhikes', [BlueHikeController::class, 'plannedhikes'])->name('bluehikes.plannedhikes');
+    Route::post('/completebluestage', [BlueHikeController::class, 'completehike'])->name('bluehikes.completehike');
+});
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

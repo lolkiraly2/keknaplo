@@ -8,6 +8,7 @@ use Inertia\Response;
 use App\Models\Grouphike;
 use Illuminate\Http\Request;
 use App\Models\GrouphikeParticipant;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
@@ -22,7 +23,7 @@ class GrouphikeController extends Controller
     public function index(): Response
     {
         return Inertia::render('grouphikes/index', [
-            'grouphikes' => Grouphike::where('public', 1)->orderBy('name')->get()
+            'grouphikes' => Grouphike::where('public', 1)->where('date', '>=', Carbon::today())->orderBy('name')->get()
         ]);
     }
 
@@ -33,7 +34,8 @@ class GrouphikeController extends Controller
     {
         $uid = Auth::user()->id;
         return Inertia::render('grouphikes/mygrouphikes', [
-            'grouphikes' => Auth::user()->mygrouphikes
+            'grouphikes' => Auth::user()->mygrouphikes->where('date', '>=', Carbon::today()),
+            'previusgrouphikes' => Auth::user()->mygrouphikes->where('date', '<', Carbon::today())
         ]);
     }
 
@@ -43,7 +45,7 @@ class GrouphikeController extends Controller
     public function futurehikes(): Response
     {
         return Inertia::render('grouphikes/futurehikes', [
-            'futurehikes' => Auth::user()->joinedhikes
+            'futurehikes' => Auth::user()->joinedhikes->where('grouphike.date', '>=', Carbon::today())
         ]);
     }
 
@@ -63,6 +65,19 @@ class GrouphikeController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+        $names = Auth::user()->mygrouphikes->pluck('name');
+        if ($names->contains($request->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű csoportos túra már létezik!']);
+        }
+        if ($request->public == 0) {
+            $passwords = Auth::user()->mygrouphikes->where('public', 0)->pluck('password');
+            foreach ($passwords as $password) {
+                if (Hash::check($request->password, $password)) {
+                    return redirect()->back()->withErrors(['password' => 'Ez a jelszó már foglalt!']);
+                }
+            }
+        }
+
         Grouphike::create($this->validateGrouphike());
 
         return to_route('grouphikes.mygrouphikes');
@@ -118,8 +133,12 @@ class GrouphikeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Grouphike $grouphike): RedirectResponse
+    public function update(Request $request, Grouphike $grouphike): RedirectResponse
     {
+        $names = Auth::user()->mygrouphikes->where('id', '!=', $grouphike->id)->pluck('name');
+        if ($names->contains($request->name)) {
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű csoportos túra már létezik!']);
+        }
         $grouphike->update($this->validateGrouphike());
         return to_route('grouphikes.mygrouphikes');
     }
@@ -135,6 +154,11 @@ class GrouphikeController extends Controller
 
     public function join(): RedirectResponse
     {
+        $grouphike = Grouphike::find(request('grouphike_id'));
+        if ($grouphike->participants->count() >= $grouphike->maxparticipants) {
+            return redirect()->back();
+        }
+
         GrouphikeParticipant::create([
             'grouphike_id' => request('grouphike_id'),
             'user_id' => request('user_id')

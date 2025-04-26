@@ -246,7 +246,7 @@ function submit() {
                   <p class="col-span-2">{{ grouphike.description }}</p>
 
                   <form @submit.prevent="form.post(route('grouphikes.join'))"
-                    class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined">
+                    class="col-span-2 flex flex-row items-center" v-show="!isOrganizer && !isJoined && participants.length < grouphike.maxparticipants">
                     <input type="submit" value="Csatlakozás" id="delete" class="join">
                   </form>
 

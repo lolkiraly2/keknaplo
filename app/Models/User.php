@@ -67,6 +67,10 @@ class User extends Authenticatable implements MustVerifyEmail
     }
 
     public function bluehikes(){
-        return $this->Hasmany(BlueHike::class)->orderBy('name');
+        return $this->Hasmany(BlueHike::class)->where('completed', 1)->orderBy('name');
+    }
+
+    public function plannedbluehikes(){
+        return $this->Hasmany(BlueHike::class)->where('completed', 0)->orderBy('name');
     }
 }

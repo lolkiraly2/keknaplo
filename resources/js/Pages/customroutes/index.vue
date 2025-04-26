@@ -26,7 +26,7 @@ function remove(routeId){
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h3 class="text-center font-black text-2xl mt-2">Saját túráim</h3>
 
-                    <!-- <div class="grid grid-cols-3 lg:grid-cols-5 items-center px-10 my-2" v-for="croute in customroutes">
+                    <div class="grid grid-cols-3 lg:grid-cols-5 items-center px-10 my-2" v-for="croute in customroutes">
                         <p class="hyphens-auto lg:col-span-3">{{ croute.name }}</p>
                         
                             <button class="diary sm:justify-self-end">
@@ -36,7 +36,7 @@ function remove(routeId){
                                 Törlés
                             </button>
 
-                    </div> -->
+                    </div>
 
                 </div>
             </div>

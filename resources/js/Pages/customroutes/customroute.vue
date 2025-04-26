@@ -274,8 +274,8 @@ function addGPXtoMap(u) {
                 <input type="text" placeholder="Túra neve" id="nev" v-model="form.name" class="mb-5 inp" required><br>
                 <input type="submit" value="Mentés" id="save" class="submit">
               </form>
-              <ul class="w-1/2">
-                <li v-for="(item, index) in form.errors" :key="index" class="text-red-500 text-sm px-3 mb-2">
+              <ul>
+                <li v-for="(item, index) in form.errors" :key="index" class="text-red-500 text-sm px-3 mb-2 text-center">
                   {{ item }}
                 </li>
               </ul>

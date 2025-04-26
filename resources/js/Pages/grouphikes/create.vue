@@ -121,7 +121,9 @@ const isInvalid = computed(() => {
 
                                         <label v-if="form.public == 0" for="password">Jelszó:<br>
                                             <span class="text-red-600">Később nem
-                                                módosítható!</span> </label>
+                                                módosítható!<br>{{
+                                                    form.errors.password
+                                                }}</span> </label>
                                         <input type="password" id="password" v-model="form.password"
                                             v-if="form.public == 0" class="inp" required>
 
@@ -153,12 +155,6 @@ const isInvalid = computed(() => {
 
                                     </form>
 
-                                    <!-- <div class="error px-[20%] text-red-600">
-                                        <p v-for="(error, key) in form.errors" :key="key">{{ error }}</p>
-                                    </div> -->
-                                    <div>
-                                        {{ form.errors.description }}
-                                    </div>
                                 </div>
 
                             </div>

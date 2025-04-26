@@ -10,7 +10,7 @@ import StageNav from './StageNav.vue';
             Megtett szakaszaim
         </NavLink>
 
-        <NavLink :href="route('grouphikes.futurehikes')" :active="route().current('grouphikes.futurehikes')">
+        <NavLink :href="route('bluehikes.plannedhikes')" :active="route().current('bluehikes.plannedhikes')">
             Tervezett szakaszaim
         </NavLink>
 

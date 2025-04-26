@@ -140,7 +140,7 @@ function downloadGPX() {
 }
 
 #map {
-  height: 450px;
+  height: 500px;
 }
 </style>
 
