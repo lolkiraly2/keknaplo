@@ -138,7 +138,7 @@ const isInvalid = computed(() => {
                                         <label for="description">Rövid leírás: <span class="text-red-600"
                                                 v-if="form.errors.description"><br>{{
                                                     form.errors.description
-                                                }}</span></label>F
+                                                }}</span></label>
                                         <textarea id="description" v-model="form.description" class="inp"
                                             required></textarea>
 

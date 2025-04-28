@@ -69,7 +69,7 @@ Route::resource('grouphikecomments', GrouphikeCommentController::class)->only([
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('grouphikes', GrouphikeController::class);
 
-    Route::resource('bluehikes', BlueHikeController::class)->middleware(['auth', 'verified'])->except('create');
+    Route::resource('bluehikes', BlueHikeController::class)->except('create');
     Route::get('/bluehikes/create/{hike}', [BlueHikeController::class, 'create'])->name('bluehikes.create');
     Route::get('/bluehikes/progress/{hike}', [BlueHikeController::class, 'progress'])->name('bluehikes.progress');
     Route::post('/bluehikes/savediary', [BlueHikeController::class, 'savediary'])->name('bluehikes.savediary');

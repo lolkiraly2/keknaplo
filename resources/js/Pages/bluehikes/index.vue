@@ -32,7 +32,7 @@ function remove(routeId) {
                         <p class="pl-3 sm:col-span-2 md:pl-7 md:col-span-3">{{ bluehike.name }}</p>
 
                         <p class=" sm:justify-self-end md:pr-5 md:col-span-2">{{
-                            dayjs(bluehike.created_at).format('YYYY.MM.DD')
+                            dayjs(bluehike.date).format('YYYY.MM.DD')
                         }}</p>
                         <button class="diary">
                             <Link :href="route('bluehikes.show', bluehike.id)">Napló</Link>

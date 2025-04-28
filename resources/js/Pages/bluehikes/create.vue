@@ -38,6 +38,7 @@ let startpoint = null;
 let endpoint = null;
 let controlElevation;
 let routeXML;
+const today = new Date().toISOString().split('T')[0];
 let attrs = useAttrs()
 const startcpoints = ref([]);
 const endcpoints = ref([]);
@@ -56,6 +57,7 @@ const form = useForm({
     start_point: null,
     isCustomEnd: null,
     end_point: null,
+    date: null,
     completed: 1,
     gpx: null,
     distance: null,
@@ -272,7 +274,7 @@ function addGPXtoMap(u) {
                                 <div class="flex flex-row justify-center items-center mb-2">
                                     <input type="checkbox" class="mr-2" v-model="isCustomStart"
                                         @change="SetStartPoints()">
-                                    <p>Saját pontot haszálok</p>
+                                    <p>Saját pontot használok</p>
                                 </div>
 
                                 <select class="inp w-3/4 mx-auto" @change="ReloadStartPoints($event.target.value)">
@@ -294,7 +296,7 @@ function addGPXtoMap(u) {
 
                                 <div class="flex flex-row justify-center items-center mb-2">
                                     <input type="checkbox" class="mr-2" v-model="isCustomEnd" @change="SetEndPoints()">
-                                    <p>Saját pontot haszálok</p>
+                                    <p>Saját pontot használok</p>
                                 </div>
 
                                 <select class="inp w-3/4 mx-auto" @change="ReloadEndPoints($event.target.value)">
@@ -325,13 +327,16 @@ function addGPXtoMap(u) {
 
                                 <form v-show="showForm" @submit.prevent="form.post(route('bluehikes.store'))">
                                     <div class="grid gap-3 px-5 mt-1">
-                                        <input type="text" placeholder="Túra neve" id="nev" v-model="form.name"
+                                        <input type="text" placeholder="Szakasz neve" id="nev" v-model="form.name"
                                             class="inp w-3/4 mx-auto" required>
 
                                         <select class="inp w-3/4 mx-auto" v-model="form.completed">
                                             <option value="0">Tervezett</option>
                                             <option value="1">Teljesített</option>
                                         </select>
+
+                                        <input type="date" id="date" v-model="form.date" class="inp w-3/4 mx-auto" required
+                                        v-bind:min="today">
 
                                         <input type="submit" value="Mentés" id="save" class="submit mx-auto">
                                     </div>

@@ -29,7 +29,7 @@ function remove(routeId) {
         <div class="py-12">
             <div class="w-[75%] lg:w-[60%] mx-auto sm:px-6 lg:px-7">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <h3 class="text-center font-black text-2xl mt-2">Kéktúra szakaszaim</h3>
+                    <h3 class="text-center font-black text-2xl mt-2">Tervezett kéktúra szakaszaim</h3>
 
                     <div class="grid border-b-4 border-gray-300 sm:border-0 px-5 justify-items-center sm:justify-items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-6 items-center"
                         v-for="bluehike in plannedhikes">
@@ -38,7 +38,7 @@ function remove(routeId) {
                         </p>
 
                         <p class="justify-self-center md:justify-self-end md:pr-5 md:col-span-2">
-                            {{ dayjs(bluehike.created_at).format('YYYY.MM.DD') }}
+                            {{ dayjs(bluehike.date).format('YYYY.MM.DD') }}
                         </p>
                         <button class="diary justify-self-cenet md:justify-self-end" @click="complete(bluehike)">
                             Teljesítve

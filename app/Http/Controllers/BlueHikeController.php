@@ -8,6 +8,7 @@ use Inertia\Inertia;
 use App\Models\Stage;
 use Inertia\Response;
 use App\Models\BlueHike;
+use Carbon\Carbon;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -57,7 +58,7 @@ class BlueHikeController extends Controller
             'plannedhikes' => Auth::user()->plannedbluehikes
         ]);
     }
-    
+
     /**
      * Set hike as completed
      */
@@ -66,6 +67,7 @@ class BlueHikeController extends Controller
     {
         $bluehike = BlueHike::find($request->id);
         $bluehike->completed = 1;
+        $bluehike->date = Carbon::today()->format('Y-m-d');
         $bluehike->save();
         return to_route('bluehikes.index');
     }
@@ -137,7 +139,7 @@ class BlueHikeController extends Controller
     {
         $names = Auth::user()->bluehikes->pluck('name');
         if ($names->contains($request->name)) {
-            return redirect()->back()->withErrors(['name' => 'Ilyen nevű túra már létezik!']);
+            return redirect()->back()->withErrors(['name' => 'Ilyen nevű szakasz már létezik!']);
         }
 
         $email = Auth::user()->email;
@@ -145,7 +147,12 @@ class BlueHikeController extends Controller
         BlueHike::create($this->validate());
 
         Storage::disk('local')->put($filename, $request->gpx);
-        return to_route('bluehikes.index');
+
+        if ($request->completed) {
+            return to_route('bluehikes.index');
+        } else {
+            return to_route('bluehikes.plannedhikes');
+        }
     }
 
     /**
@@ -218,6 +225,7 @@ class BlueHikeController extends Controller
                 'start_point' => ['required'],
                 'isCustomEnd' => ['required'],
                 'end_point' => ['required'],
+                'date' => ['required'],
                 'completed' => ['required'],
                 'distance' => ['required'],
                 'diary' => ['min:0'],
