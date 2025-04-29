@@ -196,6 +196,12 @@ async function PlanRoute() {
             mode: 1
         });
 
+        if(response.data.error != '') {
+        alert("Nem található útvonal a megadott pontok között!\nMinden pontnak Magyarország területén kell lennie!");
+        loading.value = false;
+        return;
+      }
+
         loading.value = false;
         routeXML = response.data.route;
         addGPXtoMap(routeXML);

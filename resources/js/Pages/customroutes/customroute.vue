@@ -69,6 +69,11 @@ function InitMap() {
 }
 
 function AddMarker(e) {
+  if(points.value.length >= 90) {
+    alert("Maximum 90 pontot adhat meg!");
+    return;
+  }
+  
   var blueMarker = L.ExtraMarkers.icon({
     icon: 'fa-number',
     markerColor: 'blue',
@@ -130,6 +135,12 @@ async function PlanRoute() {
         points: latLongArray,
         mode: 0
       });
+
+      if(response.data.error != '') {
+        alert("Nem található útvonal a megadott pontok között!\nMinden pontnak Magyarország területén kell lennie!");
+        loading.value = false;
+        return;
+      }
 
       loading.value = false;
       routeXML = response.data.route;
@@ -275,7 +286,8 @@ function addGPXtoMap(u) {
                 <input type="submit" value="Mentés" id="save" class="submit">
               </form>
               <ul>
-                <li v-for="(item, index) in form.errors" :key="index" class="text-red-500 text-sm px-3 mb-2 text-center">
+                <li v-for="(item, index) in form.errors" :key="index"
+                  class="text-red-500 text-sm px-3 mb-2 text-center">
                   {{ item }}
                 </li>
               </ul>

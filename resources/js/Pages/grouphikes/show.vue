@@ -223,7 +223,7 @@ function submit() {
                 <h1 class="text-center font-black text-2xl mb-3">Információk</h1>
                 <div class="grid grid-cols-2 gap-6 px-[10%] items-center">
                   <p>Túra napja:</p>
-                  <p>{{ grouphike.date }}</p>
+                  <p>{{  dayjs(grouphike.date).format('YYYY.MM.DD')}}</p>
                   <p>Gyülekező: </p>
                   <p>{{ grouphike.gatheringtime }}</p>
                   <p>indulás:</p>

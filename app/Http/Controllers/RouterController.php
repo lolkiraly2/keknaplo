@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class RouterController extends Controller
 {
@@ -18,13 +19,21 @@ class RouterController extends Controller
         }
 
         if ($request->input('mode') == 0)
-            $databasePath = "C:\Users\szebi\Documents\\routino\data";
+            $databasePath = Storage::path('routino\data');
         else
-        $databasePath = "C:\Users\szebi\Documents\\routino\data2";
+        $databasePath = Storage::path('routino\data2');
 
         $command = "router --dir=$databasePath --shortest --profile=hike $pointsCommand --output-gpx-track --output-stdout";
 
         $route = shell_exec($command . ' 2>&1');
+
+        //check if the route is valid
+        if(str_contains($route, 'Error:'))
+        {
+            return response()->json([
+                'error' => 'Sikertelen tervezés',
+            ]);
+        }
 
 
         $xml = simplexml_load_string($route);
@@ -38,10 +47,18 @@ class RouterController extends Controller
                 $out .= $lat . ' ' . $lon . PHP_EOL;
             }
         }
-        file_put_contents('C:\Users\szebi\Documents\routino\coords.txt', $out);
+
+        $filename = Auth::user()->email . "/blueroutes/coords.txt";
+        Storage::disk('local')->put($filename, $out);
 
         // //calculete elevations
-        $pyCommand = escapeshellcmd('python.exe C:\Users\szebi\Documents\routino\CalculateElevations.py');
+        $pythonScript = Storage::path('routino\CalculateElevations.py');
+        $srtmPath = Storage::path('routino\hungary_raster.tif');
+        $srtmPath = str_replace('\'', '\\', $srtmPath);
+        $coordsPath = Storage::path($filename);
+        $coordsPath = str_replace('\'', '\\', $coordsPath);
+
+        $pyCommand = "python.exe  $pythonScript $coordsPath $srtmPath";
         $pyCommandOut = shell_exec($pyCommand);
 
         // //convert script output to array
@@ -59,7 +76,7 @@ class RouterController extends Controller
         //$xml->saveXML('C:\Users\szebi\Documents\routino\routeWithEle.gpx');
         return response()->json([
             'route' => $routeEle,
-            //'ele' =>  $elevations,
+            'error' => ''
         ]);
     }
 }
