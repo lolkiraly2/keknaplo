@@ -54,7 +54,7 @@ const isInvalid = computed(() => {
                             <div class="flex flex-col justify-center">
 
                                 <div class="mt-8">
-                                    <h2 class="text-center font-black text-2xl mb-10">Új csoportos túra tervezés</h2>
+                                    <h2 class="text-center font-black text-2xl mb-10">Új csoportos túra szervezés</h2>
                                     <form @submit.prevent="form.post(route('grouphikes.store'))"
                                         class="grid grid-cols-2 gap-6 px-[20%] items-center">
 

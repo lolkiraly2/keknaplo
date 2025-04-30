@@ -40,7 +40,8 @@ class StampController extends Controller
             'stagestamps' => fn () => Stamp::where('stage_id',$stage_id)->get(),
             'hike' => $hike,
             'stages' => Hike::find($number)->stages->select('id', 'name'),
-            'stage' => Stage::select("name")->find($stage_id)
+            'stage' => Stage::select("name")->find($stage_id),
+            'url' => asset('storage') . '/',
         ]);
     }
 

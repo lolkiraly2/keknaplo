@@ -73,7 +73,6 @@ class RouterController extends Controller
             }
         }
         $routeEle = $xml->asXML();
-        //$xml->saveXML('C:\Users\szebi\Documents\routino\routeWithEle.gpx');
         return response()->json([
             'route' => $routeEle,
             'error' => ''

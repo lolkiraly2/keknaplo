@@ -49,7 +49,7 @@ function remove(grouphikeid) {
                         </button>
                     </div>
 
-                    <h2 class="text-center font-black text-2xl mt-4 mb-2">Korábbi szervezett túrák</h2>
+                    <h2 class="text-center font-black text-2xl mt-4 mb-2">Korábbi szervezett túráim</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 items-center px-10 border-b-4 border-gray-300 md:border-0"
                         v-for="grouphike in previusgrouphikes">
                         <p class=" lg:col-span-2 justify-self-center md:justify-self-start">

@@ -187,15 +187,14 @@ class GrouphikeController extends Controller
         $findhike = false;
         $inputemail = request('email');
         $inputpassword = request('password');
-        $grouphikes = Grouphike::select('id', 'public', 'user_id', 'password')->get();
+        $grouphikes = Grouphike::select('id', 'public', 'user_id', 'password')->where('public', 0)->get();
         $i = 0;
         while ($i < count($grouphikes)) {
             $user = User::find($grouphikes[$i]->user_id);
 
-            if ($grouphikes[$i]->public == 0 && Hash::check($inputpassword, $grouphikes[$i]->password) && $user->email == $inputemail) {
+            if (Hash::check($inputpassword, $grouphikes[$i]->password) && $user->email == $inputemail) {
                 $findhike = true;
                 break;
-                // dd($findhike, $grouphikes, $inputemail, $inputpassword);
             }
             $i++;
         }

@@ -13,7 +13,7 @@ use App\Http\Controllers\GrouphikeCommentController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -35,7 +35,7 @@ Route::get('/map', function () {
 })->middleware(['auth', 'verified'])->name('map');
 
 Route::get('/restrictions', function () {
-    return Inertia::render('korlatozasok');
+    return Inertia::render('restrictions');
 })->middleware(['auth', 'verified'])->name('restrictions');
 
 Route::resource('custompoints', CpointController::class)->middleware(['auth', 'verified']);

@@ -13,17 +13,19 @@ const props = defineProps({
   hike: String,
   stages: Object,
   stagestamps: Object,
-  stage: Object
+  stage: Object,
+  url: String
 })
 
 let map;
 let zgpx;
+let gpx;
 const szakasz = ref('0');
 const stagename = ref('');
 
 onMounted(() => {
   InitMap();
-  addGPXtoMap(props.hike);
+  addGPXtoMap(props.url);
 
   nextTick(() => {
     AddStampsToMap();
@@ -39,9 +41,9 @@ function InitMap() {
 }
 
 function addGPXtoMap(u) {
-  let url = "../gpx/" + u + "_teljes.gpx";
+  let url = u + props.hike.toLowerCase() + "_teljes.gpx";
 
-  new L.GPX(url, {
+  gpx = new L.GPX(url, {
     async: true,
     markers: {
       startIcon: '../gpx/empty.png',
@@ -98,7 +100,7 @@ function reloadPartialProps(stage) {
 }
 
 function ZoomToStage() {
-  let url = "../gpx/" + props.hike + "/" + props.stage.name + ".gpx";
+  let url = props.url + props.hike + "/" + props.stage.name + ".gpx";
   zgpx = new L.GPX(url, {
     async: true,
   }).on('loaded', function (e) {

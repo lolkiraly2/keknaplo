@@ -22,20 +22,12 @@ icon.value = "ico/sav-kek.ico";
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard')">
+                                <Link :href="route('welcome')">
                                 <ApplicationLogo class="block h-9 w-auto fill-current text-gray-800" />
                                 </Link>
                             </div>
 
-                            <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Főoldal
-                                </NavLink>
-                            </div>
                         </div>
-
-                            
 
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
                             <!-- Settings Dropdown -->
@@ -46,7 +38,7 @@ icon.value = "ico/sav-kek.ico";
 
                                 <NavLink :href="route('register')">
                                     Regisztráció
-                                </NavLink> 
+                                </NavLink>
                             </div>
                         </div>
 
@@ -84,7 +76,7 @@ icon.value = "ico/sav-kek.ico";
                         </ResponsiveNavLink>
                     </div>
 
-                    
+
                 </div>
             </nav>
 
