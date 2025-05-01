@@ -88,6 +88,12 @@ class CustomRouteController extends Controller
      */
     public function destroy(string $id): RedirectResponse
     {
+        $customroute = CustomRoute::find($id);
+        $grouphikes = Auth::user()->mygrouphikes->pluck('customroute_id');
+        if ($grouphikes->contains($id)) {
+            return redirect()->back()->withErrors(['name' => 'A(z) ' . $customroute->name .' nevű túra nem törölhető, mert csoportos túrához van rendelve!']);
+        }
+
         $route = CustomRoute::find($id);
         $email = Auth::user()->email;
         $filename = $email . "/croutes/" . $route->name . ".gpx";

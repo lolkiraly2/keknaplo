@@ -26,7 +26,7 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
 
         <div class="mb-4 text-sm text-gray-600">
             Kérem, erősítse meg az email címét a linkre kattintva, amit most
-            küldtünk el önnek. Ha nem kapta meg az emailt, az alábbi gombra kattintva újjat kérhet.
+            küldtünk el önnek. Ha nem kapta meg az emailt, az alábbi gombra kattintva újat kérhet.
         </div>
 
         <div class="mb-4 font-medium text-sm text-green-600" v-if="verificationLinkSent">

@@ -71,6 +71,11 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->Hasmany(GrouphikeParticipant::class)->with(['grouphike:id,name,date'])->orderBy('id');
     }
 
+    public function allbluehikes()
+    {
+        return $this->Hasmany(BlueHike::class)->orderBy('name');
+    }
+
     public function bluehikes()
     {
         return $this->Hasmany(BlueHike::class)->where('completed', 1)->orderBy('name');

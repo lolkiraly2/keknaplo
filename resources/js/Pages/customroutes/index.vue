@@ -1,7 +1,7 @@
 <script setup>
 import CrouteNav from '@/Components/CrouteNav.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router } from '@inertiajs/vue3';
+import { Head, Link, router, usePage } from '@inertiajs/vue3';
 
 const props = defineProps({
     customroutes: Object
@@ -10,6 +10,8 @@ const props = defineProps({
 function remove(routeId) {
     router.delete(route('customroutes.destroy', routeId));
 }
+
+const usepage = usePage()
 </script>
 
 <template>
@@ -25,7 +27,7 @@ function remove(routeId) {
             <div class="w-4/5 md:w-3/4 lg:w-[60%] mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h3 class="text-center font-black text-2xl mt-2">Saját túráim</h3>
-
+                    <p v-for="error in usepage.props.errors" class="text-center text-red-600">{{ error }}</p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-center px-10 my-2 border-b-4 border-gray-300 sm:border-0 mt-2"
                         v-for="croute in customroutes">
                         <p class="hyphens-auto justify-self-center sm:justify-self-start lg:col-span-3">{{ croute.name

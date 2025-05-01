@@ -97,6 +97,12 @@ class CpointController extends Controller
      */
     public function destroy(Cpoint $custompoint): RedirectResponse
     {
+        $customstartpoints = Auth::user()->allbluehikes->where('isCustomStart', 1)->pluck('start_point');
+        $customendpoints = Auth::user()->allbluehikes->where('isCustomEnd', 1)->pluck('end_point');
+
+        if ($customstartpoints->contains($custompoint->id) || $customendpoints->contains($custompoint->id)) {
+            return redirect()->back()->withErrors(['name' => 'A pontot nem lehet törölni, mert legalább egy szakaszhoz hozzá van rendelve!']);
+        }
         $custompoint->delete();
         return to_route('custompoints.index');
     }

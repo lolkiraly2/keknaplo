@@ -236,7 +236,7 @@ function submit() {
                   <p>{{ grouphike.location }}</p>
                   <p>Szervező: </p>
                   <p>{{ organizer }}</p>
-                  <p>Maxium létszám:</p>
+                  <p>Maximum létszám:</p>
                   <p>{{ grouphike.maxparticipants }}</p>
                   <p>Eddig jelentkezettek száma:</p>
                   <p> {{ participants.length }}</p>
