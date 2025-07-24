@@ -8,13 +8,10 @@ import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import pecsetek from '@/Components/pecsetek.vue';
 import ProgressNav from '@/Components/ProgressNav.vue';
-import { Link, usePage } from '@inertiajs/vue3';
-const user = usePage().props.auth.user;
-
+import { Link } from '@inertiajs/vue3';
 const showingNavigationDropdown = ref(false);
 const icon = useFavicon();
 icon.value = "/storage/sav-kek.jpg";
-
 </script>
 
 <template>
@@ -35,30 +32,24 @@ icon.value = "/storage/sav-kek.jpg";
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:items-center">
 
-                                <ProgressNav></ProgressNav>
-
                                 <NavLink :href="route('custompoints.index')">
-                                    Saját pontjaim
+                                    Szakaszok
                                 </NavLink>
 
                                 <NavLink :href="route('bluehikes.index')">
-                                    Kék szakaszaim
+                                    Pecsétek
                                 </NavLink>
 
-                                <NavLink :href="route('customroutes.index')"
-                                    :active="route().current('customroutes.index')">
-                                    Túráim
+                                <NavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
+                                    Felhasználók
                                 </NavLink>
 
-                                <NavLink :href="route('grouphikes.index')"
-                                    :active="route().current('grouphikes.index')">
-                                    Csoportos túrák
+                                <NavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
+                                   Mozgalmak
                                 </NavLink>
 
-                                <pecsetek></pecsetek>
-
-                                <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
-                                    Korlátozások
+                                <NavLink :href="route('dashboard')">
+                                   Vissza
                                 </NavLink>
                             </div>
 
@@ -88,8 +79,6 @@ icon.value = "/storage/sav-kek.jpg";
 
                                     <template #content>
                                         <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
-                                        <DropdownLink v-if="user.is_admin==1"
-                                            :href="route('Admin.index')"> Admin felület</DropdownLink>
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Kijelentkezés
                                         </DropdownLink>
@@ -124,7 +113,7 @@ icon.value = "/storage/sav-kek.jpg";
                     class="sm:hidden">
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <p
+                        <p 
                             class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
                             Haladás
                         </p>
@@ -137,14 +126,14 @@ icon.value = "/storage/sav-kek.jpg";
                     </div>
 
                     <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'DDK' })" class="pl-4 pb-1">
+                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'DDK' })"  class="pl-4 pb-1">
                             • Rockenbauer Pál Dél-dunántúli Kéktúra
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-0 pb-0 space-y-1">
                         <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'AK' })" class="pl-4 pb-1">
-                            • Alföldi Kéktúra
+                            • Alföldi Kéktúra 
                         </ResponsiveNavLink>
                     </div>
 
@@ -162,28 +151,25 @@ icon.value = "/storage/sav-kek.jpg";
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.index')"
-                            :active="route().current('bluehikes.index')">
-                            Kék szakaszaim
+                        <ResponsiveNavLink :href="route('bluehikes.index')" :active="route().current('bluehikes.index')">
+                           Kék szakaszaim
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('customroutes.index')"
-                            :active="route().current('customroutes.index')">
+                        <ResponsiveNavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
                             Túráim
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('grouphikes.index')"
-                            :active="route().current('grouphikes.index')">
-                            Csoportos túrák
-                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
+                                   Csoportos túrák
+                                </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <p
+                        <p 
                             class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
                             Pecsétek
                         </p>
@@ -196,14 +182,14 @@ icon.value = "/storage/sav-kek.jpg";
                     </div>
 
                     <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'DDK' })" class="pl-4 pb-1">
+                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'DDK' })"  class="pl-4 pb-1">
                             • Rockenbauer Pál Dél-dunántúli Kéktúra
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-0 pb-0 space-y-1">
                         <ResponsiveNavLink :href="route('stamps.index', { hike: 'AK' })" class="pl-4 pb-1">
-                            • Alföldi Kéktúra
+                            • Alföldi Kéktúra 
                         </ResponsiveNavLink>
                     </div>
 

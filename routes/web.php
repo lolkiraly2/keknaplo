@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\Admin\AdminController;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StampController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
 use App\Http\Controllers\BlueHikeController;
 use App\Http\Controllers\GrouphikeCommentController;
+use App\Http\Middleware\IsAdmin;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -78,5 +80,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
+
+// Admin routes
+Route::middleware(['auth', 'verified',IsAdmin::class])->group(function () {
+    Route::resource('Admin', AdminController::class);
+
+;
+});
 
 require __DIR__ . '/auth.php';
