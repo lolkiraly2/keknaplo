@@ -89,7 +89,7 @@ icon.value = "/storage/sav-kek.jpg";
                                     <template #content>
                                         <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
                                         <DropdownLink v-if="user.is_admin==1"
-                                            :href="route('Admin.index')"> Admin felület</DropdownLink>
+                                            :href="route('admin.index')"> Admin felület</DropdownLink>
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Kijelentkezés
                                         </DropdownLink>

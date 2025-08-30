@@ -1,17 +1,19 @@
 <?php
-use App\Http\Controllers\Admin\AdminController;
+
 use Inertia\Inertia;
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StampController;
 use App\Http\Controllers\CpointController;
-use App\Http\Controllers\CustomRouteController;
-use App\Http\Controllers\GrouphikeController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\StampCommentController;
 use App\Http\Controllers\RouterController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlueHikeController;
+use App\Http\Controllers\GrouphikeController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\CustomRouteController;
+use App\Http\Controllers\StampCommentController;
+use App\Http\Controllers\Admin\StampEditController;
 use App\Http\Controllers\GrouphikeCommentController;
-use App\Http\Middleware\IsAdmin;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -50,7 +52,8 @@ Route::get('/stamps/{hike}', [StampController::class, 'index'])->name('stamps.in
 Route::get('/stamps/{stamp}/show', [StampController::class, 'show'])->name('stamps.show');
 
 Route::resource('customroutes', CustomRouteController::class)->except([
-    'edit', 'update'
+    'edit',
+    'update'
 ])->middleware(['auth', 'verified']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -82,10 +85,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 Route::post('/api/get-route', [RouterController::class, 'getRoute']);
 
 // Admin routes
-Route::middleware(['auth', 'verified',IsAdmin::class])->group(function () {
-    Route::resource('Admin', AdminController::class);
-
-;
+Route::middleware(['auth', 'verified', IsAdmin::class])->group(function () {
+    Route::get('admin', [AdminController::class, 'index'])->name('admin.index');
+    Route::resource('admin/stampsedit', StampEditController::class);
 });
 
 require __DIR__ . '/auth.php';

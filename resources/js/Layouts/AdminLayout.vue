@@ -24,7 +24,8 @@ icon.value = "/storage/sav-kek.jpg";
                         <div class="flex items-center">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard')">
+                                <Link :href="route('admin.index')"
+                                    class="flex items-center text-gray-800 font-semibold text-xl">
                                 <ApplicationLogo class="block h-9 w-auto fill-current text-gray-800" />
                                 </Link>
                             </div>
@@ -36,7 +37,7 @@ icon.value = "/storage/sav-kek.jpg";
                                     Szakaszok
                                 </NavLink>
 
-                                <NavLink :href="route('bluehikes.index')">
+                                <NavLink :href="route('stampsedit.index')" :active="route().current('stampsedit.index')">
                                     Pecsétek
                                 </NavLink>
 
