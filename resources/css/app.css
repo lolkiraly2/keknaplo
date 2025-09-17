@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+  @theme {
+  --breakpoint-3xl: 120rem;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -28,6 +32,15 @@ h3 {
     font-weight: bold;
 }
 
+#map{
+    @apply h-[500px]  rounded-md p-2;
+}
+
+@media screen and (min-width: 1600px) {
+  #map{
+    @apply h-[700px]  rounded-md p-2;
+}
+}
 
 .inp {
     @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm;

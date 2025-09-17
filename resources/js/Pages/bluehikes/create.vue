@@ -253,12 +253,6 @@ function addGPXtoMap(u) {
 }
 </script>
 
-<style>
-#map {
-    height: 500px;
-}
-</style>
-
 <template>
 
     <Head title="Új szakasz" />

@@ -161,12 +161,6 @@ function submit() {
 }
 </script>
 
-<style>
-#map {
-  height: 500px;
-}
-</style>
-
 <template>
 
   <Head>

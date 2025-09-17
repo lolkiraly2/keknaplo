@@ -268,10 +268,6 @@ function Saving() {
 .leaflet-grab {
   cursor: auto;
 }
-
-#map {
-  height: 500px;
-}
 </style>
 
 <template>
@@ -284,7 +280,7 @@ function Saving() {
     </template>
 
     <div class="py-12">
-      <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
+      <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex flex-col">

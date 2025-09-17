@@ -113,10 +113,6 @@ function ZoomToStage() {
 <style>
 @import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css';
 @import 'https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css';
-
-#map {
-  height: 500px;
-}
 </style>
 
 <template>
@@ -129,7 +125,7 @@ function ZoomToStage() {
     </template>
 
     <div class="py-12">
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
+      <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex md:flex-row flex-col">

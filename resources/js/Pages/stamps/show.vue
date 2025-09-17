@@ -51,10 +51,6 @@ function submit() {
 </script>
 
 <style>
-#map {
-  height: 500px;
-}
-
 h1 {
   font-size: xx-large;
   font-weight: bold;
@@ -71,7 +67,7 @@ h1 {
     </template>
 
     <div class="py-12">
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
+      <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
           <h1 class="text-center mt-3">Pecsét adatai</h1>
           <div class="flex md:flex-row flex-col-reverse">
