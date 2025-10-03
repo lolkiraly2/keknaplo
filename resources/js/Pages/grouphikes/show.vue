@@ -174,7 +174,7 @@ function submit() {
 
     <div class="py-12">
       <div class="max-w-8xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex flex-col mt-3">
 
@@ -203,7 +203,7 @@ function submit() {
                   <div class="flex m-3 items-center justify-center">
                     <label for="leiras" class="mr-2"></label>
                     <textarea id="leiras" placeholder="Hozzászólás" v-model="messageform.comment"
-                      class="inp w-3/4"></textarea>
+                      class="inp w-3/4 dark:placeholder:text-white"></textarea>
                   </div>
 
                   <div class="flex m-3 items-center justify-center">

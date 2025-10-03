@@ -10,7 +10,7 @@ import { Head } from '@inertiajs/vue3';
     <VendegLayout>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg px-20">
+                <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg px-20">
 
                     <h1 class="noto-serif-600 text-4xl text-center mt-4">Kéknapló</h1>
                     <div class="flex flex-col md:flex-row w-1/2 mx-auto gap-5 justify-between items-center my-4">

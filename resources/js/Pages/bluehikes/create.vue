@@ -264,7 +264,7 @@ function addGPXtoMap(u) {
 
         <div class="py-12">
             <div class="w-5/6 mx-auto sm:px-6 lg:px-6">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="flex md:flex-row flex-col">
                         <div class="lg:w-1/4 md:w-2/5 w-full">
 

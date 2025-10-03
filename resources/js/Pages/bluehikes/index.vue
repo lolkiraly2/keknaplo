@@ -24,7 +24,7 @@ function remove(routeId) {
 
         <div class="py-12">
             <div class="w-[70%] md:w-[60%] mx-auto sm:px-6 lg:px-7">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h3 class="text-center font-black text-2xl mt-2">Kéktúra szakaszaim</h3>
 
                     <div class="grid grid-cols-2 border-b-4 border-gray-300 sm:border-0 mt-2 sm:mt-0 justify-items-center sm:justify-items-start sm:grid-cols-5 md:grid-cols-7 items-center"

@@ -25,7 +25,7 @@ const submit = () => {
     <GuestLayout>
         <Head title="Forgot Password" />
 
-        <div class="mb-4 text-sm text-gray-600">
+        <div class="mb-4 text-sm text-gray-600 dark:text-white">
            Az email címét megadva egy linket küldünk, amellyel visszaállíthatja a jelszavát. 
         </div>
 
@@ -40,7 +40,7 @@ const submit = () => {
                 <TextInput
                     id="email"
                     type="email"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full dark:bg-gray-800 dark:text-white dark:caret-white"
                     v-model="form.email"
                     required
                     autofocus

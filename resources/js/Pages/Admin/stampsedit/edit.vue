@@ -3,8 +3,8 @@ import AdminLayout from '@/Layouts/AdminLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
 
 const props = defineProps({
- stages: [Object],
- stamp: Object
+    stages: [Object],
+    stamp: Object
 })
 
 const form = useForm({
@@ -41,13 +41,13 @@ function CheckAvailability() {
 
 <template>
 
-    <Head title="Új pecsét" />
+    <Head title="Pecsét szerkesztés" />
 
     <AdminLayout>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
 
                     <div class="flex flex-col">
 
@@ -55,7 +55,7 @@ function CheckAvailability() {
                             <div class="flex flex-col justify-center">
 
                                 <div class="mt-8">
-                                    <h2 class="text-center font-black text-2xl mb-10">Új Pecsét</h2>
+                                    <h2 class="text-center font-black text-2xl mb-10">Pecsét szerkesztés</h2>
                                     <form @submit.prevent="form.put(route('stampsedit.update', props.stamp.id))"
                                         class="grid grid-cols-1  sm:grid-cols-2 gap-6 px-[20%] items-center">
 
@@ -77,9 +77,9 @@ function CheckAvailability() {
                                                 v-if="form.errors.stage_id"><br>{{
                                                     form.errors.stage_id
                                                 }}</span></label>
-                                        <select id="stage_id"
-                                            v-model="form.stage_id" class="inp">
-                                            <option v-for="stage in props.stages" :value="stage.id">{{ stage.name }}</option>
+                                        <select id="stage_id" v-model="form.stage_id" class="inp">
+                                            <option v-for="stage in props.stages" :value="stage.id">{{ stage.name }}
+                                            </option>
                                         </select>
 
 
@@ -118,21 +118,20 @@ function CheckAvailability() {
                                         </select>
 
                                         <label v-show="CheckAvailability()" for="opening_hours">Nyitvatartás: </label>
-                                        <input v-show="CheckAvailability()" type="text" id="opening_hours" v-model="form.opening_hours" class="inp" >
+                                        <input v-show="CheckAvailability()" type="text" id="opening_hours"
+                                            v-model="form.opening_hours" class="inp">
 
                                         <label for="lat">Szélesség: <span class="text-red-600"
                                                 v-if="form.errors.lat"><br>{{
                                                     form.errors.lat
                                                 }}</span></label>
-                                        <input type="text" staps="any" id="lat" v-model="form.lat" class="inp"
-                                            required>
+                                        <input type="text" staps="any" id="lat" v-model="form.lat" class="inp" required>
 
                                         <label for="lon">Hosszúság: <span class="text-red-600"
                                                 v-if="form.errors.lon"><br>{{
                                                     form.errors.lon
                                                 }}</span></label>
-                                        <input type="text" staps="any" id="lon" v-model="form.lon" class="inp"
-                                            required>
+                                        <input type="text" staps="any" id="lon" v-model="form.lon" class="inp" required>
 
 
                                         <label for="stamp_url">Pecsét url címe: <span class="text-red-600"
@@ -160,12 +159,12 @@ function CheckAvailability() {
                                                 }}</span></label>
                                         <input type="url" id="picture3_url" v-model="form.picture3_url" class="inp">
 
-                                        <input type="submit" value="Mentés" id="save"
-                                            class="submit">
+                                        <input type="submit" value="Mentés" id="save" class="submit">
 
                                     </form>
 
-                                    <form @submit.prevent="form.delete(route('stampsedit.destroy', props.stamp.id))">
+                                    <form @submit.prevent="form.delete(route('stampsedit.destroy', props.stamp.id))"
+                                        class="grid grid-cols-1  sm:grid-cols-2 gap-6 px-[20%] items-center">
                                         <input type="submit" value="Törlés" id="delete" class="delete">
                                     </form>
                                 </div>

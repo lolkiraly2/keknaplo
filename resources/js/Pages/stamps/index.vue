@@ -121,12 +121,12 @@ function ZoomToStage() {
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ hikename }} pecsétei szakaszonként</h2>
+      <h2 class="font-semibold text-xl text-gray-800 dark:text-white leading-tight">{{ hikename }} pecsétei szakaszonként</h2>
     </template>
 
     <div class="py-12">
       <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex md:flex-row flex-col">
             <div class="md:w-1/4 w-full" id="szakaszok">

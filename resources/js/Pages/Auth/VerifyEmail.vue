@@ -24,7 +24,7 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
 
         <Head title="Email Verification" />
 
-        <div class="mb-4 text-sm text-gray-600">
+        <div class="mb-4 text-sm text-gray-600 dark:text-white">
             Kérem, erősítse meg az email címét a linkre kattintva, amit most
             küldtünk el önnek. Ha nem kapta meg az emailt, az alábbi gombra kattintva újat kérhet.
         </div>
@@ -40,7 +40,7 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
                 </PrimaryButton>
 
                 <Link :href="route('logout')" method="post" as="button"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    class="underline text-sm text-gray-600 dark:text-white hover:text-gray-900 dark:hover:text-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Kijelentkezés</Link>
             </div>
         </form>

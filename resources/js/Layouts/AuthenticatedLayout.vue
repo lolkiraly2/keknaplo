@@ -9,6 +9,7 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import pecsetek from '@/Components/pecsetek.vue';
 import ProgressNav from '@/Components/ProgressNav.vue';
 import { Link, usePage } from '@inertiajs/vue3';
+import DarkToggle from '@/Components/DarkToogle.vue';
 const user = usePage().props.auth.user;
 
 const showingNavigationDropdown = ref(false);
@@ -19,8 +20,8 @@ icon.value = "/storage/sav-kek.jpg";
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
-            <nav class="bg-white border-b border-gray-100">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            <nav class="bg-white dark:bg-gray-800 border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -28,14 +29,14 @@ icon.value = "/storage/sav-kek.jpg";
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
-                                <ApplicationLogo class="block h-9 w-auto fill-current text-gray-800" />
+                                <ApplicationLogo class="block h-9 w-auto fill-current " />
                                 </Link>
                             </div>
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex sm:items-center">
 
-                                <ProgressNav></ProgressNav>
+                                <ProgressNav />
 
                                 <NavLink :href="route('custompoints.index')">
                                     Saját pontjaim
@@ -55,7 +56,7 @@ icon.value = "/storage/sav-kek.jpg";
                                     Csoportos túrák
                                 </NavLink>
 
-                                <pecsetek></pecsetek>
+                                <pecsetek />
 
                                 <NavLink :href="route('restrictions')" :active="route().current('restrictions')">
                                     Korlátozások
@@ -73,7 +74,7 @@ icon.value = "/storage/sav-kek.jpg";
                                     <template #trigger>
                                         <span class="inline-flex rounded-md">
                                             <button type="button"
-                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none transition ease-in-out duration-150">
                                                 {{ $page.props.auth.user.name }}
 
                                                 <svg class="ms-2 -me-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -87,12 +88,16 @@ icon.value = "/storage/sav-kek.jpg";
                                     </template>
 
                                     <template #content>
-                                        <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
-                                        <DropdownLink v-if="user.is_admin==1"
-                                            :href="route('admin.index')"> Admin felület</DropdownLink>
-                                        <DropdownLink :href="route('logout')" method="post" as="button">
-                                            Kijelentkezés
-                                        </DropdownLink>
+                                        <div class="bg-white dark:bg-gray-800">
+                                            <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
+                                            <DropdownLink v-if="user.is_admin == 1" :href="route('admin.index')"> Admin
+                                                felület</DropdownLink>
+                                            <DropdownLink :href="route('logout')" method="post" as="button">
+                                                Kijelentkezés
+                                            </DropdownLink>
+
+                                            <DarkToggle />
+                                        </div>
                                     </template>
                                 </Dropdown>
                             </div>
@@ -125,7 +130,7 @@ icon.value = "/storage/sav-kek.jpg";
 
                     <div class="pt-1 pb-2 space-y-1">
                         <p
-                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
+                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600 dark:text-white">
                             Haladás
                         </p>
                     </div>
@@ -184,7 +189,7 @@ icon.value = "/storage/sav-kek.jpg";
 
                     <div class="pt-1 pb-2 space-y-1">
                         <p
-                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
+                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600 dark:text-white">
                             Pecsétek
                         </p>
                     </div>
@@ -216,17 +221,21 @@ icon.value = "/storage/sav-kek.jpg";
                     <!-- Responsive Settings Options -->
                     <div class="pt-4 pb-1 border-t border-gray-200">
                         <div class="px-4">
-                            <div class="font-medium text-base text-gray-800">
+                            <div class="font-medium text-base text-gray-800 dark:text-gray-100">
                                 {{ $page.props.auth.user.name }}
                             </div>
-                            <div class="font-medium text-sm text-gray-500">{{ $page.props.auth.user.email }}</div>
+                            <div class="font-medium text-sm text-gray-500 dark:text-white">{{ $page.props.auth.user.email }}</div>
                         </div>
 
                         <div class="mt-3 space-y-1">
                             <ResponsiveNavLink :href="route('profile.edit')"> Profil </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('admin.index')"> Admin felület </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('logout')" method="post" as="button">
                                 Kijelentkezés
                             </ResponsiveNavLink>
+                        </div>
+                        <div class="mt-3 px-4">
+                            <DarkToggle />
                         </div>
                     </div>
                 </div>

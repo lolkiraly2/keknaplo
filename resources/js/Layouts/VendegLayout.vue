@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import { useFavicon } from '@vueuse/core';
-import Dropdown from '@/Components/Dropdown.vue';
-import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import DarkToggleSmall from '@/Components/DarkToogleSmall.vue';
+import DarkToggle from '@/Components/DarkToogle.vue';
 const showingNavigationDropdown = ref(false);
 const icon = useFavicon();
 icon.value = "ico/sav-kek.ico";
@@ -14,8 +14,8 @@ icon.value = "ico/sav-kek.ico";
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
-            <nav class="bg-white border-b border-gray-100">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            <nav class="bg-white dark:bg-gray-800 border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -23,7 +23,7 @@ icon.value = "ico/sav-kek.ico";
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('welcome')">
-                                <ApplicationLogo class="block h-9 w-auto fill-current text-gray-800" />
+                                <ApplicationLogo class="block h-9 w-auto fill-current" />
                                 </Link>
                             </div>
 
@@ -38,7 +38,9 @@ icon.value = "ico/sav-kek.ico";
 
                                 <NavLink :href="route('register')">
                                     Regisztráció
-                                </NavLink>
+                                </NavLink> 
+                                
+                                <DarkToggleSmall />
                             </div>
                         </div>
 
@@ -74,6 +76,8 @@ icon.value = "ico/sav-kek.ico";
                         <ResponsiveNavLink :href="route('register')" :active="route().current('register')">
                             Regisztráció
                         </ResponsiveNavLink>
+
+                        <DarkToggle />
                     </div>
 
 

@@ -68,7 +68,7 @@ h1 {
 
     <div class="py-12">
       <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
           <h1 class="text-center mt-3">Pecsét adatai</h1>
           <div class="flex md:flex-row flex-col-reverse">
             <div class="md:w-2/5 w-full" id="szakaszok">
@@ -135,6 +135,7 @@ h1 {
                     {{ item }}
                   </li>
                 </ul>
+                
                 <form @submit.prevent="submit">
                   <div class="flex m-3 items-center">
                     <label for="datum" class="mr-2">Túra napja: </label>

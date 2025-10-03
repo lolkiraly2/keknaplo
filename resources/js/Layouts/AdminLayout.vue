@@ -6,9 +6,8 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import pecsetek from '@/Components/pecsetek.vue';
-import ProgressNav from '@/Components/ProgressNav.vue';
 import { Link } from '@inertiajs/vue3';
+import DarkToogle from '@/Components/DarkToogle.vue';
 const showingNavigationDropdown = ref(false);
 const icon = useFavicon();
 icon.value = "/storage/sav-kek.jpg";
@@ -16,8 +15,8 @@ icon.value = "/storage/sav-kek.jpg";
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
-            <nav class="bg-white border-b border-gray-100">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+            <nav class="bg-white dark:bg-gray-800 border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -37,20 +36,23 @@ icon.value = "/storage/sav-kek.jpg";
                                     Szakaszok
                                 </NavLink>
 
-                                <NavLink :href="route('stampsedit.index')" :active="route().current('stampsedit.index')">
+                                <NavLink :href="route('stampsedit.index')"
+                                    :active="route().current('stampsedit.index')">
                                     Pecsétek
                                 </NavLink>
 
-                                <NavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
+                                <NavLink :href="route('customroutes.index')"
+                                    :active="route().current('customroutes.index')">
                                     Felhasználók
                                 </NavLink>
 
-                                <NavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
-                                   Mozgalmak
+                                <NavLink :href="route('grouphikes.index')"
+                                    :active="route().current('grouphikes.index')">
+                                    Mozgalmak
                                 </NavLink>
 
                                 <NavLink :href="route('dashboard')">
-                                   Vissza
+                                    Vissza
                                 </NavLink>
                             </div>
 
@@ -65,7 +67,7 @@ icon.value = "/storage/sav-kek.jpg";
                                     <template #trigger>
                                         <span class="inline-flex rounded-md">
                                             <button type="button"
-                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-white bg-white dark:bg-gray-800 hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                                                 {{ $page.props.auth.user.name }}
 
                                                 <svg class="ms-2 -me-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +81,14 @@ icon.value = "/storage/sav-kek.jpg";
                                     </template>
 
                                     <template #content>
-                                        <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
-                                        <DropdownLink :href="route('logout')" method="post" as="button">
-                                            Kijelentkezés
-                                        </DropdownLink>
+                                        <div class="bg-white dark:bg-gray-800">
+                                            <DropdownLink :href="route('profile.edit')"> Profil </DropdownLink>
+                                            <DropdownLink :href="route('dashboard')"> Vissza </DropdownLink>
+                                            <DropdownLink :href="route('logout')" method="post" as="button">
+                                                Kijelentkezés
+                                            </DropdownLink>
+                                            <DarkToogle />
+                                        </div>
                                     </template>
                                 </Dropdown>
                             </div>
@@ -113,100 +119,41 @@ icon.value = "/storage/sav-kek.jpg";
                 <div :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden">
 
-                    <div class="pt-1 pb-2 space-y-1">
-                        <p 
-                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
-                            Haladás
-                        </p>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'OKT' })" class="pl-4 pb-1 pt-0">
-                            • Országos Kéktúra
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'DDK' })"  class="pl-4 pb-1">
-                            • Rockenbauer Pál Dél-dunántúli Kéktúra
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'AK' })" class="pl-4 pb-1">
-                            • Alföldi Kéktúra 
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.progress', { hike: 'OKK' })" class="pl-4 pb-1">
-                            • Országos Kékkör
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-1 pb-2 space-y-1">
+                  
+                  <div class="pt-1 pb-2 space-y-1">
                         <ResponsiveNavLink :href="route('custompoints.index')"
                             :active="route().current('custompoints.index')">
-                            Saját pontjaim
+                            Szakaszok
                         </ResponsiveNavLink>
                     </div>
 
-                    <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('bluehikes.index')" :active="route().current('bluehikes.index')">
-                           Kék szakaszaim
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('customroutes.index')" :active="route().current('customroutes.index')">
-                            Túráim
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('grouphikes.index')" :active="route().current('grouphikes.index')">
-                                   Csoportos túrák
-                                </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-1 pb-2 space-y-1">
-                        <p 
-                            class="block w-full ps-3 pe-4 pt-2 pb-1 border-l-4 border-transparent text-start text-base font-medium text-gray-600">
+                     <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('stampsedit.index')"
+                            :active="route().current('stampsedit.index')">
                             Pecsétek
-                        </p>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'OKT' })" class="pl-4 pb-1 pt-0">
-                            • Országos Kéktúra
                         </ResponsiveNavLink>
                     </div>
 
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'DDK' })"  class="pl-4 pb-1">
-                            • Rockenbauer Pál Dél-dunántúli Kéktúra
-                        </ResponsiveNavLink>
-                    </div>
-
-                    <div class="pt-0 pb-0 space-y-1">
-                        <ResponsiveNavLink :href="route('stamps.index', { hike: 'AK' })" class="pl-4 pb-1">
-                            • Alföldi Kéktúra 
+                     <div class="pt-1 pb-2 space-y-1">
+                        <ResponsiveNavLink :href="route('custompoints.index')"
+                            :active="route().current('custompoints.index')">
+                            Mozgalmak
                         </ResponsiveNavLink>
                     </div>
 
                     <div class="pt-1 pb-2 space-y-1">
-                        <ResponsiveNavLink :href="route('restrictions')" :active="route().current('restrictions')">
-                            Korlátozások
+                        <ResponsiveNavLink :href="route('dashboard')">
+                            Vissza
                         </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
                     <div class="pt-4 pb-1 border-t border-gray-200">
                         <div class="px-4">
-                            <div class="font-medium text-base text-gray-800">
+                            <div class="font-medium text-base text-gray-800 dark:text-gray-300">
                                 {{ $page.props.auth.user.name }}
                             </div>
-                            <div class="font-medium text-sm text-gray-500">{{ $page.props.auth.user.email }}</div>
+                            <div class="font-medium text-sm text-gray-500 dark:text-white">{{ $page.props.auth.user.email }}</div>
                         </div>
 
                         <div class="mt-3 space-y-1">
@@ -214,6 +161,7 @@ icon.value = "/storage/sav-kek.jpg";
                             <ResponsiveNavLink :href="route('logout')" method="post" as="button">
                                 Kijelentkezés
                             </ResponsiveNavLink>
+                            <DarkToogle />
                         </div>
                     </div>
                 </div>

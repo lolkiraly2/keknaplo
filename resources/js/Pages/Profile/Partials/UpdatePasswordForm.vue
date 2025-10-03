@@ -36,7 +36,7 @@ const updatePassword = () => {
 <template>
     <section>
         <header>
-            <h2 class="text-lg font-medium text-gray-900">Új jelszó</h2>
+            <h2 class="text-lg font-medium text-gray-900 dark:text-white">Új jelszó</h2>
 
             <!-- <p class="mt-1 text-sm text-gray-600">
                 Ensure your account is using a long, random password to stay secure.
@@ -52,7 +52,7 @@ const updatePassword = () => {
                     ref="currentPasswordInput"
                     v-model="form.current_password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full dark:bg-gray-800"
                     autocomplete="current-password"
                 />
 
@@ -67,7 +67,7 @@ const updatePassword = () => {
                     ref="passwordInput"
                     v-model="form.password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full dark:bg-gray-800"
                     autocomplete="new-password"
                 />
 
@@ -81,7 +81,7 @@ const updatePassword = () => {
                     id="password_confirmation"
                     v-model="form.password_confirmation"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full dark:bg-gray-800"
                     autocomplete="new-password"
                 />
 

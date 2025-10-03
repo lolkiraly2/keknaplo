@@ -281,7 +281,7 @@ function Saving() {
 
     <div class="py-12">
       <div class="xl:max-w-[80%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex flex-col">
             <h1 class="text-center text-2xl font-black my-2">{{ bluehike.name }}</h1>

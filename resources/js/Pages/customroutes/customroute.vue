@@ -69,11 +69,11 @@ function InitMap() {
 }
 
 function AddMarker(e) {
-  if(points.value.length >= 90) {
+  if (points.value.length >= 90) {
     alert("Maximum 90 pontot adhat meg!");
     return;
   }
-  
+
   var blueMarker = L.ExtraMarkers.icon({
     icon: 'fa-number',
     markerColor: 'blue',
@@ -136,7 +136,7 @@ async function PlanRoute() {
         mode: 0
       });
 
-      if(response.data.error != '') {
+      if (response.data.error != '') {
         alert("Nem található útvonal a megadott pontok között!\nMinden pontnak Magyarország területén kell lennie!");
         loading.value = false;
         return;
@@ -255,30 +255,32 @@ function addGPXtoMap(u) {
 
     <div class="py-12">
       <div class="xl:max-w-[90%] max-w-7xl mx-auto sm:px-6 lg:px-8 relative z-0" id="page">
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+        <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
 
           <div class="flex md:flex-row flex-col">
             <div class="md:w-1/4 flex flex-col flex-wrap content-center" id="menu">
+              <div class="border-solid border-4 border-blue-500 rounded-md my-5">
+                <table class="w-full">
+                  <tr>
+                    <th colspan="2" class="text-xl">Pontok</th>
+                  </tr>
+                  <tr v-if="points.length != 0" v-for="(point, index) in points">
+                    <td class="pl-6">{{ index + 1 }} pont.</td>
+                    <td class="pr-4"><button @click="deleteRow(index)"
+                        class="text-red-600 text-lg font-black">x</button>
+                    </td>
 
-              <table class="border-solid border-4 border-blue-500 rounded-full my-4">
-                <tr>
-                  <th colspan="2" class="text-xl">Pontok</th>
-                </tr>
-                <tr v-if="points.length != 0" v-for="(point, index) in points">
-                  <td class="pl-6">{{ index + 1 }} pont.</td>
-                  <td class="pr-4"><button @click="deleteRow(index)" class="text-red-600 text-lg font-black">x</button>
-                  </td>
-
-                </tr>
-              </table>
-
+                  </tr>
+                </table>
+              </div>
               <button class="plannerbutton" @click="RemoveMapElements()">Útvonal törlése</button>
 
               <button class="plannerbutton" @click="PlanRoute()">Tervezés</button>
               <img v-show="loading" src="../../../../public/ico/Walking.gif" alt="" height="200" width="50">
 
               <form v-show="showForm" @submit.prevent="form.post(route('customroutes.store'))">
-                <input type="text" placeholder="Túra neve" id="nev" v-model="form.name" class="mb-5 inp" required><br>
+                <input type="text" placeholder="Túra neve" id="nev" v-model="form.name"
+                  class="mb-5 inp dark:placeholder:text-white" required><br>
                 <input type="submit" value="Mentés" id="save" class="submit">
               </form>
               <ul>

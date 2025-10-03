@@ -55,7 +55,7 @@ function InitMap() {
     }).addTo(map.value);
   })
 
-  console.log(progresspercent);
+  //console.log(progresspercent);
 }
 
 </script>
@@ -67,8 +67,8 @@ function InitMap() {
   <AuthenticatedLayout>
     <template #header>
 
-      <div class="flex flex-col">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">Táv: {{ distancesum }} km/{{ totalDistance
+      <div class="flex flex-col bg-white dark:bg-gray-800">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-white leading-tight">Táv: {{ distancesum }} km/{{ totalDistance
         }} km ({{ progresspercent }}%)</h2>
 
         <div id="progressbar">

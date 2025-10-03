@@ -26,7 +26,7 @@ function remove(grouphikeid) {
 
         <div class="py-12">
             <div class="w-4/5 md:w-[85%] lg:w-[75%] mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow-sm sm:rounded-lg">
                     <h2 class="text-center font-black text-2xl mt-4 mb-2">Általam szervezett túrák</h2>
 
                     <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 items-center px-10 border-b-4 border-gray-300 md:border-0"

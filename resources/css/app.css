@@ -7,17 +7,25 @@
   --breakpoint-3xl: 120rem;
 }
 
+header{
+    @apply bg-white dark:bg-gray-800;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
+    @apply bg-gray-100 dark:bg-gray-900;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: grey;
+    @apply bg-gray-500 dark:bg-gray-200;
     border-radius: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+	@apply dark:invert;
 }
 
 a {
@@ -43,11 +51,11 @@ h3 {
 }
 
 .inp {
-    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm;
+    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm text-black dark:text-white bg-white dark:bg-gray-800 placeholder-gray-500 dark:placeholder-gray-400;
 }
 
 .submit {
-    @apply px-4 py-2 mb-5 w-fit bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out hover:bg-gray-700 hover:duration-500 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+    @apply px-4 py-2 mb-5 w-fit bg-gray-800 dark:bg-white border border-transparent rounded-md font-semibold text-xs text-white dark:text-black uppercase tracking-widest transition ease-in-out hover:bg-gray-700 dark:hover:bg-gray-300 hover:duration-500 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
 }
 
 .edit {
