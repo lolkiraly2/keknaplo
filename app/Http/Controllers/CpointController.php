@@ -82,10 +82,10 @@ class CpointController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Cpoint $custompoint): RedirectResponse
+    public function update(Cpoint $custompoint, Request $request): RedirectResponse
     {
-        $names = Auth::user()->cpoints->pluck('name');
-        if ($names->contains($custompoint->name)) {
+        $names = Auth::user()->cpoints->pluck('name')->reject($custompoint->name);
+        if ($names->contains($request->name)) {
             return redirect()->back()->withErrors(['name' => 'Ilyen nevű pont már létezik!']);
         }
         $custompoint->update($this->validatePoint());
@@ -122,6 +122,8 @@ class CpointController extends Controller
                 'name.required' => "A név nem lehet üres!",
                 'name.max' => "Túl hosszú név! (Maximum: :max karakter)!",
                 'stage_id.required' => "Válassz szakaszt!",
+                'lat.required' => "Válasszon ki egy pontot a térképen!",
+                'lon.required' => "Kattintson a térképen bárhova!",
             ]
         );
     }

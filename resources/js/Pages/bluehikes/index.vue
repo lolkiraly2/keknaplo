@@ -19,7 +19,7 @@ function remove(routeId) {
 
     <AuthenticatedLayout>
         <template #header>
-            <bluehikeNav></bluehikeNav>
+            <bluehikeNav />
         </template>
 
         <div class="py-12">

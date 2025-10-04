@@ -40,6 +40,8 @@ let controlElevation;
 let routeXML;
 const today = new Date().toISOString().split('T')[0];
 let attrs = useAttrs()
+let startpointname = ref([])
+let endpointname = ref([]);
 const startcpoints = ref([]);
 const endcpoints = ref([]);
 const startvalue = ref(0);
@@ -157,6 +159,7 @@ const AddStartPoint = (id) => {
     }).addTo(map);
 
     form.start_point = id;
+    startpointname.value = point.name;
 };
 
 const AddEndPoint = (id) => {
@@ -175,6 +178,7 @@ const AddEndPoint = (id) => {
         icon: blueMarker
     }).addTo(map);
     form.end_point = id;
+    endpointname.value = point.name;
 };
 
 async function PlanRoute() {
@@ -196,17 +200,18 @@ async function PlanRoute() {
             mode: 1
         });
 
-        if(response.data.error != '') {
-        alert("Nem található útvonal a megadott pontok között!\nMinden pontnak Magyarország területén kell lennie!");
-        loading.value = false;
-        return;
-      }
+        if (response.data.error != '') {
+            alert("Nem található útvonal a megadott pontok között!\nMinden pontnak Magyarország területén kell lennie!");
+            loading.value = false;
+            return;
+        }
 
         loading.value = false;
         routeXML = response.data.route;
         addGPXtoMap(routeXML);
         showForm.value = true;
         form.gpx = routeXML;
+        form.name = startpointname.value + " - " + endpointname.value;
 
     } catch (error) {
         console.error("Error fetching the route:", error);
@@ -259,7 +264,7 @@ function addGPXtoMap(u) {
 
     <AuthenticatedLayout>
         <template #header>
-            <bluehikeNav></bluehikeNav>
+            <bluehikeNav />
         </template>
 
         <div class="py-12">
@@ -315,8 +320,8 @@ function addGPXtoMap(u) {
                                 </select>
 
                                 <button class="plannerbutton mx-auto w-3/4" @click="PlanRoute()">Tervezés</button>
-                                <img v-show="loading" src="../../../../public/ico/Walking.gif" alt="" height="200"
-                                    width="50">
+                                <img v-show="loading" src="../../../../public/ico/loading.gif" alt="loading gif"
+                                    height="200" width="100" class="mx-auto">
 
                                 <ul>
                                     <li v-for="(item, index) in form.errors" :key="index"
@@ -328,15 +333,15 @@ function addGPXtoMap(u) {
                                 <form v-show="showForm" @submit.prevent="form.post(route('bluehikes.store'))">
                                     <div class="grid gap-3 px-5 mt-1">
                                         <input type="text" placeholder="Szakasz neve" id="nev" v-model="form.name"
-                                            class="inp w-3/4 mx-auto" required>
+                                            class="inp w-3/4 mx-auto" required hidden>
 
                                         <select class="inp w-3/4 mx-auto" v-model="form.completed">
                                             <option value="0">Tervezett</option>
                                             <option value="1">Teljesített</option>
                                         </select>
 
-                                        <input type="date" id="date" v-model="form.date" class="inp w-3/4 mx-auto" required
-                                        v-bind:min="today">
+                                        <input type="date" id="date" v-model="form.date" class="inp w-3/4 mx-auto"
+                                            required v-bind:min="today">
 
                                         <input type="submit" value="Mentés" id="save" class="submit mx-auto">
                                     </div>
@@ -344,10 +349,6 @@ function addGPXtoMap(u) {
                                 </form>
 
                             </div>
-
-
-
-
 
                         </div>
 

@@ -63,7 +63,7 @@ h1 {
 
   <AuthenticatedLayout>
     <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ stamp.mtsz_id }} - {{ stamp.name }}</h2>
+      <h2 class="font-semibold text-xl text-gray-800 dark:text-white leading-tight">{{ stamp.mtsz_id }} - {{ stamp.name }}</h2>
     </template>
 
     <div class="py-12">

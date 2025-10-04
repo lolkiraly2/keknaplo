@@ -15,7 +15,7 @@ const props = defineProps({
 
     <AuthenticatedLayout>
         <template #header>
-            <Pointnav></Pointnav>
+            <Pointnav />
         </template>
 
         <div class="py-12">

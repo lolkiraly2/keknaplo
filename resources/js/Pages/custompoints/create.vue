@@ -151,7 +151,7 @@ function StageChanged() {
 
     <AuthenticatedLayout>
         <template #header>
-            <Pointnav></Pointnav>
+            <Pointnav />
         </template>
 
         <div class="py-12">
@@ -201,9 +201,9 @@ function StageChanged() {
                                         <input type="text" placeholder="Saját pont neve" id="nev" v-model="form.name"
                                             class="mb-5 inp" required>
                                         <input type="text" placeholder="szélesség" id="szel" v-model="form.lat"
-                                            class="mb-5 inp" disabled required>
+                                            class="mb-5 inp" disabled required hidden>
                                         <input type="text" placeholder="hosszúság" id="hossz" v-model="form.lon"
-                                            class="mb-5 inp" disabled required>
+                                            class="mb-5 inp" disabled required hidden>
                                         <textarea id="leiras" placeholder="Rövid leírás (opcionális)"
                                             v-model="form.description" class="mb-5 inp"></textarea>
                                         <input type="submit" value="Rögzítés" id="save" class="submit">

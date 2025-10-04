@@ -147,7 +147,7 @@ function downloadGPX() {
 
   <AuthenticatedLayout>
     <template #header>
-      <CrouteNav></CrouteNav>
+      <CrouteNav />
     </template>
 
     <div class="py-12">

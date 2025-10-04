@@ -20,8 +20,7 @@ function remove(grouphikeid) {
 
     <AuthenticatedLayout>
         <template #header>
-            <!-- <h2 class="font-semibold text-xl text-gray-800 leading-tight">Saját pont rögzítés</h2> -->
-            <grouphikeNav></grouphikeNav>
+            <grouphikeNav />
         </template>
 
         <div class="py-12">

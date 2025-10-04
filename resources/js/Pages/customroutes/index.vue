@@ -20,7 +20,7 @@ const usepage = usePage()
 
     <AuthenticatedLayout>
         <template #header>
-            <CrouteNav></CrouteNav>
+            <CrouteNav />
         </template>
 
         <div class="py-12">

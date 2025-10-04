@@ -51,7 +51,7 @@ h3 {
 }
 
 .inp {
-    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm text-black dark:text-white bg-white dark:bg-gray-800 placeholder-gray-500 dark:placeholder-gray-400;
+    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm text-black dark:text-white bg-white dark:bg-gray-800 placeholder-gray-500 dark:placeholder:text-gray-200;
 }
 
 .submit {

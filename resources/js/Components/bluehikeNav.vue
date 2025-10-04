@@ -14,6 +14,6 @@ import StageNav from './StageNav.vue';
             Tervezett szakaszaim
         </NavLink>
 
-        <StageNav></StageNav>
+        <StageNav />
     </div>
 </template>

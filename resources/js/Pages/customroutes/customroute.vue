@@ -250,7 +250,7 @@ function addGPXtoMap(u) {
 
   <AuthenticatedLayout>
     <template #header>
-      <CrouteNav></CrouteNav>
+      <CrouteNav />
     </template>
 
     <div class="py-12">
@@ -276,7 +276,8 @@ function addGPXtoMap(u) {
               <button class="plannerbutton" @click="RemoveMapElements()">Útvonal törlése</button>
 
               <button class="plannerbutton" @click="PlanRoute()">Tervezés</button>
-              <img v-show="loading" src="../../../../public/ico/Walking.gif" alt="" height="200" width="50">
+              <img v-show="loading" src="../../../../public/ico/loading.gif" alt="" height="200" width="100"
+                class="mx-auto">
 
               <form v-show="showForm" @submit.prevent="form.post(route('customroutes.store'))">
                 <input type="text" placeholder="Túra neve" id="nev" v-model="form.name"

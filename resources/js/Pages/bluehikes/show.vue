@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import CrouteNav from '@/Components/CrouteNav.vue';
+import bluehikeNav from '@/Components/bluehikeNav.vue';
 import { Head, router } from '@inertiajs/vue3';
 import { onMounted } from 'vue';
 import "leaflet/dist/leaflet.css";
@@ -276,7 +276,7 @@ function Saving() {
 
   <AuthenticatedLayout>
     <template #header>
-      <CrouteNav></CrouteNav>
+      <bluehikeNav />
     </template>
 
     <div class="py-12">
@@ -288,7 +288,7 @@ function Saving() {
             <div id="map" class="w-full"></div>
             <button @click="downloadGPX" class="join my-5">Útvonal letöltése</button>
             <h2 class="text-center text-xl font-black my-2">Napló</h2>
-            <div id="editorjs" class="border-2 rounded-md border-black w-2/3 mx-auto my-5 p-5"></div>
+            <div id="editorjs" class="border-2 rounded-md border-black dark:border-white w-2/3 mx-auto my-5 p-5"></div>
             <button @click="Saving" class="join">Mentés</button>
           </div>
 

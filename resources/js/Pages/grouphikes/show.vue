@@ -169,7 +169,7 @@ function submit() {
 
   <AuthenticatedLayout>
     <template #header>
-      <grouphikeNav></grouphikeNav>
+      <grouphikeNav />
     </template>
 
     <div class="py-12">

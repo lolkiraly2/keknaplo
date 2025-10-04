@@ -16,7 +16,7 @@ const props = defineProps({
 
     <AuthenticatedLayout>
         <template #header>
-            <grouphikeNav></grouphikeNav>
+            <grouphikeNav />
         </template>
 
         <div class="py-12">
