@@ -79,8 +79,8 @@ function addGPXtoMap(u) {
     gpx.value = new L.GPX(u, {
         async: true,
         markers: {
-            startIcon: '../gpx/empty.png',
-            endIcon: '../gpx/empty.png',
+            startIcon: '../storage/empty.png',
+            endIcon: '../storage/empty.png',
         }
     }).on('loaded', (e) => {
         map.value.flyToBounds(e.target.getBounds());
@@ -95,7 +95,7 @@ function StageChanged() {
     form.stage_id = szakasz.value;
     // form.stage_id = this.szakasz;
     if (marker.value) map.value.removeLayer(marker.value);
-    let url = "../gpx/";
+    let url = "../storage/";
     let sznev = "";
 
     //DDK szakasz lett választva

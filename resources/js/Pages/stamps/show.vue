@@ -105,7 +105,7 @@ h1 {
                 <div class="pr-5 m-1">{{ stamp.location }}</div>
                 <div class="pl-5 m-1">Helyszín leírás:</div>
                 <div class="pr-5 m-1">{{ stamp.location_description }}</div>
-                <div class="pl-5 m-1" v-if="stamp.address != 'nincs'">cím:</div>
+                <div class="pl-5 m-1" v-if="stamp.address != 'nincs'">Cím:</div>
                 <div class="pr-5 m-1" v-if="stamp.address != 'nincs'">{{ stamp.address }}</div>
                 <div class="pl-5 m-1">Elérhetőség:</div>
                 <div class="pr-5 m-1">{{ stamp.availability }}</div>

@@ -46,8 +46,8 @@ function addGPXtoMap(u) {
   gpx = new L.GPX(url, {
     async: true,
     markers: {
-      startIcon: '../gpx/empty.png',
-      endIcon: '../gpx/empty.png',
+      startIcon: '../storage/empty.png',
+      endIcon: '../storage/empty.png',
     }
   }).on('loaded', function (e) {
     map.fitBounds(e.target.getBounds());

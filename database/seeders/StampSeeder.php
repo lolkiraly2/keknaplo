@@ -2945,7 +2945,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "DDKPH_28_1",
+            'mtsz_id' => "DDKPH_28",
             'stamp_id' => "DDKPH_28",
             'stage_id' => 7,
             'name' => "Nemesvid",
@@ -2954,30 +2954,12 @@ class StampSeeder extends Seeder
             'address' => "8738 Nemesvid, Dr. Huszti Dezső u. 1.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 46.49110528,
-            'lon' => 17.25619026,
+            'lat' => 46.491105,
+            'lon' => 17.256190,
             'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_1_f_3.jpg",
-        ]);
-
-        Stamp::create([
-            'mtsz_id' => "DDKPH_28_2",
-            'stamp_id' => "DDKPH_28",
-            'stage_id' => 7,
-            'name' => "Nemesvid",
-            'location' => "Sheriff söröző",
-            'location_description' => "A terasz faoszlopán.",
-            'address' => "8739 Nemesvid, Vörösmarty u. 1.",
-            'availability' => "Folyamatos",
-            'opening_hours' => "nincs",
-            'lat' => 46.48548511,
-            'lon' => 17.24556719,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_2_f_2.jpg",
-            'picture3_url' => "",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3303,6 +3285,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_1.jpg",
             'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_2.jpg",
             'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_3.jpg",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "DDKPH_41_B",
+            'stamp_id' => "DDKPH_41_B",
+            'stage_id' => 9,
+            'name' => "Árpádtető",
+            'location' => "Mecsekerdő Árpádtetői Erdészet",
+            'location_description' => "Az épület fedett teraszának jobb oldali oszlopán.",
+            'address' => "7628 Pécs-Árpádtető 3.",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 46.136286,
+            'lon' => 18.251564,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/ddkph_41_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4357,6 +4357,24 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
+            'mtsz_id' => "OKTPH_30_B",
+            'stamp_id' => "OKTPH_30_B",
+            'stage_id' => 17,
+            'name' => "Badacsony",
+            'location' => "OKK információs tábla",
+            'location_description' => "OKK információs táblán a Kisfaludy-kilátó közelében.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 46.802684,
+            'lon' => 17.496120,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_30_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_3.jpg",
+        ]);
+
+        Stamp::create([
             'mtsz_id' => "OKTPH_31",
             'stamp_id' => "OKTPH_31",
             'stage_id' => 17,
@@ -4560,17 +4578,17 @@ class StampSeeder extends Seeder
             'stamp_id' => "OKTPH_38",
             'stage_id' => 18,
             'name' => "Városlőd",
-            'location' => "Városlőd-Kislőd vasútállomás",
-            'location_description' => "A forgalmi ajtaja mellett, a falon.",
-            'address' => "nincs",
+            'location' => "Információs tábla",
+            'location_description' => "A buszmegálló mellett információs táblán.",
+            'address' => "8445 Városlőd, Pápai utca 3-5.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 47.1342848,
-            'lon' => 17.63167024,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_2.jpg",
-            'picture3_url' => "",
+            'lat' => 47.148084,
+            'lon' => 17.653542,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_38.svg",
+            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_1.jpg",
+            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_2.jpg",
+            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5391,17 +5409,17 @@ class StampSeeder extends Seeder
             'stamp_id' => "OKTPH_62",
             'stage_id' => 22,
             'name' => "Mogyorósbánya",
-            'location' => "Kakukk söröző",
-            'location_description' => "A söröző ajtajában.",
-            'address' => "2535 Mogyorósbánya, Alkotmány u. 17.",
+            'location' => "OKK útjelző oszlop",
+            'location_description' => "Buszmegállóval szemben lévő útjelző oszlopon.",
+            'address' => "2535 Mogyorósbánya, Arany János u.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 47.72745719,
-            'lon' => 18.59976087,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_62.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_62_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_62_f_2.jpg",
-            'picture3_url' => "",
+            'lat' => 47.726772,
+            'lon' => 18.602274,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_62.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5438,6 +5456,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_1.jpg",
             'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_2.jpg",
             'picture3_url' => "",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_63_C",
+            'stamp_id' => "OKTPH_63_C",
+            'stage_id' => 22,
+            'name' => "Nagy-Gete",
+            'location' => "OKK útjelző oszlop",
+            'location_description' => "Az útjelző oszlopon a csúcs közelépben.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.708993,
+            'lon' => 18.683006,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_63_c.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5846,17 +5882,17 @@ class StampSeeder extends Seeder
             'stamp_id' => "OKTPH_76",
             'stage_id' => 27,
             'name' => "Pilisszentlászló",
-            'location' => "Jánošikova krčma",
-            'location_description' => "A kocsma bejáratától jobbra, a kerítésen.",
-            'address' => "2009 Pilisszentlászló, Béke u. 8.",
+            'location' => "Kékvölgy Waldorf Általános Iskola",
+            'location_description' => "Az iskola kerítésén, a kaputól jobbra.",
+            'address' => "2009 Pilisszentlászló, Petőfi tér 1.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 47.72348511,
-            'lon' => 18.98759029,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_76.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_1_f_3.jpg",
+            'lat' => 47.723289,
+            'lon' => 18.988757,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_76.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5987,6 +6023,24 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
+            'mtsz_id' => "OKTPH_80_B",
+            'stamp_id' => "OKTPH_80_B",
+            'stage_id' => 28,
+            'name' => "Julianus-kilátó",
+            'location' => "OKK útjelző oszlop",
+            'location_description' => "Az útjelző oszlopon a kilátó közelében.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.783978,
+            'lon' => 18.933410,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_80_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_3.jpg",
+        ]);
+
+        Stamp::create([
             'mtsz_id' => "OKTPH_81",
             'stamp_id' => "OKTPH_81",
             'stage_id' => 28,
@@ -6038,6 +6092,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_1.jpg",
             'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_2.jpg",
             'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_3.jpg",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_83_B",
+            'stamp_id' => "OKTPH_83_B",
+            'stage_id' => 28,
+            'name' => "Csóványos",
+            'location' => "OKK információs tábla",
+            'location_description' => "Az információs táblán a kilátó közelében.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.949156,
+            'lon' => 18.948406,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_83_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6147,6 +6219,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_1.jpg",
             'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_2.jpg",
             'picture3_url' => "",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_86_B",
+            'stamp_id' => "OKTPH_86_B",
+            'stage_id' => 29,
+            'name' => "Naszály",
+            'location' => "Információs tábla",
+            'location_description' => "Egy információs táblán a geodéziai mérőtorony közelében.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.833844,
+            'lon' => 19.152866,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_86_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6601,7 +6691,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_102_1",
+            'mtsz_id' => "OKTPH_102_2",
             'stamp_id' => "OKTPH_102",
             'stage_id' => 31,
             'name' => "Galyatető",
@@ -6619,7 +6709,7 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_102_2",
+            'mtsz_id' => "OKTPH_102_1",
             'stamp_id' => "OKTPH_102",
             'stage_id' => 31,
             'name' => "Galyatető",
@@ -7112,17 +7202,17 @@ class StampSeeder extends Seeder
             'stamp_id' => "OKTPH_116",
             'stage_id' => 34,
             'name' => "Uppony",
-            'location' => "BB söröző",
-            'location_description' => "A söröző kerítésének betonoszlopán.",
-            'address' => "3622 Uppony, István Telep 71.",
+            'location' => "Lázbérc Bistro",
+            'location_description' => "A bisztró bejáratánál, a terasz fa oszlopán.",
+            'address' => "3622 Uppony, Szabadság telep 1.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 48.21401574,
-            'lon' => 20.44027676,
+            'lat' => 48.214993,
+            'lon' => 20.439183,
             'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_116.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_2_f_2.jpg",
-            'picture3_url' => "",
+            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_1.jpg",
+            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_2.jpg",
+            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7449,6 +7539,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_1.jpg",
             'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_2.jpg",
             'picture3_url' => "",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_128_B",
+            'stamp_id' => "OKTPH_128_B",
+            'stage_id' => 36,
+            'name' => "Irota",
+            'location' => "OKK információs tábla",
+            'location_description' => "Információs táblán a kézművesháznál.",
+            'address' => "3786 Kossuth Lajos u. 1.",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 48.398217,
+            'lon' => 20.875997,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_128_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7886,39 +7994,21 @@ class StampSeeder extends Seeder
         ]);
 
         Stamp::create([
-            'mtsz_id' => "OKTPH_146_1",
+            'mtsz_id' => "OKTPH_146",
             'stamp_id' => "OKTPH_146",
             'stage_id' => 38,
-            'name' => "Bózsva",
-            'location' => "Faluház",
-            'location_description' => "A Faluház előtti villanyoszlopon.",
-            'address' => "3994 Bózsva, Dózsa György utca 21.",
+            'name' => "Füzérradvány",
+            'location' => "	OKK információs tábla",
+            'location_description' => "Református templommal szemben, OKK információs táblán.",
+            'address' => "3993 Füzérradvány, Kossuth Lajos u.",
             'availability' => "Folyamatos",
             'opening_hours' => "nincs",
-            'lat' => 48.47420525,
-            'lon' => 21.46931778,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_146.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_146_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_146_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_146_1_f_3.jpg",
-        ]);
-
-        Stamp::create([
-            'mtsz_id' => "OKTPH_146_2",
-            'stamp_id' => "OKTPH_146",
-            'stage_id' => 38,
-            'name' => "Bózsva",
-            'location' => "Kőbérc Panzió Étterem",
-            'location_description' => "Az épület tornácának faoszlopán.",
-            'address' => "3994 Bózsva, Esze Tamás utca 30–31.",
-            'availability' => "Folyamatos",
-            'opening_hours' => "nincs",
-            'lat' => 48.47514612,
-            'lon' => 21.46835874,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_146.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_146_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_146_2_f_2.jpg",
-            'picture3_url' => "",
+            'lat' => 48.484423,
+            'lon' => 21.525029,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_146.svg",
+            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_1.jpg",
+            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_2.jpg",
+            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7955,6 +8045,24 @@ class StampSeeder extends Seeder
             'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_1_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_147_B",
+            'stamp_id' => "OKTPH_147_B",
+            'stage_id' => 38,
+            'name' => "Nagy-Milic",
+            'location' => "OKK útjelző oszlop",
+            'location_description' => "Az útjelző oszlopon a Nagy-Milic közelében.",
+            'address' => "nincs",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 48.576535,
+            'lon' => 21.458098,
+            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_147_b.svg",
+            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_1.jpg",
+            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_2.jpg",
+            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_3.jpg",
         ]);
 
         Stamp::create([
