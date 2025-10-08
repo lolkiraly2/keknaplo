@@ -59,7 +59,7 @@ function InitMap() {
 function addGPXtoMap() {
 
   controlElevation = L.control.elevation({
-    srcFolder: 'http://unpkg.com/@raruto/leaflet-elevation/src/',
+    srcFolder: 'https://unpkg.com/@raruto/leaflet-elevation/src/',
     theme: "lightblue-theme",
 
     // Chart container outside/inside map container
