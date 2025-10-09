@@ -5,6 +5,8 @@ import Pointnav from '@/Components/pointnav.vue';
 import { ref, onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import 'leaflet-extra-markers';
+import 'leaflet-extra-markers/dist/css/leaflet.extra-markers.min.css';
 import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
@@ -24,6 +26,11 @@ const gpx = ref(null);
 const marker = ref(null);
 const map = ref(null);
 const stagename = ref('');
+
+var blueMarker = L.ExtraMarkers.icon({
+        markerColor: 'blue',
+        shape: 'circle',
+    });
 
 const form = useForm({
     name: props.cpoint.name,
@@ -51,23 +58,24 @@ function InitMap() {
         kekturak.value = "AK";
     if (props.stage[0] == 'B')
         kekturak.value = "BFK";
-    let url = "../../gpx/" + kekturak.value + "/" + props.stage + ".gpx";
+    let url = "../../storage/" + kekturak.value + "/" + props.stage + ".gpx";
     szakasz.value = props.cpoint.stage_id
     HikeChanged();
     addGPXtoMap(url)
-    marker.value = new L.marker([props.cpoint.lat, props.cpoint.lon]).addTo(map.value);
+    marker.value = new L.marker([props.cpoint.lat, props.cpoint.lon],{ icon: blueMarker}).addTo(map.value);
 
     map.value.on('click', NewMarker);
 }
 
 function NewMarker(e) {
     if (marker.value) map.value.removeLayer(marker.value);
-    var myIcon = L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/iconic/open-iconic/master/png/map-marker-8x.png',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
-    });
-    marker.value = new L.marker([e.latlng.lat, e.latlng.lng]).addTo(map.value);
+    
+    
+
+    marker.value = new L.marker([e.latlng.lat, e.latlng.lng], {
+        draggable: true,
+        icon: blueMarker
+    }).addTo(map.value);
     // console.log("new marker")
 
     //console.log(this.marker)
@@ -93,8 +101,8 @@ function addGPXtoMap(u) {
     gpx.value = new L.GPX(u, {
         async: true,
         markers: {
-            startIcon: '../../gpx/empty.png',
-            endIcon: '../../gpx/empty.png',
+            startIcon: '../../storage/empty.png',
+            endIcon: '../../storage/empty.png',
         }
     }).on('loaded', (e) => {
         map.value.flyToBounds(e.target.getBounds());
@@ -109,7 +117,7 @@ function StageChanged() {
     form.stage_id = szakasz.value;
     // form.stage_id = this.szakasz;
     if (marker.value) map.value.removeLayer(marker.value);
-    let url = "../../gpx/";
+    let url = "../../storage/";
     let sznev = "";
 
     //DDK szakasz lett választva

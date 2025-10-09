@@ -5,6 +5,8 @@ import Pointnav from '@/Components/pointnav.vue';
 import { ref, onMounted } from 'vue'
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import 'leaflet-extra-markers';
+import 'leaflet-extra-markers/dist/css/leaflet.extra-markers.min.css';
 import 'leaflet-gpx/gpx.js';
 
 const page = usePage();
@@ -48,12 +50,16 @@ function InitMap() {
 
 function NewMarker(e) {
     if (marker.value) map.value.removeLayer(marker.value);
-    var myIcon = L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/iconic/open-iconic/master/png/map-marker-8x.png',
-        iconSize: [32, 32],
-        iconAnchor: [16, 32],
+
+    var blueMarker = L.ExtraMarkers.icon({
+        markerColor: 'blue',
+        shape: 'circle',
     });
-    marker.value = new L.marker([e.latlng.lat, e.latlng.lng]).addTo(map.value);
+
+    marker.value = new L.marker([e.latlng.lat, e.latlng.lng], {
+        draggable: true,
+        icon: blueMarker
+    }).addTo(map.value);
     // console.log("new marker")
 
     //console.log(this.marker)
@@ -141,7 +147,7 @@ function StageChanged() {
 
 <style>
 .leaflet-grab {
-  cursor: auto;
+    cursor: auto;
 }
 </style>
 

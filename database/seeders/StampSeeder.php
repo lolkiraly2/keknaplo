@@ -26,10 +26,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.34950238,
             'lon' => 18.71254019,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_50_akph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_50_akph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -44,10 +44,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.34459808,
             'lon' => 18.79073997,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_02.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_02.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_02_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -62,10 +62,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.328435,
             'lon' => 18.85094,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_03.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_03.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_03_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -80,10 +80,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.25538778,
             'lon' => 18.84330513,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_04.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_04.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -98,10 +98,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.19960052,
             'lon' => 18.83729725,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_04_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_04_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_04_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -116,10 +116,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.19155193,
             'lon' => 18.93007471,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -134,10 +134,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.193134,
             'lon' => 18.92125,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_3.jpg",
         ]);
 
         //AK 2. szakasz
@@ -153,10 +153,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.19155193,
             'lon' => 18.93007471,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -171,10 +171,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.193134,
             'lon' => 18.92125,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_05_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -189,10 +189,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.30159222,
             'lon' => 18.94099372,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_06.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_06.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -207,10 +207,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.25740046,
             'lon' => 19.09109741,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_06_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_06_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_06_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -225,10 +225,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.38490763,
             'lon' => 19.1504371,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_3.jpg",
         ]);
 
         //AK 3. szakasz
@@ -244,10 +244,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.38490763,
             'lon' => 19.1504371,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -262,10 +262,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.39790057,
             'lon' => 19.23579756,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_07_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_07_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -280,10 +280,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.36362968,
             'lon' => 19.28576777,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_08.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_08.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_08_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -298,10 +298,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.39382815,
             'lon' => 19.36518211,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -316,10 +316,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.35250039,
             'lon' => 19.4478972,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -334,9 +334,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.29277949,
             'lon' => 19.56790429,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09_c.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_c_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_c_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_09_c.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_c_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_09_c_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -352,10 +352,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.25591476,
             'lon' => 19.65847763,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_3.jpg",
         ]);
 
         //4. szakasz
@@ -371,10 +371,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.25591476,
             'lon' => 19.65847763,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -389,10 +389,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.22200039,
             'lon' => 19.76599727,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_10_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_10_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -407,10 +407,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.287987,
             'lon' => 19.749941,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_11.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_11.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_11_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -425,10 +425,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.274851,
             'lon' => 19.888101,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_12.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_12.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_12_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -443,10 +443,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.319137,
             'lon' => 19.925012,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_13.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_13.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_13_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -461,10 +461,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.326934,
             'lon' => 19.971141,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_14.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_14.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_14_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -479,10 +479,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.3457,
             'lon' => 20.0438,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_15_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -497,10 +497,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.3621957,
             'lon' => 20.0974959,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_16.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_16.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_16_f_3.jpg",
         ]);
         Stamp::create([
             'mtsz_id' => "AKPH_17",
@@ -514,10 +514,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.48811288,
             'lon' => 20.09376885,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_17.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_17.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_17_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -532,10 +532,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.53247697,
             'lon' => 20.16381488,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -550,8 +550,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "Ősz: 6.30 – 17.00 Nyár: 5.30 – 19.00",
             'lat' => 46.533,
             'lon' => 20.1636,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_2_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_18_2_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -568,10 +568,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.15 – 21.05",
             'lat' => 46.52402695,
             'lon' => 20.19369399,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_3.jpg",
         ]);
 
         //AK 5. szakasz
@@ -587,10 +587,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.15 – 21.05",
             'lat' => 46.52402695,
             'lon' => 20.19369399,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -605,10 +605,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 46.54166122,
             'lon' => 20.33514872,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_19_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_19_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -623,10 +623,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 46.54263916,
             'lon' => 20.40654392,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_20.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_20.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_20_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -641,10 +641,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 46.588839,
             'lon' => 20.468421,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_21.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_21.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_21_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -659,10 +659,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.6169,
             'lon' => 20.5504,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_22.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_22.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_22_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -677,10 +677,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.65858353,
             'lon' => 20.58985044,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_23.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_23.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -695,10 +695,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.7071618,
             'lon' => 20.5614526,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_23_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_23_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_23_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -713,10 +713,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8584149,
             'lon' => 20.5260147,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -731,10 +731,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8 – sötétedésig",
             'lat' => 46.87368647,
             'lon' => 20.52790956,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_3.jpg",
         ]);
 
         //AK 6. szakasz
@@ -750,10 +750,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8584149,
             'lon' => 20.5260147,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -768,10 +768,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8 – sötétedésig",
             'lat' => 46.87368647,
             'lon' => 20.52790956,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_24_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -786,10 +786,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.94477556,
             'lon' => 20.63831974,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_25.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_25.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_25_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -804,9 +804,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.00552071,
             'lon' => 20.62086628,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_26.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_26.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -822,10 +822,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.08245102,
             'lon' => 20.76083945,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_26_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_26_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_26_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -840,10 +840,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.15413461,
             'lon' => 20.91659643,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_27.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_27.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_27_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -858,10 +858,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.08131953,
             'lon' => 20.93343959,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_28.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_28.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_28_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -876,10 +876,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.30 – 20.00",
             'lat' => 47.03400629,
             'lon' => 20.94348879,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_3.jpg",
         ]);
 
         //AK 7. szakasz
@@ -895,10 +895,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.30 – 20.00",
             'lat' => 47.03400629,
             'lon' => 20.94348879,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -913,10 +913,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.04331153,
             'lon' => 21.06465496,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_29_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_29_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -931,10 +931,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.30 – 20.30",
             'lat' => 46.96996896,
             'lon' => 21.08589851,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_30.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_30.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_30_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -949,10 +949,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.986205,
             'lon' => 21.183002,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_31.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_31.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -967,10 +967,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98586798,
             'lon' => 21.18294629,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_31.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_31.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_31_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -985,10 +985,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.9394138,
             'lon' => 21.2146105,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_32.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_32.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_32_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1003,10 +1003,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 7.50 – 22.50",
             'lat' => 46.9388573,
             'lon' => 21.26370679,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_33.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_33.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_3.jpg",
         ]);
 
         //AK 8. szakasz
@@ -1022,10 +1022,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 7.50 – 22.50",
             'lat' => 46.9388573,
             'lon' => 21.26370679,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_33.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_33.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_33_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1040,10 +1040,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.89880937,
             'lon' => 21.34268205,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_34.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_34.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_34_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1058,10 +1058,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.919311,
             'lon' => 21.486434,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1076,10 +1076,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.92393033,
             'lon' => 21.53276857,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_35_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_35_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_35_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1094,10 +1094,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.885641,
             'lon' => 21.575717,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_36.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_36.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1112,9 +1112,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.884045,
             'lon' => 21.579988,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_36.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_36.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_36_2_f_2.jpg",
             'picture3_url' => "",
         ]);
         Stamp::create([
@@ -1129,10 +1129,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.97019445,
             'lon' => 21.60103569,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_37.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_37.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1147,10 +1147,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.96419171,
             'lon' => 21.65708146,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_37_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_37_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_37_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1165,10 +1165,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.009248,
             'lon' => 21.6458528,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_38_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1183,10 +1183,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.01911903,
             'lon' => 21.592238,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_39.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_39.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1201,10 +1201,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.07090942,
             'lon' => 21.54142195,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_39_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_39_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_39_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1219,10 +1219,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.1285108,
             'lon' => 21.4563661,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_40.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_40.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_40_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1237,10 +1237,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "Elérhetőség: 30/902-8275",
             'lat' => 47.19232647,
             'lon' => 21.45913787,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_41.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_41.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_41_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1255,10 +1255,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.20972422,
             'lon' => 21.53789013,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_3.jpg",
         ]);
 
         //AK 9. szakasz
@@ -1274,10 +1274,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.20972422,
             'lon' => 21.53789013,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1292,10 +1292,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.22762707,
             'lon' => 21.61656667,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_42_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_42_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1310,10 +1310,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.243852,
             'lon' => 21.701775,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_f_3.jpg",
         ]);
         Stamp::create([
             'mtsz_id' => "AKPH_43_B",
@@ -1327,10 +1327,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.19531743,
             'lon' => 21.73273576,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_43_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_43_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_43_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1345,10 +1345,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.190784,
             'lon' => 21.80021,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_44.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_44.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1363,9 +1363,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.1875782,
             'lon' => 21.80043745,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_44.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_44.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_44_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -1381,10 +1381,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.243914,
             'lon' => 21.814002,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_45.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_45.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1399,10 +1399,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.2481999,
             'lon' => 21.8265139,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_45.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_45.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_45_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1417,10 +1417,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.278514,
             'lon' => 21.804674,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1435,10 +1435,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "Telefonon egyeztetni: 06-20-921-5663 vagy 06-20-521-3117",
             'lat' => 47.28621588,
             'lon' => 21.82684296,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1453,10 +1453,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.2832536,
             'lon' => 21.8278144,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_46.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_46_3_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1471,10 +1471,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.32044525,
             'lon' => 21.89133341,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_47_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1489,10 +1489,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.3834419,
             'lon' => 21.8916791,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_48.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_48.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_3.jpg",
         ]);
 
         //AK 10. szakasz
@@ -1508,10 +1508,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.3834419,
             'lon' => 21.8916791,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_48.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_48.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_48_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1526,10 +1526,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.4604779,
             'lon' => 21.9335107,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_49.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_49.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_49_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1544,10 +1544,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.42234648,
             'lon' => 21.86587081,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1562,10 +1562,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.4812813,
             'lon' => 21.8232304,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_50_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_50_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_50_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1580,10 +1580,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.446314,
             'lon' => 21.692623,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_51.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_51.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1598,10 +1598,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.452919,
             'lon' => 21.703606,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_51.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_51.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_51_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1616,10 +1616,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.48702642,
             'lon' => 21.7181635,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1634,9 +1634,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.47862849,
             'lon' => 21.71941826,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -1652,10 +1652,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.4997251,
             'lon' => 21.76655166,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_52_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_52_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1670,10 +1670,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.52921017,
             'lon' => 21.81523221,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_3.jpg",
         ]);
 
         //AK 11. szakasz
@@ -1689,10 +1689,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.52921017,
             'lon' => 21.81523221,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1707,10 +1707,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.56944478,
             'lon' => 21.87916592,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_53_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_53_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1725,9 +1725,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.6018514,
             'lon' => 21.9718914,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_54.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_54.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -1743,9 +1743,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.66191775,
             'lon' => 22.01113433,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_54_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_54_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_54_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -1761,10 +1761,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.69319176,
             'lon' => 22.04512309,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_55.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_55.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_55_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1779,10 +1779,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.77968497,
             'lon' => 22.06589667,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_56.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_56.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_56_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1797,10 +1797,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.837176,
             'lon' => 22.127151,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1815,10 +1815,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-V: 03:30 - 0:30",
             'lat' => 47.842323,
             'lon' => 22.131179,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_3.jpg",
         ]);
 
         //AK 12. szakasz
@@ -1834,10 +1834,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.837176,
             'lon' => 22.127151,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1852,10 +1852,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-V: 03:30 - 0:30",
             'lat' => 47.842323,
             'lon' => 22.131179,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_57_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1870,10 +1870,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.896228,
             'lon' => 22.162368,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_58.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_58.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_58_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1888,10 +1888,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.9901555,
             'lon' => 22.1475065,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_59.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_59.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_59_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1906,10 +1906,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.09672733,
             'lon' => 22.10105293,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_60.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_60.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_60_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1924,10 +1924,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.1361084,
             'lon' => 22.1127203,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_61.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_61.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_61_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1942,10 +1942,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.20855981,
             'lon' => 22.07833445,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1960,10 +1960,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.23078689,
             'lon' => 22.06848124,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_3.jpg",
         ]);
 
         //AK 13. szakasz
@@ -1979,10 +1979,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.20855981,
             'lon' => 22.07833445,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -1997,10 +1997,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.23078689,
             'lon' => 22.06848124,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2015,10 +2015,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.21321109,
             'lon' => 22.00405657,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_62_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_62_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2033,9 +2033,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.24643168,
             'lon' => 21.96304889,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_63.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_63_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_63_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_63.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_63_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_63_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2051,10 +2051,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.278158,
             'lon' => 21.832895,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_64.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_64.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_64_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2069,10 +2069,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.3307779,
             'lon' => 21.8300002,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_65.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_65.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_65_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2087,10 +2087,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.31525943,
             'lon' => 21.79478308,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_66.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_66.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2105,10 +2105,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.33223834,
             'lon' => 21.74553145,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_66_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_66_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_66_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2123,10 +2123,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.36078297,
             'lon' => 21.69342108,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_67.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\akph_67.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\akph_67_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2141,10 +2141,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 3.30 – 23.50",
             'lat' => 48.38615172,
             'lon' => 21.65740948,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_143_akph_69.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_143_akph_69.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_143_akph_69_f_3.jpg",
         ]);
 
         //DDK 1. szakasz
@@ -2160,10 +2160,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.35279646,
             'lon' => 16.43378625,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2178,10 +2178,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.35292626,
             'lon' => 16.43432804,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2196,10 +2196,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.32444595,
             'lon' => 16.49055302,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_02.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_02.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_02_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2214,9 +2214,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.22178666,
             'lon' => 16.56543438,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_03.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_03_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_03_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_03.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_03_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_03_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2232,10 +2232,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.13879003,
             'lon' => 16.58239926,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_04.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_04.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_04_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2250,10 +2250,28 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.08671164,
             'lon' => 16.6125276,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_2.jpg",
             'picture3_url' => "",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "DDKPH_05_2",
+            'stamp_id' => "DDKPH_05",
+            'stage_id' => 1,
+            'name' => "Egyházasrádóc",
+            'location' => "OKK információs tábla",
+            'location_description' => "Egyházasrádóc vasútállomáson az OKK információs táblán.",
+            'address' => "9783 Egyházasrádóc",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.089960,
+            'lon' => 16.618946,
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_05_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_05_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_05_2_f_3.jpg",
         ]);
 
         //DDK 2. szakasz
@@ -2269,9 +2287,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.08671164,
             'lon' => 16.6125276,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_05_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2287,10 +2305,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.04347108,
             'lon' => 16.67938716,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_06.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_06.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_06_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2305,10 +2323,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98980786,
             'lon' => 16.67742791,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_07.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_07.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_07_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2323,10 +2341,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.97155856,
             'lon' => 16.56382159,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_08.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_08.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_08_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2341,10 +2359,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.93808423,
             'lon' => 16.49712893,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_09.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_09.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_09_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2359,10 +2377,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.89632162,
             'lon' => 16.39329269,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_10.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_10.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_10_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2377,9 +2395,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.83849791,
             'lon' => 16.42104557,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_11.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_11.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2396,9 +2414,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.83849791,
             'lon' => 16.42104557,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_11.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_11.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_11_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2414,10 +2432,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.76069992,
             'lon' => 16.34193875,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_12.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_12.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_12_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2432,9 +2450,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.72433687,
             'lon' => 16.40989258,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_13.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_13_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_13_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_13.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_13_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_13_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2450,10 +2468,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.7906975,
             'lon' => 16.526287,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_14.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_14.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2468,10 +2486,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.81735934,
             'lon' => 16.53246683,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_14_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_14_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_14_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2486,10 +2504,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8457449,
             'lon' => 16.57698248,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2504,10 +2522,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.843076,
             'lon' => 16.585099,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_3.jpg",
         ]);
 
         //DDK 4. szakasz
@@ -2523,10 +2541,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8457449,
             'lon' => 16.57698248,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2541,10 +2559,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.843076,
             'lon' => 16.585099,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_15_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2559,10 +2577,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.78331327,
             'lon' => 16.67853674,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_16.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_16.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_16_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2577,10 +2595,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.77420857,
             'lon' => 16.69715768,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_17.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_17.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2595,10 +2613,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.77338966,
             'lon' => 16.69763403,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_17.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_17.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_17_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2613,10 +2631,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.70311862,
             'lon' => 16.76186883,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2631,10 +2649,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.7009628,
             'lon' => 16.75874551,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_18_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2649,9 +2667,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.6540809,
             'lon' => 16.77125828,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_2.jpg",
             'picture3_url' => "",
         ]);
         Stamp::create([
@@ -2666,10 +2684,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.65508159,
             'lon' => 16.76668587,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_3.jpg",
         ]);
 
         //DDK 5. szakasz
@@ -2685,9 +2703,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.6540809,
             'lon' => 16.77125828,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_1_f_2.jpg",
             'picture3_url' => "",
         ]);
         Stamp::create([
@@ -2702,10 +2720,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.65508159,
             'lon' => 16.76668587,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2720,10 +2738,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.61576606,
             'lon' => 16.75779349,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_19_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_19_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2738,10 +2756,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.55634991,
             'lon' => 16.71603285,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_20.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_20.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2756,10 +2774,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.53753667,
             'lon' => 16.70293677,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_20_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_20_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_20_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2774,10 +2792,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.527022,
             'lon' => 16.727478,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_21.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_21.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2792,9 +2810,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.49338737,
             'lon' => 16.74347064,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_21_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_21_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_21_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2810,10 +2828,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.50165178,
             'lon' => 16.81036485,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_22.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_22.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_22_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2828,10 +2846,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.49902578,
             'lon' => 16.91697326,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_23.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_23.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_23_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2846,10 +2864,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.49857079,
             'lon' => 16.98501945,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_3.jpg",
         ]);
 
         //DDK 6. szakasz
@@ -2865,10 +2883,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.49857079,
             'lon' => 16.98501945,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_24_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2883,10 +2901,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.59505746,
             'lon' => 17.05336614,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_25.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_25.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_25_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2901,10 +2919,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.55840895,
             'lon' => 17.10929821,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_26.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_26.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_26_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2919,10 +2937,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.52571219,
             'lon' => 17.17813977,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_27.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_27.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_3.jpg",
         ]);
 
         //DDK 7. szakasz
@@ -2938,10 +2956,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.52571219,
             'lon' => 17.17813977,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_27.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_27.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_27_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2956,10 +2974,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.491105,
             'lon' => 17.256190,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_28_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -2974,9 +2992,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.50711157,
             'lon' => 17.28500069,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_28_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_28_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -2992,10 +3010,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.49657358,
             'lon' => 17.4231584,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3010,9 +3028,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–P: 6–17:30, Szo: 6–14, V: 7–11:30",
             'lat' => 46.49583928,
             'lon' => 17.42319525,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_29_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3028,10 +3046,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.43370311,
             'lon' => 17.57712365,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_30.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_30.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_30_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3046,10 +3064,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.354718,
             'lon' => 17.692677,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_31.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_31.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_3.jpg",
         ]);
 
         //DDK 8. szakasz
@@ -3065,10 +3083,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.354718,
             'lon' => 17.692677,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_31.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_31.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_31_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3083,10 +3101,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.30477835,
             'lon' => 17.72616902,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_32.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_32.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_32_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3101,10 +3119,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.26921741,
             'lon' => 17.73079409,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_33.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_33.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_1_f_3.jpg",
         ]);
         Stamp::create([
             'mtsz_id' => "DDKPH_33_2",
@@ -3118,10 +3136,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.27324409,
             'lon' => 17.73407136,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_33.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_33.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_33_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3136,10 +3154,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.28474958,
             'lon' => 17.82974063,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_34.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_34.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_34_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3154,10 +3172,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.25546,
             'lon' => 17.885232,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_35_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3172,10 +3190,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.19214878,
             'lon' => 17.95881923,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_36.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_36.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_36_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3190,10 +3208,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.15282895,
             'lon' => 18.07525338,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_37.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_37.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_3.jpg",
         ]);
 
         //DDK 9. szakasz
@@ -3209,10 +3227,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.15282895,
             'lon' => 18.07525338,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_37.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_37.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_37_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3227,10 +3245,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.13671813,
             'lon' => 18.11645282,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_38_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3245,10 +3263,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.09372379,
             'lon' => 18.13806135,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_39.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_39.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_39_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3263,10 +3281,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.12351864,
             'lon' => 18.18130482,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_40.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_40.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_40_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3281,10 +3299,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.12405048,
             'lon' => 18.226005,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_41.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_41.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_41_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3299,10 +3317,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.136286,
             'lon' => 18.251564,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/ddkph_41_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/ddkph_41_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/ddkph_41_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3317,10 +3335,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.1849285,
             'lon' => 18.31854395,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_3.jpg",
         ]);
 
         //DDK 10. szakasz
@@ -3336,10 +3354,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.1849285,
             'lon' => 18.31854395,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_42_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3354,10 +3372,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.21096507,
             'lon' => 18.36907589,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_43_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3372,10 +3390,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.22068547,
             'lon' => 18.4110538,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_44.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_44.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_44_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3390,10 +3408,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.20311846,
             'lon' => 18.48055668,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_45.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_45.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_45_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3408,10 +3426,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.22228561,
             'lon' => 18.60030432,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_46.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_46.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_46_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3426,10 +3444,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.236013,
             'lon' => 18.627454,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3444,10 +3462,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.21472851,
             'lon' => 18.64260543,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_3.jpg",
         ]);
 
         //DDK 11. szakasz
@@ -3463,10 +3481,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.236013,
             'lon' => 18.627454,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3481,10 +3499,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.21472851,
             'lon' => 18.64260543,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_47_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3499,10 +3517,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.27508375,
             'lon' => 18.63544505,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_48.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_48.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_48_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3517,10 +3535,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.2888452,
             'lon' => 18.60602413,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_49.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_49.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_49_f_3.jpg",
         ]);
         Stamp::create([
             'mtsz_id' => "DDKPH_50",
@@ -3534,10 +3552,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.34950238,
             'lon' => 18.71254019,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_50_akph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\ddkph_50_akph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\ddkph_50_akph_01_f_3.jpg",
         ]);
 
         //OKT 1. szakasz
@@ -3553,10 +3571,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.35279646,
             'lon' => 16.43378625,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3571,10 +3589,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.35292626,
             'lon' => 16.43432804,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_01_ddkph_01.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_01_ddkph_01_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3589,10 +3607,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.38730386,
             'lon' => 16.50054978,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_02.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_02.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_02_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3607,10 +3625,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.38811913,
             'lon' => 16.54230953,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_03.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_03.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3625,10 +3643,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 11–21 óráig",
             'lat' => 47.3902967,
             'lon' => 16.53812947,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_03.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_03.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_03_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3643,10 +3661,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.36391177,
             'lon' => 16.67555217,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_04.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_04.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_04_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3661,9 +3679,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.34886499,
             'lon' => 16.74464646,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_05.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_05_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_05_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_05.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_05_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_05_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3679,10 +3697,28 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.3100101,
             'lon' => 16.83236488,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_06.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_06.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_06_f_3.jpg",
+        ]);
+
+        Stamp::create([
+            'mtsz_id' => "OKTPH_06_2",
+            'stamp_id' => "OKTPH_06",
+            'stage_id' => 12,
+            'name' => "Szeleste",
+            'location' => "OKK információs tábla",
+            'location_description' => "Ölbő-Alsószeleste vasútállomáson, épület mögött OKK információs táblán.",
+            'address' => "9621 Ölbő",
+            'availability' => "Folyamatos",
+            'opening_hours' => "nincs",
+            'lat' => 47.300441,
+            'lon' => 16.842954,
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_06.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_06_2_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_06_2_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_06_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3697,10 +3733,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.25217262,
             'lon' => 16.82889459,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_07.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_07.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3715,9 +3751,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H: 7-10, K–P: 7–15, Szo: 6–11, V: zárva",
             'lat' => 47.25294112,
             'lon' => 16.82948781,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_07.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_07.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_07_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3733,10 +3769,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.23822396,
             'lon' => 16.89678215,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_08.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_08.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_08_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3751,10 +3787,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.2455474,
             'lon' => 16.9408054,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_09.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_09.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_3.jpg",
         ]);
 
         //OKT 2. szakasz
@@ -3770,10 +3806,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.2455474,
             'lon' => 16.9408054,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_09.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_09.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_09_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3788,8 +3824,8 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.21813638,
             'lon' => 17.01509361,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_10.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_1_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_10.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_1_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -3805,10 +3841,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.21576225,
             'lon' => 17.01629947,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_10.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_10.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_10_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3823,9 +3859,9 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.20197256,
             'lon' => 17.00050746,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_11.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_11_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_11_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_11.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_11_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_11_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3841,8 +3877,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.16205344,
             'lon' => 16.98285759,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_12.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_12_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_12.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_12_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -3860,9 +3896,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 6–22",
             'lat' => 47.16166965,
             'lon' => 17.04513898,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_13.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_13.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3878,9 +3914,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.16025735,
             'lon' => 17.04521829,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_13.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_13.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_13_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3896,9 +3932,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.09191618,
             'lon' => 17.02236197,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_14.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_14_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_14_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_14.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_14_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_14_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3914,9 +3950,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.05498789,
             'lon' => 17.01140197,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_15.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_15_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_15_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_15.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_15_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_15_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3932,10 +3968,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.01197873,
             'lon' => 17.13980137,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_16.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_16.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_16_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -3950,9 +3986,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.99496131,
             'lon' => 17.19885059,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_17.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_17_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_17_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_17.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_17_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_17_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -3968,10 +4004,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98116496,
             'lon' => 17.27083293,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_3.jpg",
         ]);
 
         //OKT 3. szakasz
@@ -3987,10 +4023,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98116496,
             'lon' => 17.27083293,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_18.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_18.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_18_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4005,10 +4041,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.93493002,
             'lon' => 17.29235474,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_19.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_19.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_19_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4023,10 +4059,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.898736,
             'lon' => 17.216622,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_20.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_20.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_20_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4041,10 +4077,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.88975596,
             'lon' => 17.22853554,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_20.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_20.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_20_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4059,10 +4095,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-Cs: 11-21, P: 11-23, Szo: 9-23, V: 9-21",
             'lat' => 46.84293148,
             'lon' => 17.21894007,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_21.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_21.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4077,10 +4113,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8426815,
             'lon' => 17.218868,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_21.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_21.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_21_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4095,10 +4131,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8289259,
             'lon' => 17.1977147,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_22.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_22.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_22_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4113,10 +4149,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.788522,
             'lon' => 17.191177,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_23.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_23.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_23_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4131,9 +4167,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.75771206,
             'lon' => 17.24695065,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4150,9 +4186,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.75771206,
             'lon' => 17.24695065,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_24.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_24.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_24_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4168,10 +4204,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8452034,
             'lon' => 17.3042997,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_25.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_25.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_25_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4186,10 +4222,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8718395,
             'lon' => 17.3577135,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_26.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_26.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4204,10 +4240,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.8690831,
             'lon' => 17.3620195,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_26.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_26.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_26_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4222,10 +4258,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.87747635,
             'lon' => 17.42919701,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_27.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_27.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_3.jpg",
         ]);
 
         //OKT 5. szakasz
@@ -4241,10 +4277,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.87747635,
             'lon' => 17.42919701,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_27.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_27.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_27_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4259,10 +4295,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.84707942,
             'lon' => 17.45155091,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_28.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_28.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_28_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4277,9 +4313,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.80327695,
             'lon' => 17.43478933,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_3_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_3_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4295,8 +4331,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.80460138,
             'lon' => 17.43571274,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_1_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_1_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -4313,9 +4349,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "Szezonális, telefonon érdeklődni!",
             'lat' => 46.80308617,
             'lon' => 17.43489039,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_29.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_29_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4331,10 +4367,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.15 – 22.30",
             'lat' => 46.8098115,
             'lon' => 17.46930875,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_30.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_30.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_3.jpg",
         ]);
 
         //OKT 6. szakasz
@@ -4350,10 +4386,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 4.15 – 22.30",
             'lat' => 46.8098115,
             'lon' => 17.46930875,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_30.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_30.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_30_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4368,10 +4404,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.802684,
             'lon' => 17.496120,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_30_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_30_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_30_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4386,9 +4422,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.84937812,
             'lon' => 17.51332746,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_31.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_31.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4404,9 +4440,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.87113393,
             'lon' => 17.50333676,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_31_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_31_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_31_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4422,9 +4458,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.88730507,
             'lon' => 17.56340244,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_32.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_32_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_32_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_32.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_32_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_32_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4440,10 +4476,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.9113202,
             'lon' => 17.6158341,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_33.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_33.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_33_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4458,10 +4494,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.94747546,
             'lon' => 17.6513873,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_34.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_34.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_34_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4476,10 +4512,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98449327,
             'lon' => 17.69618913,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4494,10 +4530,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-Sz: 6.00-22.00 V: 7.00-21.00",
             'lat' => 46.98216442,
             'lon' => 17.69601033,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_3.jpg",
         ]);
 
         //OKT 7. szakasz
@@ -4513,10 +4549,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 46.98449327,
             'lon' => 17.69618913,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4531,10 +4567,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-Sz: 6.00-22.00 V: 7.00-21.00",
             'lat' => 46.98216442,
             'lon' => 17.69601033,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_35.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_35_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4549,10 +4585,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.05212408,
             'lon' => 17.6522042,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_36.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_36.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_36_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4567,10 +4603,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.0817975,
             'lon' => 17.64537747,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_37.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_37.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_37_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4585,10 +4621,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.148084,
             'lon' => 17.653542,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_38_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4603,9 +4639,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–Cs: 6–22, P–Szo: 6–23,  V: 6–24",
             'lat' => 47.14798496,
             'lon' => 17.65375607,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4622,9 +4658,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.1342848,
             'lon' => 17.63167024,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4640,9 +4676,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–Cs: 6–22, P–Szo: 6–23,  V: 6–24",
             'lat' => 47.14798496,
             'lon' => 17.65375607,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_38.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_38_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4658,9 +4694,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.21773305,
             'lon' => 17.65175233,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_39.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_39_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_39_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_39.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_39_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_39_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4676,10 +4712,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.25799724,
             'lon' => 17.72112353,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_40.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_40.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4694,9 +4730,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.25695653,
             'lon' => 17.71915674,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_40.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_40.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_40_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4712,9 +4748,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.29437714,
             'lon' => 17.75452581,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_41.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_41_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_41_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_41.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_41_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_41_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4730,9 +4766,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.29006574,
             'lon' => 17.83646548,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4748,10 +4784,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.29004789,
             'lon' => 17.83409722,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_42.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_42.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_42_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4766,10 +4802,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.266092,
             'lon' => 17.862083,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4784,10 +4820,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.26658774,
             'lon' => 17.87789721,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_3.jpg",
         ]);
 
         //OKT 9. szakasz
@@ -4803,10 +4839,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.266092,
             'lon' => 17.862083,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4821,10 +4857,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.26658774,
             'lon' => 17.87789721,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_43.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_43_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4839,9 +4875,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.27222281,
             'lon' => 17.97285094,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_44.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_44_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_44_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_44.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_44_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_44_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4857,10 +4893,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.283093,
             'lon' => 18.025839,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_45.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_45.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4875,9 +4911,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.28235589,
             'lon' => 18.02286725,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_45.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_45.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_45_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4893,9 +4929,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.27069942,
             'lon' => 18.05813919,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_46.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_46_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_46_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_46.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_46_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_46_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4911,9 +4947,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.30168194,
             'lon' => 18.11744784,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4929,9 +4965,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.30054391,
             'lon' => 18.12091723,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_47.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_47.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_47_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -4947,10 +4983,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.2451389,
             'lon' => 18.19710715,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_48.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_48.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_48_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4965,10 +5001,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.280704,
             'lon' => 18.25475,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_49.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_49.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_49_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -4983,10 +5019,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.318006,
             'lon' => 18.251822,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5001,10 +5037,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.319943,
             'lon' => 18.238773,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5019,9 +5055,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8–12,  14–21",
             'lat' => 47.32453758,
             'lon' => 18.23174593,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5038,10 +5074,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.318006,
             'lon' => 18.251822,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_3_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5056,10 +5092,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.319943,
             'lon' => 18.238773,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5074,9 +5110,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8–12,  14–21",
             'lat' => 47.32453758,
             'lon' => 18.23174593,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5092,9 +5128,9 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.35916681,
             'lon' => 18.27787626,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_50_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_50_b_f_2.jpg",
             'picture3_url' => "",
         ]);
         Stamp::create([
@@ -5109,9 +5145,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.39189804,
             'lon' => 18.38914878,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_51.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_51.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5127,9 +5163,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.39003353,
             'lon' => 18.38784163,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_51.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_51.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_51_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5145,9 +5181,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.42308944,
             'lon' => 18.33801724,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_52.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_52_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_52_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_52.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_52_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_52_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5163,9 +5199,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.44322203,
             'lon' => 18.39055546,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_53.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_53_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_53_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_53.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_53_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_53_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5181,9 +5217,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.46793882,
             'lon' => 18.3936815,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_54.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_54.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5199,9 +5235,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.4760396,
             'lon' => 18.39622485,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_54.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_54.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_54_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5217,10 +5253,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.51842,
             'lon' => 18.496151,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_55.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_55.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_3.jpg",
         ]);
 
         //OKT 11. szakasz
@@ -5236,10 +5272,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.51842,
             'lon' => 18.496151,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_55.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_55.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_55_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5254,9 +5290,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.57453447,
             'lon' => 18.53435298,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_56.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_56_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_56_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_56.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_56_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_56_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5272,10 +5308,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.58253129,
             'lon' => 18.45378147,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5290,10 +5326,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.5854,
             'lon' => 18.4532,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_57.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_57.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_57_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5308,10 +5344,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.66159618,
             'lon' => 18.47613118,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_58.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_58.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_58_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5326,9 +5362,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.68559921,
             'lon' => 18.49240328,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_59.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_59_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_59_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_59.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_59_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_59_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5344,10 +5380,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.6888882,
             'lon' => 18.51883011,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_60.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_60.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5362,9 +5398,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.68765169,
             'lon' => 18.52016831,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_60.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_60.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_60_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5380,10 +5416,10 @@ class StampSeeder extends Seeder
             'opening_hours' => " nincs",
             'lat' => 47.70971876,
             'lon' => 18.5904526,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_61.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_61.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5398,10 +5434,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.7091824,
             'lon' => 18.5876319,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_61.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_61.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_61_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5416,10 +5452,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.726772,
             'lon' => 18.602274,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_62.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_62.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_62_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5434,9 +5470,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.71927476,
             'lon' => 18.62540419,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_63.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_63.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5452,9 +5488,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.71887327,
             'lon' => 18.65447002,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_63_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_63_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_63_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5470,10 +5506,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.708993,
             'lon' => 18.683006,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_63_c.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_63_c.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_63_c_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5488,10 +5524,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.72320799,
             'lon' => 18.73278259,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_64.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_64.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_3.jpg",
         ]);
 
         //OKT 12. szakasz
@@ -5507,10 +5543,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.72320799,
             'lon' => 18.73278259,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_64.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_64.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_64_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5525,9 +5561,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.70104369,
             'lon' => 18.83499464,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_65.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_65.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5543,9 +5579,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.70201091,
             'lon' => 18.83303456,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_65.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_65.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_65_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5561,10 +5597,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.63943856,
             'lon' => 18.82830535,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_66.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_66.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_3.jpg",
         ]);
 
         //OKT 13. szakasz
@@ -5580,10 +5616,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.63943856,
             'lon' => 18.82830535,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_66.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_66.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_66_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5598,10 +5634,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.58941714,
             'lon' => 18.90054194,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_67.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_67.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_67_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5616,10 +5652,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.54102443,
             'lon' => 18.96376625,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5634,9 +5670,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.54083437,
             'lon' => 18.96389887,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5653,10 +5689,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.54102443,
             'lon' => 18.96376625,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5671,9 +5707,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.54083437,
             'lon' => 18.96389887,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_68.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_68_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5689,10 +5725,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.55453564,
             'lon' => 18.99894185,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_69.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_69.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5707,9 +5743,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.55680871,
             'lon' => 18.99750407,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_69.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_69.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_69_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5725,9 +5761,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.56576684,
             'lon' => 18.98939331,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_70.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_70_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_70_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_70.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_70_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_70_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5743,10 +5779,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.5851311,
             'lon' => 18.98974101,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_71.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_71.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_3.jpg",
         ]);
 
         //OKT 15. szakasz
@@ -5762,10 +5798,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.5851311,
             'lon' => 18.98974101,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_71.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_71.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_71_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5780,9 +5816,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.6267707,
             'lon' => 18.9770341,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_72.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_72_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_72_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_72.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_72_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_72_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5798,9 +5834,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 6–22",
             'lat' => 47.69406315,
             'lon' => 18.90236387,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_73.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_73.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5816,9 +5852,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.69320505,
             'lon' => 18.90129275,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_73.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_73.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_73_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5834,9 +5870,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.71955686,
             'lon' => 18.89885882,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_74.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_74.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5853,9 +5889,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.71955686,
             'lon' => 18.89885882,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_74.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_74.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_74_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5871,10 +5907,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.7055246,
             'lon' => 18.9621152,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_75.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_75.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_75_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5889,10 +5925,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.723289,
             'lon' => 18.988757,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_76.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_76.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_76_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5907,9 +5943,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.72079603,
             'lon' => 18.98598227,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_76.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_76.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_76_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5925,9 +5961,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.7377,
             'lon' => 19.012,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_77.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_77_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_77_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_77.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_77_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_77_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -5943,10 +5979,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "változó",
             'lat' => 47.79551685,
             'lon' => 18.99222405,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_78.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_78.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5961,10 +5997,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 11.30 – 18.00",
             'lat' => 47.79502609,
             'lon' => 18.98959105,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_78.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_78.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_78_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -5979,10 +6015,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.78598335,
             'lon' => 18.96695816,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_79.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_79.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
         ]);
 
         //OKT 17. szakasz
@@ -5998,10 +6034,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.78598335,
             'lon' => 18.96695816,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_79.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_79.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_79_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6016,10 +6052,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.79125688,
             'lon' => 18.95908157,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_80.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_80.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_80_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6034,10 +6070,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.783978,
             'lon' => 18.933410,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_80_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_80_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_80_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6052,10 +6088,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.83080408,
             'lon' => 18.94335993,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_81.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_81.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_81_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6070,10 +6106,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.89074934,
             'lon' => 18.92765425,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_82.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_82.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_82_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6088,10 +6124,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.93614548,
             'lon' => 18.92178233,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_83.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_83.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_83_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6106,10 +6142,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.949156,
             'lon' => 18.948406,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_83_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_83_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_83_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6124,10 +6160,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.90253715,
             'lon' => 19.04718373,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_84.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_84.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_3.jpg",
         ]);
 
         //OKT 19. szakasz
@@ -6143,10 +6179,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.90253715,
             'lon' => 19.04718373,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_84.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_84.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_84_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6161,10 +6197,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.84801099,
             'lon' => 19.05477447,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_85.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_85.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6179,9 +6215,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.87922964,
             'lon' => 19.03578171,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_85_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_b_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_85_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_85_b_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6197,10 +6233,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.85047523,
             'lon' => 19.1056587,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_86.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_86.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6215,9 +6251,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.85547682,
             'lon' => 19.10534822,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_86.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_86.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_86_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6233,10 +6269,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.833844,
             'lon' => 19.152866,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_86_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_86_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_86_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6251,9 +6287,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.85780961,
             'lon' => 19.19582104,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_87.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_87.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6269,9 +6305,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.85910754,
             'lon' => 19.19174153,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_87.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_87.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_87_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6287,10 +6323,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.88519455,
             'lon' => 19.19968273,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_88.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_88.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_88_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6305,10 +6341,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.87483672,
             'lon' => 19.24428487,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_89.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_89.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6323,10 +6359,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.8751542,
             'lon' => 19.24359429,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_89.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_89.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_89_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6341,10 +6377,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.920064,
             'lon' => 19.262803,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_90.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_90.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6359,10 +6395,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.92382951,
             'lon' => 19.26564788,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_90.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_90.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_90_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6377,9 +6413,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.93632753,
             'lon' => 19.28570806,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_91.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_91_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_91_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_91.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_91_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_91_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6395,9 +6431,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.91085254,
             'lon' => 19.37585742,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6413,10 +6449,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–P: 7–17, Szo: 7–12, V: 7–11",
             'lat' => 47.90999958,
             'lon' => 19.37710983,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_3.jpg",
         ]);
 
         //OKT 19. szakasz
@@ -6432,9 +6468,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.91085254,
             'lon' => 19.37585742,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6450,10 +6486,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–P: 7–17, Szo: 7–12, V: 7–11",
             'lat' => 47.90999958,
             'lon' => 19.37710983,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_92.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_92_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6468,10 +6504,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.927619,
             'lon' => 19.410987,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_93.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_93.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_93_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6486,9 +6522,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.97622911,
             'lon' => 19.42505018,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_94.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_94_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_94_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_94.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_94_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_94_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6504,10 +6540,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.007884,
             'lon' => 19.50190201,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_95.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_95.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6522,10 +6558,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.00434254,
             'lon' => 19.51036284,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_95.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_95.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_95_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6540,10 +6576,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.997353,
             'lon' => 19.59119801,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_96.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_96.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_96_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6558,10 +6594,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.93839811,
             'lon' => 19.60796326,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_97.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_97.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_97_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6576,10 +6612,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.99723545,
             'lon' => 19.70030707,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_98.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_98.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_98_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6594,9 +6630,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.97332254,
             'lon' => 19.77881469,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_99.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_99.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6613,9 +6649,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.97332254,
             'lon' => 19.77881469,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_99.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_99.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_99_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6631,9 +6667,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "Szo–V + hosszú hétvégéken és iskolai szünetekben mindennap: 9–20",
             'lat' => 47.923,
             'lon' => 19.8256,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_100.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_100.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6649,8 +6685,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.92329448,
             'lon' => 19.82583581,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_100.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_2_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_100.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_100_2_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -6666,10 +6702,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.926787,
             'lon' => 19.870607,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_101.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_101.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6684,9 +6720,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.92651074,
             'lon' => 19.87214391,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_101.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_101.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_101_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6702,10 +6738,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.917596,
             'lon' => 19.924072,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_102.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_102_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_102.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_102_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6720,10 +6756,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 7–20",
             'lat' => 47.91644477,
             'lon' => 19.92379581,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_102.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_102.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_102_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6738,10 +6774,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.90475621,
             'lon' => 19.95781833,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_103.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_103.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_103_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6756,10 +6792,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.882602,
             'lon' => 19.977493,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_104.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_104.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_104_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6774,10 +6810,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.868312,
             'lon' => 19.978283,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6792,10 +6828,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.86861059,
             'lon' => 19.97751687,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_3.jpg",
         ]);
 
         //OKT 21. szakasz
@@ -6811,10 +6847,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.868312,
             'lon' => 19.978283,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6829,10 +6865,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.86861059,
             'lon' => 19.97751687,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_105.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_105_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6847,10 +6883,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.873343,
             'lon' => 20.008657,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_106.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_106.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_106_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6865,10 +6901,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.86898529,
             'lon' => 20.05864969,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_107.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_107.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_107_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6883,10 +6919,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.912113,
             'lon' => 20.17789,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6901,10 +6937,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.93162585,
             'lon' => 20.19450774,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_3.jpg",
         ]);
 
         //OKT 22 szakasz.
@@ -6920,10 +6956,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.912113,
             'lon' => 20.17789,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6938,10 +6974,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.93162585,
             'lon' => 20.19450774,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_108.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_108_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6956,9 +6992,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.95751211,
             'lon' => 20.23659235,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_109.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_109_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_109_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_109.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_109_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_109_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -6974,10 +7010,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.988315,
             'lon' => 20.331043,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -6992,9 +7028,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.98833466,
             'lon' => 20.33235321,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7011,10 +7047,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.988315,
             'lon' => 20.331043,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7029,9 +7065,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 47.98833466,
             'lon' => 20.33235321,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_110.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_110_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7047,10 +7083,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.03912588,
             'lon' => 20.35205156,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_111.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_111.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7065,9 +7101,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.03903315,
             'lon' => 20.35108632,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_111.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_111.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_111_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7083,9 +7119,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.05759694,
             'lon' => 20.35301326,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_112.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_112.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7101,9 +7137,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.05925289,
             'lon' => 20.36843405,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_112.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_112.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_112_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7119,9 +7155,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.05172093,
             'lon' => 20.43307391,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_113.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_113_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_113_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_113.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_113_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_113_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7137,9 +7173,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8–20",
             'lat' => 48.09983537,
             'lon' => 20.48366011,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_114.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_114.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7155,10 +7191,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.09988099,
             'lon' => 20.48341885,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_114.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_114.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_114_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7173,10 +7209,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.15307366,
             'lon' => 20.49396406,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_115.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_115.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_115_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7191,9 +7227,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.21828718,
             'lon' => 20.43938914,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_116.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_116.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_116_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7209,10 +7245,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.214993,
             'lon' => 20.439183,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_116.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_116.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_116_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7227,9 +7263,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.28657237,
             'lon' => 20.43738752,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_117.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_117.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7246,9 +7282,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.28657237,
             'lon' => 20.43738752,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_117.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_117.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_117_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7264,9 +7300,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.35669979,
             'lon' => 20.43141592,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7282,9 +7318,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8–16",
             'lat' => 48.35665095,
             'lon' => 20.43161719,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7300,9 +7336,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–P: 6–16 Szo: 6–12",
             'lat' => 48.35599209,
             'lon' => 20.42957407,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_3_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_118.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_118_3_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7318,9 +7354,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.37510299,
             'lon' => 20.42804759,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_119.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_119_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_119_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_119.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_119_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_119_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7336,10 +7372,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 11–19",
             'lat' => 48.38611426,
             'lon' => 20.48771527,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_120.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_120.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_120_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7354,9 +7390,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.47110363,
             'lon' => 20.49449814,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_121.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_121.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7372,8 +7408,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "H–V: 8–16",
             'lat' => 48.47103028,
             'lon' => 20.49556247,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_121.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_2_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_121.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_121_2_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -7390,10 +7426,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.485523,
             'lon' => 20.549831,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_122.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_122.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7408,9 +7444,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.48430911,
             'lon' => 20.53962659,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_122.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_2_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_122.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_122_2_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7426,9 +7462,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.54166309,
             'lon' => 20.64048526,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_123.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_123_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_123_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_123.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_123_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_123_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7444,10 +7480,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.563163,
             'lon' => 20.702455,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_124.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_124.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_124_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7462,10 +7498,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.53745743,
             'lon' => 20.73789561,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_125.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_125.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_3.jpg",
         ]);
 
         //OKT 25. szakasz
@@ -7481,10 +7517,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.53745743,
             'lon' => 20.73789561,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_125.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_125.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_125_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7499,9 +7535,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.51269576,
             'lon' => 20.73607281,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_126.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_126_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_126_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_126.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_126_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_126_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7517,10 +7553,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.49175341,
             'lon' => 20.81843202,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_127.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_127.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_127_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7535,9 +7571,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.46198098,
             'lon' => 20.83547624,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_128.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_128.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_128_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7553,10 +7589,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.398217,
             'lon' => 20.875997,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_128_b.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_128_b.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_128_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7571,10 +7607,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.370441,
             'lon' => 20.914954,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_129.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_129.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7589,10 +7625,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "napközben",
             'lat' => 48.37054778,
             'lon' => 20.92130005,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_129.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_129.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_129_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7607,9 +7643,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.36974629,
             'lon' => 20.97322004,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_130.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_130_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_130_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_130.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_130_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_130_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7625,10 +7661,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.365433,
             'lon' => 21.028009,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_131.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_131.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_131_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7643,10 +7679,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.35631178,
             'lon' => 21.06298436,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7661,10 +7697,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.327599,
             'lon' => 21.118303,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7679,10 +7715,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.33523,
             'lon' => 21.10893,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_132_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_132_b_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7697,10 +7733,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.314883,
             'lon' => 21.161221,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_133.svg",
-            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_1.jpg",
-            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_2.jpg",
-            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_133.svg",
+            'picture1_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_1.jpg",
+            'picture2_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_2.jpg",
+            'picture3_url' => "httpss://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_133_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7715,8 +7751,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.34849084,
             'lon' => 21.19116277,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_134.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_134_1_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_134.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_134_1_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -7733,10 +7769,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.344807,
             'lon' => 21.232018,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7751,9 +7787,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.34490986,
             'lon' => 21.20882664,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7770,12 +7806,12 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.344807,
             'lon' => 21.232018,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_2_f_3.jpg",
         ]);
-        
+
         Stamp::create([
             'mtsz_id' => "OKTPH_135_2",
             'stamp_id' => "OKTPH_135",
@@ -7788,9 +7824,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.34490986,
             'lon' => 21.20882664,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_135.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_135_1_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7806,10 +7842,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.39223513,
             'lon' => 21.34441737,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7824,10 +7860,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "H-Szo: 7:30-16, V: 9-14",
             'lat' => 48.39190329,
             'lon' => 21.34372421,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7842,9 +7878,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.3942695,
             'lon' => 21.34604549,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_3_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_3_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_136.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_3_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_136_3_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7860,9 +7896,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.40855226,
             'lon' => 21.40100785,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_137.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_137_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_137_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_137.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_137_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_137_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7878,10 +7914,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.4045758,
             'lon' => 21.4654081,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_138.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_138.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_138_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7896,10 +7932,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.35991245,
             'lon' => 21.51705766,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_139.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_139.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_139_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7914,10 +7950,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.37695945,
             'lon' => 21.53794892,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_140.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_140.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_140_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -7932,9 +7968,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.39224603,
             'lon' => 21.62394817,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_142.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_142.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7951,9 +7987,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.39224603,
             'lon' => 21.62394817,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_142.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_142.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_142_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7969,9 +8005,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.42302975,
             'lon' => 21.54099928,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_144.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_144_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_144_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_144.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_144_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_144_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -7987,9 +8023,9 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.43082728,
             'lon' => 21.49218358,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_145.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_145_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_145_f_2.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_145.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_145_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_145_f_2.jpg",
             'picture3_url' => "",
         ]);
 
@@ -8005,10 +8041,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.484423,
             'lon' => 21.525029,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_146.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_146.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_146_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -8023,10 +8059,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.544836,
             'lon' => 21.46129,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_147.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_147.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_2_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -8041,8 +8077,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.54009304,
             'lon' => 21.45525738,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_147.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_1_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_147.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_147_1_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -8059,10 +8095,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.576535,
             'lon' => 21.458098,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_147_b.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok/oktph_147_b.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek/oktph_147_b_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -8077,10 +8113,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.56503867,
             'lon' => 21.43228074,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_148.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_148.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_148_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -8095,8 +8131,8 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.54270509,
             'lon' => 21.41298576,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_3_f_1.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_3_f_1.jpg",
             'picture2_url' => "",
             'picture3_url' => "",
         ]);
@@ -8113,10 +8149,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.53351782,
             'lon' => 21.41987352,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_1_f_3.jpg",
         ]);
 
         Stamp::create([
@@ -8131,10 +8167,10 @@ class StampSeeder extends Seeder
             'opening_hours' => "nincs",
             'lat' => 48.53448624,
             'lon' => 21.418476,
-            'stamp_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
-            'picture1_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_1.jpg",
-            'picture2_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_2.jpg",
-            'picture3_url' => "http://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_3.jpg",
+            'stamp_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzo_lenyomatok\oktph_149.svg",
+            'picture1_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_1.jpg",
+            'picture2_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_2.jpg",
+            'picture3_url' => "https://turistaterkepek.hu/kepek/okk_kepek/belyegzohely_kepek\oktph_149_2_f_3.jpg",
         ]);
     }
 }
